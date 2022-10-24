@@ -1,0 +1,28 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "console": "integratedTerminal",
+            // "program": "/home3/yuhang001/new_wenet/wenet/examples/decode_lr/add_embedding/wenet/bin/recognize.py",
+            // "args": [ "--gpu","1","--mode","attention_rescoring","--config","exp/sp_spec_aug/train.yaml","--data_type","raw","--dict","data/lang_char/train_unigram5000_units.txt","--bpe_model","data/lang_char/train_unigram5000.model","--test_data","data/test/data.list","--checkpoint","exp/sp_spec_aug/avg_3.pt","--beam_size","10","--batch_size","1","--penalty","0.0","--result_file","exp/sp_spec_aug/test_attention_rescoring/text_bpe","--ctc_weight","0.5","--decoding_chunk_size","-1"  ],
+
+            // "program": "/home3/yuhang001/espnet/egs2/librispeech_100/fine_turn_letter/espnet2/bin/lm_train.py",
+            // "args": ["--collect_stats","true","--use_preprocessor","true","--bpemodel","data/en_token_list/bpe_unigram5000/bpe.model","--token_type","bpe","--token_list","data/en_token_list/bpe_unigram5000/tokens.txt","--non_linguistic_symbols","none","--cleaner","none","--g2p","none","--train_data_path_and_name_and_type","dump/raw/lm_train.txt,text,text","--valid_data_path_and_name_and_type","dump/raw/dev/text,text,text","--train_shape_file","exp/lm_stats_en_bpe5000/logdir/train.1.scp","--valid_shape_file","exp/lm_stats_en_bpe5000/logdir/dev.1.scp","--output_dir","exp/lm_stats_en_bpe5000/logdir/stats.1"],
+    
+            "program": "/home3/yuhang001/espnet/egs2/librispeech_100/letter_bid_fine/espnet2/bin/asr_train.py",
+            "args": ["--use_preprocessor","true","--ngpu","1","--bpemodel","data/en_token_list/bpe_unigram5000/bpe.model","--token_type","bpe","--token_list","data/en_token_list/bpe_unigram5000/tokens.txt","--non_linguistic_symbols","none","--cleaner","none","--g2p","none","--valid_data_path_and_name_and_type","dump/raw/dev/wav.scp,speech,kaldi_ark","--valid_data_path_and_name_and_type","dump/raw/dev/text,text,text","--valid_data_path_and_name_and_type","dump/raw/dev/phone_text_with_id,text_phone,text","--valid_shape_file","exp/asr_stats_raw_en_bpe5000_sp/valid/speech_shape","--valid_shape_file","exp/asr_stats_raw_en_bpe5000_sp/valid/text_shape.bpe","--resume","true","--init_param","--ignore_init_mismatch","false","--fold_length","80000","--fold_length","150","--output_dir","exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic_start_33","--config","conf/train_asr.yaml","--frontend_conf","fs=16k","--normalize=global_mvn","--normalize_conf","stats_file=exp/asr_stats_raw_en_bpe5000_sp/train/feats_stats.npz","--train_data_path_and_name_and_type","dump/raw/train_clean_100_sp/wav.scp,speech,kaldi_ark","--train_data_path_and_name_and_type","dump/raw/train_clean_100_sp/text,text,text","--train_data_path_and_name_and_type","dump/raw/train_clean_100_sp/phone_text_with_id,text_phone,text","--train_shape_file","exp/asr_stats_raw_en_bpe5000_sp/train/speech_shape","--train_shape_file","exp/asr_stats_raw_en_bpe5000_sp/train/text_shape.bpe","--train_data_path_and_name_and_type","dump/raw/train_960_text/text,other_text,text","--train_data_path_and_name_and_type","dump/raw/train_960_text/phone_text_with_id,other_text_phone,text"],
+            //"--checkpoint","exp/conformer/final.pt",
+            //"program": "/home/yyh520/wenet/examples/aishell/s0_final_train/wenet/bin/recognize.py",
+            //"args": ["--gpu","6","--mode","ctc_greedy_search","--config","exp/conformer/train.yaml","--data_type","raw","--test_data","data/test/data.list","--checkpoint","exp/conformer/15.pt","--beam_size","10","--batch_size","1","--penalty","0.0","--dict","data/dict/lang_char.txt","--ctc_weight","0.5","--reverse_weight","0.0","--result_file","exp/conformer/test_ctc_greedy_search/text","--decoding_chunk_size","-1"],
+            "env": {
+                "PYTHONPATH":"./"
+            },
+        }
+    ]
+}

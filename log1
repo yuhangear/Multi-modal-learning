@@ -1,0 +1,61 @@
+2022-10-19T02:35:21 (asr.sh:253:main) ./asr.sh --skip_data_prep false --skip_train false --skip_eval false --lang en --ngpu 1 --nj 20 --inference_nj 10 --nbpe 5000 --max_wav_duration 30 --speed_perturb_factors 0.9 1.0 1.1 --audio_format flac.ark --feats_type raw --use_lm false --asr_tag conformer_lr2e-3_warmup15k_amp_nondeterministic_start_33_add_bert --asr_config conf/train_asr.yaml --inference_config conf/decode_asr.yaml --train_set train_clean_100 --valid_set dev --test_sets  dev_clean  --lm_train_text data/train_clean_100/text --bpe_train_text data/train_clean_100/text --stage 11 --stop_stage 13
+2022-10-19T02:35:21 (asr.sh:1020:main) Stage 11: ASR Training: train_set=dump/raw/train_clean_100_sp, valid_set=dump/raw/dev
+2022-10-19T02:35:21 (asr.sh:1089:main) Generate 'exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic_start_33_add_bert/run.sh'. You can resume the process from stage 11 using this script
+2022-10-19T02:35:21 (asr.sh:1093:main) ASR training started... log: 'exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic_start_33_add_bert/train.log'
+--config conf/train_asr.yaml --frontend_conf fs=16k --normalize=global_mvn --normalize_conf stats_file=exp/asr_stats_raw_en_bpe5000_sp/train/feats_stats.npz --train_data_path_and_name_and_type dump/raw/train_clean_100_sp/wav.scp,speech,kaldi_ark --train_data_path_and_name_and_type dump/raw/train_clean_100_sp/text,text,text --train_data_path_and_name_and_type dump/raw/train_clean_100_sp/phone_text_with_id,text_phone,text --train_shape_file exp/asr_stats_raw_en_bpe5000_sp/train/speech_shape --train_shape_file exp/asr_stats_raw_en_bpe5000_sp/train/text_shape.bpe --train_data_path_and_name_and_type dump/raw/train_960_text/text,other_text,text --train_data_path_and_name_and_type dump/raw/train_960_text/phone_text_with_id,other_text_phone,text
+--token_list data/en_token_list/bpe_unigram5000/tokens.txt
+--output_dir exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic_start_33_add_bert
+2022-10-19 02:35:21,847 (launch:95) INFO: /home3/yuhang001/w2021/anaconda/envs/final_esp/bin/python3 /home3/yuhang001/espnet/egs2/librispeech_100/letter_bid_fine/espnet2/bin/launch.py --cmd '/home/asrxiv/w2021/project/eng_man_malay8k/utils/slurm.pl --quiet --num-threads 6 --exclude=node0[2,3,4,5,6,7,8,9]' --log exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic_start_33_add_bert/train1.log --ngpu 1 --num_nodes 1 --init_file_prefix exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic_start_33_add_bert/.dist_init_ --multiprocessing_distributed true -- python3 -m espnet2.bin.asr_train --use_preprocessor true --bpemodel data/en_token_list/bpe_unigram5000/bpe.model --token_type bpe --token_list data/en_token_list/bpe_unigram5000/tokens.txt --non_linguistic_symbols none --cleaner none --g2p none --valid_data_path_and_name_and_type dump/raw/dev/wav.scp,speech,kaldi_ark --valid_data_path_and_name_and_type dump/raw/dev/text,text,text --valid_data_path_and_name_and_type dump/raw/dev/phone_text_with_id,text_phone,text --valid_shape_file exp/asr_stats_raw_en_bpe5000_sp/valid/speech_shape --valid_shape_file exp/asr_stats_raw_en_bpe5000_sp/valid/text_shape.bpe --resume true --init_param --ignore_init_mismatch false --fold_length 80000 --fold_length 150 --output_dir exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic_start_33_add_bert --config conf/train_asr.yaml --frontend_conf fs=16k --normalize=global_mvn --normalize_conf stats_file=exp/asr_stats_raw_en_bpe5000_sp/train/feats_stats.npz --train_data_path_and_name_and_type dump/raw/train_clean_100_sp/wav.scp,speech,kaldi_ark --train_data_path_and_name_and_type dump/raw/train_clean_100_sp/text,text,text --train_data_path_and_name_and_type dump/raw/train_clean_100_sp/phone_text_with_id,text_phone,text --train_shape_file exp/asr_stats_raw_en_bpe5000_sp/train/speech_shape --train_shape_file exp/asr_stats_raw_en_bpe5000_sp/train/text_shape.bpe --train_data_path_and_name_and_type dump/raw/train_960_text/text,other_text,text --train_data_path_and_name_and_type dump/raw/train_960_text/phone_text_with_id,other_text_phone,text
+2022-10-19 02:35:22,009 (launch:349) INFO: log file: exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic_start_33_add_bert/train1.log
+2022-10-19T16:06:47 (asr.sh:1219:main) Stage 12: Decoding: training_dir=exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic_start_33_add_bert
+2022-10-19T16:06:47 (asr.sh:1247:main) Generate 'exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic_start_33_add_bert/decode_asr_asr_model_valid.acc.ave/run.sh'. You can resume the process from stage 12 using this script
+2022-10-19T16:06:47 (asr.sh:1304:main) Decoding started... log: 'exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic_start_33_add_bert/decode_asr_asr_model_valid.acc.ave/dev_clean/logdir/asr_inference.*.log'
+2022-10-19T17:08:50 (asr.sh:1330:main) Stage 13: Scoring
+/home3/yuhang001/w2021/anaconda/envs/final_esp/bin/python3 /home3/yuhang001/espnet/egs2/librispeech_100/letter_bid_fine/espnet2/bin/tokenize_text.py -f 2- --input - --output - --token_type char --non_linguistic_symbols none --remove_non_linguistic_symbols true --cleaner none
+/home3/yuhang001/w2021/anaconda/envs/final_esp/bin/python3 /home3/yuhang001/espnet/egs2/librispeech_100/letter_bid_fine/espnet2/bin/tokenize_text.py -f 2- --input - --output - --token_type char --non_linguistic_symbols none --remove_non_linguistic_symbols true
+2022-10-19T17:08:58 (asr.sh:1431:main) Write cer result in exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic_start_33_add_bert/decode_asr_asr_model_valid.acc.ave/dev_clean/score_cer/result.txt
+|     SPKR       |     # Snt          # Wrd     |     Corr           Sub            Del            Ins            Err          S.Err     |
+|     Sum/Avg    |     2703          288456     |     97.9           1.2            0.9            0.6            2.8           57.7     |
+/home3/yuhang001/w2021/anaconda/envs/final_esp/bin/python3 /home3/yuhang001/espnet/egs2/librispeech_100/letter_bid_fine/espnet2/bin/tokenize_text.py -f 2- --input - --output - --token_type word --non_linguistic_symbols none --remove_non_linguistic_symbols true --cleaner none
+/home3/yuhang001/w2021/anaconda/envs/final_esp/bin/python3 /home3/yuhang001/espnet/egs2/librispeech_100/letter_bid_fine/espnet2/bin/tokenize_text.py -f 2- --input - --output - --token_type word --non_linguistic_symbols none --remove_non_linguistic_symbols true
+2022-10-19T17:09:00 (asr.sh:1431:main) Write wer result in exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic_start_33_add_bert/decode_asr_asr_model_valid.acc.ave/dev_clean/score_wer/result.txt
+|     SPKR       |     # Snt          # Wrd     |     Corr           Sub            Del            Ins            Err          S.Err     |
+|     Sum/Avg    |     2703           54402     |     94.0           5.4            0.5            0.6            6.6           57.7     |
+/home3/yuhang001/w2021/anaconda/envs/final_esp/bin/python3 /home3/yuhang001/espnet/egs2/librispeech_100/letter_bid_fine/espnet2/bin/tokenize_text.py -f 2- --input - --output - --token_type bpe --bpemodel data/en_token_list/bpe_unigram5000/bpe.model --cleaner none
+/home3/yuhang001/w2021/anaconda/envs/final_esp/bin/python3 /home3/yuhang001/espnet/egs2/librispeech_100/letter_bid_fine/espnet2/bin/tokenize_text.py -f 2- --input - --output - --token_type bpe --bpemodel data/en_token_list/bpe_unigram5000/bpe.model
+2022-10-19T17:09:03 (asr.sh:1431:main) Write ter result in exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic_start_33_add_bert/decode_asr_asr_model_valid.acc.ave/dev_clean/score_ter/result.txt
+|     SPKR       |     # Snt          # Wrd     |     Corr           Sub            Del            Ins            Err          S.Err     |
+|     Sum/Avg    |     2703           69558     |     91.0           5.0            4.0            0.4            9.4           57.7     |
+ls: cannot access exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic_start_33_add_bert/*/*/score_wer/scoring/*.filt.sys: No such file or directory
+<!-- Generated by scripts/utils/show_asr_result.sh -->
+# RESULTS
+## Environments
+- date: `Wed Oct 19 17:09:03 +08 2022`
+- python version: `3.8.12 (default, Oct 12 2021, 13:49:34)  [GCC 7.5.0]`
+- espnet version: `espnet 0.10.7a1`
+- pytorch version: `pytorch 1.10.1`
+- Git hash: `14c635069bcabf2b953a3fcb6cf0f0aabbede2e8`
+  - Commit date: `Thu Mar 24 11:43:26 2022 -0400`
+
+## asr_conformer_lr2e-3_warmup15k_amp_nondeterministic_start_33_add_bert
+### WER
+
+|dataset|Snt|Wrd|Corr|Sub|Del|Ins|Err|S.Err|
+|---|---|---|---|---|---|---|---|---|
+|decode_asr_asr_model_valid.acc.ave/dev_clean|2703|54402|94.0|5.4|0.5|0.6|6.6|57.7|
+
+### CER
+
+|dataset|Snt|Wrd|Corr|Sub|Del|Ins|Err|S.Err|
+|---|---|---|---|---|---|---|---|---|
+|decode_asr_asr_model_valid.acc.ave/dev_clean|2703|288456|97.9|1.2|0.9|0.6|2.8|57.7|
+
+### TER
+
+|dataset|Snt|Wrd|Corr|Sub|Del|Ins|Err|S.Err|
+|---|---|---|---|---|---|---|---|---|
+|decode_asr_asr_model_valid.acc.ave/dev_clean|2703|69558|91.0|5.0|4.0|0.4|9.4|57.7|
+
+2022-10-19T17:09:05 (asr.sh:1540:main) Skip the uploading stage
+2022-10-19T17:09:05 (asr.sh:1592:main) Skip the uploading to HuggingFace stage
+2022-10-19T17:09:05 (asr.sh:1595:main) Successfully finished. [elapsed=52424s]

@@ -1,0 +1,3684 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 1432
+tiers? <exists> 
+size = 2 
+item []: 
+    item [1]:
+        class = "IntervalTier" 
+        name = "channel1_S1" 
+        xmin = 0 
+        xmax = 1432
+        intervals: size = 461 
+        intervals [1]:
+            xmin = 0 
+            xmax = 3.076438700264491 
+            text = "mesti ramai yang tertanya tanya [kan] (uh) actually ramai juga [tau] <s/>" 
+        intervals [2]:
+            xmin = 3.076438700264491 
+            xmax = 4.254609698424565 
+            text = "kenapa <s/>" 
+        intervals [3]:
+            xmin = 4.254609698424565 
+            xmax = 13.035425563267621 
+            text = "kenapa kau tak kahwin zuhairi <s/> kau kau cuba beri penjelasan [ah] dan pencerahan sikit why are you still not married <s/> lepas tu aku punya turn [ah] <s/>" 
+        intervals [4]:
+            xmin = 13.035425563267621 
+            xmax = 15.89 
+            text = "(ppl)" 
+        intervals [5]:
+            xmin = 15.89 
+            xmax = 19.33366682484481 
+            text = "--EMPTY--" 
+        intervals [6]:
+            xmin = 19.33366682484481 
+            xmax = 20.36456644823487 
+            text = "but just" 
+        intervals [7]:
+            xmin = 20.36456644823487 
+            xmax = 21.16403962555778 
+            text = "--EMPTY--" 
+        intervals [8]:
+            xmin = 21.16403962555778 
+            xmax = 22.342210623717854 
+            text = "[ah] kau cuba <c/> kau cuba <c/> kau cuba <s/>" 
+        intervals [9]:
+            xmin = 22.342210623717854 
+            xmax = 25.64529717213092 
+            text = "--EMPTY--" 
+        intervals [10]:
+            xmin = 25.64529717213092 
+            xmax = 26.21334390338667 
+            text = "(ppl)" 
+        intervals [11]:
+            xmin = 26.21334390338667 
+            xmax = 33.36728449762734 
+            text = "--EMPTY--" 
+        intervals [12]:
+            xmin = 33.36728449762734 
+            xmax = 34.545455495787415 
+            text = "kenapa kau tak kahwin lagi <s/>" 
+        intervals [13]:
+            xmin = 34.545455495787415 
+            xmax = 50.46 
+            text = "--EMPTY--" 
+        intervals [14]:
+            xmin = 50.46 
+            xmax = 51.01192270193688 
+            text = "(mm)" 
+        intervals [15]:
+            xmin = 51.01192270193688 
+            xmax = 53.073721948717015 
+            text = "--EMPTY--" 
+        intervals [16]:
+            xmin = 53.073721948717015 
+            xmax = 53.66280744779705 
+            text = "[mm-mm]" 
+        intervals [17]:
+            xmin = 53.66280744779705 
+            xmax = 67.93894775473827 
+            text = "--EMPTY--" 
+        intervals [18]:
+            xmin = 67.93894775473827 
+            xmax = 68.367 
+            text = "yah <s/>" 
+        intervals [19]:
+            xmin = 68.367 
+            xmax = 70.42152235800413 
+            text = "--EMPTY--" 
+        intervals [20]:
+            xmin = 70.42152235800413 
+            xmax = 71.05 
+            text = "correct <c/> correct <s/>" 
+        intervals [21]:
+            xmin = 71.05 
+            xmax = 85.67883507057144 
+            text = "--EMPTY--" 
+        intervals [22]:
+            xmin = 85.67883507057144 
+            xmax = 86.83596730090724 
+            text = "(mm)" 
+        intervals [23]:
+            xmin = 86.83596730090724 
+            xmax = 101.60364823396738 
+            text = "--EMPTY--" 
+        intervals [24]:
+            xmin = 101.60364823396738 
+            xmax = 102.27688880434455 
+            text = "[mm-mm]" 
+        intervals [25]:
+            xmin = 102.27688880434455 
+            xmax = 118.92161231259617 
+            text = "--EMPTY--" 
+        intervals [26]:
+            xmin = 118.92161231259617 
+            xmax = 120.56263620289056 
+            text = "(mm) betul betul betul <s/> i think" 
+        intervals [27]:
+            xmin = 120.56263620289056 
+            xmax = 120.8361401846063 
+            text = "--EMPTY--" 
+        intervals [28]:
+            xmin = 120.8361401846063 
+            xmax = 130.4745403671825 
+            text = "i think for me (uh) jawapan aku sama juga seperti kau <s/> (uh) belum datangnya jodoh lagi kerana and i think a lot of people (um)" 
+        intervals [29]:
+            xmin = 130.4745403671825 
+            xmax = 130.9584320271411 
+            text = "(ppo)" 
+        intervals [30]:
+            xmin = 130.9584320271411 
+            xmax = 137.7726970407727 
+            text = "they apa tu <c/> dorang kurang faham dengan (uh) statement ataupun (uh) ayat" 
+        intervals [31]:
+            xmin = 137.7726970407727 
+            xmax = 138.088278558137 
+            text = "--EMPTY--" 
+        intervals [32]:
+            xmin = 138.088278558137 
+            xmax = 140.96 
+            text = "i'm busy with work and career kerana" 
+        intervals [33]:
+            xmin = 140.96 
+            xmax = 144.39531738254826 
+            text = "jikalau kita berbual pasal career <c/> kita berbual pasal kerja you know <s/>" 
+        intervals [34]:
+            xmin = 144.39531738254826 
+            xmax = 145.4893333094112 
+            text = "aku dengan zuhairi" 
+        intervals [35]:
+            xmin = 145.4893333094112 
+            xmax = 147.88545707994246 
+            text = "--EMPTY--" 
+        intervals [36]:
+            xmin = 147.88545707994246 
+            xmax = 151.52516391354413 
+            text = "yah but sometimes kalau kau nak sedap <c/> kau boleh try keria gula melaka also [lah] <s/>" 
+        intervals [37]:
+            xmin = 151.52516391354413 
+            xmax = 156.57446819137306 
+            text = "tapi yang normal <c/> yang the normal one pun sedap juga tapi aku suka keria yang macam dorang tak banyak pakai tepung <s/>" 
+        intervals [38]:
+            xmin = 156.57446819137306 
+            xmax = 157.1635536904531 
+            text = "--EMPTY--" 
+        intervals [39]:
+            xmin = 157.1635536904531 
+            xmax = 158.65608286048894 
+            text = "[ah] yang keledek lebih <s/>" 
+        intervals [40]:
+            xmin = 158.65608286048894 
+            xmax = 159.0978969828546 
+            text = "--EMPTY--" 
+        intervals [41]:
+            xmin = 159.0978969828546 
+            xmax = 159.95597040748962 
+            text = "[ah-ah]" 
+        intervals [42]:
+            xmin = 159.95597040748962 
+            xmax = 161.51283922648688 
+            text = "--EMPTY--" 
+        intervals [43]:
+            xmin = 161.51283922648688 
+            xmax = 162.72084655530531 
+            text = "[ah] lembut [lah] <s/>" 
+        intervals [44]:
+            xmin = 162.72084655530531 
+            xmax = 163.28889328656106 
+            text = "--EMPTY--" 
+        intervals [45]:
+            xmin = 163.28889328656106 
+            xmax = 169.72675624079292 
+            text = "dia dia nak kena macam ikut dia punya <c/> dia punya sira <c/> bila nak sira tu [kan] dia punya proportionate to sugar and water needs to be" 
+        intervals [46]:
+            xmin = 169.72675624079292 
+            xmax = 170.48415188246727 
+            text = "good <s/>" 
+        intervals [47]:
+            xmin = 170.48415188246727 
+            xmax = 173.0508815570303 
+            text = "[ah] baru kau punya keria akan <c/> yah [lah] <c/>" 
+        intervals [48]:
+            xmin = 173.0508815570303 
+            xmax = 174.9696147530446 
+            text = "(uh) naik [ah] <s/> [eh]" 
+        intervals [49]:
+            xmin = 174.9696147530446 
+            xmax = 175.49558394865178 
+            text = "--EMPTY--" 
+        intervals [50]:
+            xmin = 175.49558394865178 
+            xmax = 179.3877559961449 
+            text = "[ah] jadi (uh) for me i'm really busy and i'm not in the" 
+        intervals [51]:
+            xmin = 179.3877559961449 
+            xmax = 182.20695088459937 
+            text = "i'm not in the correct head space [ah] <s/> aku rasa macam" 
+        intervals [52]:
+            xmin = 182.20695088459937 
+            xmax = 189.8329302805441 
+            text = "i want to be able to build a family and focus (um) when i'm ready for it and right now i don't think i'm ready for it <s/>" 
+        intervals [53]:
+            xmin = 189.8329302805441 
+            xmax = 191.96 
+            text = "am i ready to lead a family <s/>" 
+        intervals [54]:
+            xmin = 191.96 
+            xmax = 193.9775675419287 
+            text = "no <s/> am i ready to lead my wife <s/>" 
+        intervals [55]:
+            xmin = 193.9775675419287 
+            xmax = 194.5574678473939 
+            text = "no <s/>" 
+        intervals [56]:
+            xmin = 194.5574678473939 
+            xmax = 196.78757723676836 
+            text = "you know <c/> am i ready to have kids <s/> no <s/> you know <s/>" 
+        intervals [57]:
+            xmin = 196.78757723676836 
+            xmax = 201.54998844717258 
+            text = "(uh) there's so many things i want to do <s/> i want make sure my parents are able to retire happily first <s/>" 
+        intervals [58]:
+            xmin = 201.54998844717258 
+            xmax = 204.85307499558567 
+            text = "i want to be able to make sure that my parents are happy <s/>" 
+        intervals [59]:
+            xmin = 204.85307499558567 
+            xmax = 208.36654922224162 
+            text = "(uh) that aku ada ada savings you know and and" 
+        intervals [60]:
+            xmin = 208.36654922224162 
+            xmax = 208.85044088220025 
+            text = "--EMPTY--" 
+        intervals [61]:
+            xmin = 208.85044088220025 
+            xmax = 210.78026811844103 
+            text = "entah [lah] <c/> susah [lah] <s/>" 
+        intervals [62]:
+            xmin = 210.78026811844103 
+            xmax = 213.73449317667524 
+            text = "--EMPTY--" 
+        intervals [63]:
+            xmin = 213.73449317667524 
+            xmax = 216.38423004181675 
+            text = "[ah] gitu [eh] cerita dia <s/>" 
+        intervals [64]:
+            xmin = 216.38423004181675 
+            xmax = 218.97199848420408 
+            text = "--EMPTY--" 
+        intervals [65]:
+            xmin = 218.97199848420408 
+            xmax = 221.42129311465544 
+            text = "that's for you [lah] <c/> that's for you [lah] <s/> you do you <s/> yah <s/>" 
+        intervals [66]:
+            xmin = 221.42129311465544 
+            xmax = 223.27270468319273 
+            text = "--EMPTY--" 
+        intervals [67]:
+            xmin = 223.27270468319273 
+            xmax = 224.4719144491771 
+            text = "you do you <s/> you do you <s/>" 
+        intervals [68]:
+            xmin = 224.4719144491771 
+            xmax = 237.88546527532247 
+            text = "--EMPTY--" 
+        intervals [69]:
+            xmin = 237.88546527532247 
+            xmax = 239.27402395172544 
+            text = "no no <s/> of course not <c/> of course not <s/>" 
+        intervals [70]:
+            xmin = 239.27402395172544 
+            xmax = 244.72306481821582 
+            text = "--EMPTY--" 
+        intervals [71]:
+            xmin = 244.72306481821582 
+            xmax = 245.35422785294443 
+            text = "correct <s/>" 
+        intervals [72]:
+            xmin = 245.35422785294443 
+            xmax = 274.69297732540167 
+            text = "--EMPTY--" 
+        intervals [73]:
+            xmin = 274.69297732540167 
+            xmax = 275.1137526818874 
+            text = "(mm)" 
+        intervals [74]:
+            xmin = 275.1137526818874 
+            xmax = 285.69357165315046 
+            text = "--EMPTY--" 
+        intervals [75]:
+            xmin = 285.69357165315046 
+            xmax = 286.87 
+            text = "(mm)" 
+        intervals [76]:
+            xmin = 286.87 
+            xmax = 289.88028645018363 
+            text = "--EMPTY--" 
+        intervals [77]:
+            xmin = 289.88028645018363 
+            xmax = 300.4249144541557 
+            text = "--EMPTY--" 
+        intervals [78]:
+            xmin = 300.4249144541557 
+            xmax = 300.86672857846577 
+            text = "(mm)" 
+        intervals [79]:
+            xmin = 300.86672857846577 
+            xmax = 302.25 
+            text = "--EMPTY--" 
+        intervals [80]:
+            xmin = 302.25 
+            xmax = 307.09840917845884 
+            text = "and i think and i think the reason why you say this is also because i think i'm speaking on behalf of zuhairi [lah] pasal" 
+        intervals [81]:
+            xmin = 307.09840917845884 
+            xmax = 308.5523806357271 
+            text = "aku (uh)" 
+        intervals [82]:
+            xmin = 308.5523806357271 
+            xmax = 314.3854725277775 
+            text = "we cannot speak for other people because we do not know (uh) what they have in their lives but i think because zuhairi <c/> i think he he" 
+        intervals [83]:
+            xmin = 314.3854725277775 
+            xmax = 316.48934931020625 
+            text = "his his father has passed away so" 
+        intervals [84]:
+            xmin = 316.48934931020625 
+            xmax = 320.7521196740022 
+            text = "(uh) he only <c/> he's only left with his mother <c/> you see <s/> a~ and his mother is also not young anymore right <s/>" 
+        intervals [85]:
+            xmin = 320.7521196740022 
+            xmax = 322.31708799753386 
+            text = "so aku rasa" 
+        intervals [86]:
+            xmin = 322.31708799753386 
+            xmax = 322.8851347287896 
+            text = "--EMPTY--" 
+        intervals [87]:
+            xmin = 322.8851347287896 
+            xmax = 328.8964822069871 
+            text = "(uh) sisa sisa hidup ibu dia tu harus [lah] dia mar~ memarbatkan you know dan cuba untuk menjaga ibu dia <s/>" 
+        intervals [88]:
+            xmin = 328.8964822069871 
+            xmax = 334.78733719778756 
+            text = "so i think if it's not a matter of like macam [oh] kau ni anak mak ke <c/> kau mesti jenis bila kau dah kahwin <c/> kau besarkan mak kau daripada bini <s/>" 
+        intervals [89]:
+            xmin = 334.78733719778756 
+            xmax = 336.1414680206572 
+            text = "no <c/> it's not that you know <s/>" 
+        intervals [90]:
+            xmin = 336.1414680206572 
+            xmax = 337.4248328579387 
+            text = "--EMPTY--" 
+        intervals [91]:
+            xmin = 337.4248328579387 
+            xmax = 338.6450813917474 
+            text = "(ppl)" 
+        intervals [92]:
+            xmin = 338.6450813917474 
+            xmax = 349.058375 
+            text = "no <c/> it's not that but like i faham where he's coming from because (uh) he is (um) there's only two of them in the family you know it's only him and his kakak <s/> his kakak has married and has her own family you know <s/>" 
+        intervals [93]:
+            xmin = 349.058375 
+            xmax = 355.443125 
+            text = "(um) so like really there's no one else (um) you know that that can really give attention to the mother you know" 
+        intervals [94]:
+            xmin = 355.443125 
+            xmax = 361.39984298401134 
+            text = "except for him right now so aku faham kau punya decision on why you do not want to get married anytime soon <s/>" 
+        intervals [95]:
+            xmin = 361.39984298401134 
+            xmax = 365.04031221541584 
+            text = "--EMPTY--" 
+        intervals [96]:
+            xmin = 365.04031221541584 
+            xmax = 365.9029016962116 
+            text = "betul betul betul <s/>" 
+        intervals [97]:
+            xmin = 365.9029016962116 
+            xmax = 383.83099004174477 
+            text = "--EMPTY--" 
+        intervals [98]:
+            xmin = 383.83099004174477 
+            xmax = 387.4075805718736 
+            text = "you pilih <c/> you pilih <c/> you pilih mak you ke you pilih i <s/>" 
+        intervals [99]:
+            xmin = 387.4075805718736 
+            xmax = 389.9953490142609 
+            text = "--EMPTY--" 
+        intervals [100]:
+            xmin = 389.9953490142609 
+            xmax = 390.81586095940816 
+            text = "(mm)" 
+        intervals [101]:
+            xmin = 390.81586095940816 
+            xmax = 391.20106058164185 
+            text = "--EMPTY--" 
+        intervals [102]:
+            xmin = 391.20106058164185 
+            xmax = 393.49 
+            text = "okay okay okay <s/> faham faham faham <s/>" 
+        intervals [103]:
+            xmin = 393.49 
+            xmax = 396.9412005555161 
+            text = "--EMPTY--" 
+        intervals [104]:
+            xmin = 396.9412005555161 
+            xmax = 399.0240385701205 
+            text = "okay okay okay <s/> faham faham faham <s/>" 
+        intervals [105]:
+            xmin = 399.0240385701205 
+            xmax = 401.8929606763388 
+            text = "engkau ada dapat (um)" 
+        intervals [106]:
+            xmin = 401.8929606763388 
+            xmax = 402.27165849717596 
+            text = "(ppo)" 
+        intervals [107]:
+            xmin = 402.27165849717596 
+            xmax = 403.7654110127004 
+            text = "pinangan tak <s/> pernah dapat pinangan <s/>" 
+        intervals [108]:
+            xmin = 403.7654110127004 
+            xmax = 404.92254324303616 
+            text = "--EMPTY--" 
+        intervals [109]:
+            xmin = 404.92254324303616 
+            xmax = 407.46823414977496 
+            text = "aku nak cakap pasal aku dapat banyak <s/>" 
+        intervals [110]:
+            xmin = 407.46823414977496 
+            xmax = 407.89665918837596 
+            text = "--EMPTY--" 
+        intervals [111]:
+            xmin = 407.89665918837596 
+            xmax = 409.72703198908897 
+            text = "aku dapat [tau] <s/> dia macam" 
+        intervals [112]:
+            xmin = 409.72703198908897 
+            xmax = 414.52157529158904 
+            text = "dia macam okay <c/> not not takut <c/> not takut <s/> i feel very flattered whenever i get like" 
+        intervals [113]:
+            xmin = 414.52157529158904 
+            xmax = 416.28883178882916 
+            text = "girls coming up to me and say" 
+        intervals [114]:
+            xmin = 416.28883178882916 
+            xmax = 422.8085540529207 
+            text = "[eh] you know <c/> i really like you <c/> we should go out on a date and (uh) and and and (uh) and and see what what what it's like and then" 
+        intervals [115]:
+            xmin = 422.8085540529207 
+            xmax = 426.1280871303282 
+            text = "i also have a lot of people coming to me on my d_ms (uh) nak" 
+        intervals [116]:
+            xmin = 426.1280871303282 
+            xmax = 428.88416571530985 
+            text = "jodohkan aku <s/> jodohkan aku <c/> know like macam they'll like say" 
+        intervals [117]:
+            xmin = 428.88416571530985 
+            xmax = 436.57 
+            text = "[eh] i think my friend would really be interested (uh) i think you would be really interested with my friend because she's like another version of you and i'm like" 
+        intervals [118]:
+            xmin = 436.57 
+            xmax = 437.7625257371591 
+            text = "--EMPTY--" 
+        intervals [119]:
+            xmin = 437.7625257371591 
+            xmax = 439.68125964912826 
+            text = "(ppb) macam mana [eh] <s/>" 
+        intervals [120]:
+            xmin = 439.68125964912826 
+            xmax = 441.20599637602965 
+            text = "--EMPTY--" 
+        intervals [121]:
+            xmin = 441.20599637602965 
+            xmax = 442.5103999811355 
+            text = "no [lah] <c/> yah <c/> susah <s/>" 
+        intervals [122]:
+            xmin = 442.5103999811355 
+            xmax = 444.46585750807554 
+            text = "yah <s/> true true <s/>" 
+        intervals [123]:
+            xmin = 444.46585750807554 
+            xmax = 446.5907730583286 
+            text = "--EMPTY--" 
+        intervals [124]:
+            xmin = 446.5907730583286 
+            xmax = 448.06004316387236 
+            text = "(ppl)" 
+        intervals [125]:
+            xmin = 448.06004316387236 
+            xmax = 449.2171753942082 
+            text = "--EMPTY--" 
+        intervals [126]:
+            xmin = 449.2171753942082 
+            xmax = 450.24 
+            text = "yah yah yah yah <s/>" 
+        intervals [127]:
+            xmin = 450.24 
+            xmax = 450.6145316334452 
+            text = "--EMPTY--" 
+        intervals [128]:
+            xmin = 450.6145316334452 
+            xmax = 451.8347801672539 
+            text = "we do <c/> we do <s/> we get <c/> we get <s/>" 
+        intervals [129]:
+            xmin = 451.8347801672539 
+            xmax = 456.5252775113512 
+            text = "jangan cakap tak tak laku [eh] <s/> aku rembat korang [eh] <s/> kita laku [tau] <c/> dapat [tau] <s/>" 
+        intervals [130]:
+            xmin = 456.5252775113512 
+            xmax = 458.9202534011636 
+            text = "--EMPTY--" 
+        intervals [131]:
+            xmin = 458.9202534011636 
+            xmax = 462.66515407388675 
+            text = "kay <c/> [eh] tu nanti <c/> tu nanti <s/> tu nanti kita bilang orang apa yang orang dah buat pada kau [eh] <s/>" 
+        intervals [132]:
+            xmin = 462.66515407388675 
+            xmax = 463.4623307738173 
+            text = "--EMPTY--" 
+        intervals [133]:
+            xmin = 463.4623307738173 
+            xmax = 465.18750973540887 
+            text = "kau pun gullible <s/>" 
+        intervals [134]:
+            xmin = 465.18750973540887 
+            xmax = 466.17 
+            text = "untuk podcast ni <s/>" 
+        intervals [135]:
+            xmin = 466.17 
+            xmax = 466.7432306736874 
+            text = "--EMPTY--" 
+        intervals [136]:
+            xmin = 466.7432306736874 
+            xmax = 468.27906072486036 
+            text = "[ah] sekarang ni <s/>" 
+        intervals [137]:
+            xmin = 468.27906072486036 
+            xmax = 474.8917356230831 
+            text = "--EMPTY--" 
+        intervals [138]:
+            xmin = 474.8917356230831 
+            xmax = 475.8384801751761 
+            text = "[ah] berpinang <s/> [ah-ah]" 
+        intervals [139]:
+            xmin = 475.8384801751761 
+            xmax = 481.11576725691594 
+            text = "--EMPTY--" 
+        intervals [140]:
+            xmin = 481.11576725691594 
+            xmax = 482.24 
+            text = "yah <c/> yah <c/> i think" 
+        intervals [141]:
+            xmin = 482.24 
+            xmax = 490.58321277784523 
+            text = "and also [eh] i do not know <c/> i do not know if it's <c/> if it's because of the fact that you d_m me on (uh) on social media platform" 
+        intervals [142]:
+            xmin = 490.58321277784523 
+            xmax = 496.2789794546334 
+            text = "i'm okay with anyone asking me out you know but if it's from a fan [eh] <c/> aku rasa macam" 
+        intervals [143]:
+            xmin = 496.2789794546334 
+            xmax = 499.5686769173375 
+            text = "--EMPTY--" 
+        intervals [144]:
+            xmin = 499.5686769173375 
+            xmax = 505.38 
+            text = "you know <s/> i i sort of feel responsible over my fans and i really respect them for who they are <s/>" 
+        intervals [145]:
+            xmin = 505.38 
+            xmax = 508.20107352669186 
+            text = "--EMPTY--" 
+        intervals [146]:
+            xmin = 508.20107352669186 
+            xmax = 509.41741339804696 
+            text = "ada ada <c/> of course <s/>" 
+        intervals [147]:
+            xmin = 509.41741339804696 
+            xmax = 511.54394184931607 
+            text = "--EMPTY--" 
+        intervals [148]:
+            xmin = 511.54394184931607 
+            xmax = 512.9535392935434 
+            text = "[ah] okay okay okay <s/>" 
+        intervals [149]:
+            xmin = 512.9535392935434 
+            xmax = 513.2270432752591 
+            text = "--EMPTY--" 
+        intervals [150]:
+            xmin = 513.2270432752591 
+            xmax = 515.562346503755 
+            text = "but they got together when when she's also a star you see <s/>" 
+        intervals [151]:
+            xmin = 515.562346503755 
+            xmax = 516.3694693631932 
+            text = "--EMPTY--" 
+        intervals [152]:
+            xmin = 516.3694693631932 
+            xmax = 518.52175 
+            text = "i i think <c/> i think so [lah] <s/> aku tak tahu <s/>" 
+        intervals [153]:
+            xmin = 518.52175 
+            xmax = 518.8199118743634 
+            text = "--EMPTY--" 
+        intervals [154]:
+            xmin = 518.8199118743634 
+            xmax = 520.7432373092073 
+            text = "rumah tangga orang [eh] <s/> jangan kepoh dengan rumah tangga orang <s/>" 
+        intervals [155]:
+            xmin = 520.7432373092073 
+            xmax = 521.3744003439359 
+            text = "(ppl)" 
+        intervals [156]:
+            xmin = 521.3744003439359 
+            xmax = 526.8854096331805 
+            text = "--EMPTY--" 
+        intervals [157]:
+            xmin = 526.8854096331805 
+            xmax = 528.31 
+            text = "yah yah yah <s/>" 
+        intervals [158]:
+            xmin = 528.31 
+            xmax = 535.7568816547623 
+            text = "--EMPTY--" 
+        intervals [159]:
+            xmin = 535.7568816547623 
+            xmax = 537.1377913650051 
+            text = "social media <s/> yah yah <s/>" 
+        intervals [160]:
+            xmin = 537.1377913650051 
+            xmax = 548.2803024308911 
+            text = "--EMPTY--" 
+        intervals [161]:
+            xmin = 548.2803024308911 
+            xmax = 549.2901632864568 
+            text = "(mm)" 
+        intervals [162]:
+            xmin = 549.2901632864568 
+            xmax = 560.07 
+            text = "--EMPTY--" 
+        intervals [163]:
+            xmin = 560.07 
+            xmax = 561.1170082469916 
+            text = "yah yah yah yah <s/>" 
+        intervals [164]:
+            xmin = 561.1170082469916 
+            xmax = 561.727875 
+            text = "--EMPTY--" 
+        intervals [165]:
+            xmin = 561.727875 
+            xmax = 562.79 
+            text = "correct correct correct correct <s/>" 
+        intervals [166]:
+            xmin = 562.79 
+            xmax = 569.1392805894417 
+            text = "--EMPTY--" 
+        intervals [167]:
+            xmin = 569.1392805894417 
+            xmax = 570.0860251415346 
+            text = "[mm-mm] (mm)" 
+        intervals [168]:
+            xmin = 570.0860251415346 
+            xmax = 574.6093602237564 
+            text = "--EMPTY--" 
+        intervals [169]:
+            xmin = 574.6093602237564 
+            xmax = 579.1181583395505 
+            text = "faham faham faham <s/> jadi (um) zuhairi ni sebenarnya [kan] dia" 
+        intervals [170]:
+            xmin = 579.1181583395505 
+            xmax = 583.5314220896923 
+            text = "yah [lah] ramai peminat [eh] <s/> ramai orang kasi surat [eh] <s/>" 
+        intervals [171]:
+            xmin = 583.5314220896923 
+            xmax = 587.786130683157 
+            text = "kasi kasi apa tu <c/> kasi sandwich [eh] <c/> kasi cookies [eh] <s/> [ah]" 
+        intervals [172]:
+            xmin = 587.786130683157 
+            xmax = 590.2518725585576 
+            text = "ajak pergi tengok wayang [eh] <s/>" 
+        intervals [173]:
+            xmin = 590.2518725585576 
+            xmax = 592.6040085149189 
+            text = "n~ nak bekerja tapi dia" 
+        intervals [174]:
+            xmin = 592.6040085149189 
+            xmax = 596.1614705557448 
+            text = "ajak pergi tengok wayang <s/> [ah] abeh zuhairi pun layan <s/>" 
+        intervals [175]:
+            xmin = 596.1614705557448 
+            xmax = 601.8086578954877 
+            text = "i think one thing that that separates m~ me and zuhairi is that i'm very good at dodging dodgy people <s/>" 
+        intervals [176]:
+            xmin = 601.8086578954877 
+            xmax = 602.5810599427082 
+            text = "--EMPTY--" 
+        intervals [177]:
+            xmin = 602.5810599427082 
+            xmax = 609.0598525518699 
+            text = "you know <s/> i'm very good at dodging dodgy people <s/> i i'm very good at ghosting people <s/> i'm very good at gi~ telling them no but zuhairi" 
+        intervals [178]:
+            xmin = 609.0598525518699 
+            xmax = 616.9991169877866 
+            text = "akan layan <c/> dia akan layan <s/> dia macam kalau macam orang message dia cakap <c/> buat apa tu <s/> [ah] dia akan message [oh] (uh) tengah tengok t_v <s/> [oh]" 
+        intervals [179]:
+            xmin = 616.9991169877866 
+            xmax = 618.640140878081 
+            text = "tak ada plan niari <s/> tak ada <s/>" 
+        intervals [180]:
+            xmin = 618.640140878081 
+            xmax = 619.7494375 
+            text = "okay <s/>" 
+        intervals [181]:
+            xmin = 619.7494375 
+            xmax = 620.3285947927917 
+            text = "--EMPTY--" 
+        intervals [182]:
+            xmin = 620.3285947927917 
+            xmax = 622.474549110869 
+            text = "[oh] dah belajar <s/> dah bagus <s/> bagus bagus bagus <s/> dah bagus <s/>" 
+        intervals [183]:
+            xmin = 622.474549110869 
+            xmax = 644.4355790772689 
+            text = "--EMPTY--" 
+        intervals [184]:
+            xmin = 644.4355790772689 
+            xmax = 645.7399826823747 
+            text = "yes yes yes <s/>" 
+        intervals [185]:
+            xmin = 645.7399826823747 
+            xmax = 657.3285139125297 
+            text = "--EMPTY--" 
+        intervals [186]:
+            xmin = 657.3285139125297 
+            xmax = 658.4646073750413 
+            text = "yah yah yah yah yah <s/>" 
+        intervals [187]:
+            xmin = 658.4646073750413 
+            xmax = 659.9139858775246 
+            text = "--EMPTY--" 
+        intervals [188]:
+            xmin = 659.9139858775246 
+            xmax = 661.6602036069404 
+            text = "yes yes yes yes <s/> berkali kali <s/>" 
+        intervals [189]:
+            xmin = 661.6602036069404 
+            xmax = 663.4683897591103 
+            text = "--EMPTY--" 
+        intervals [190]:
+            xmin = 663.4683897591103 
+            xmax = 663.9943589547175 
+            text = "yah <s/>" 
+        intervals [191]:
+            xmin = 663.9943589547175 
+            xmax = 668.452280540119 
+            text = "--EMPTY--" 
+        intervals [192]:
+            xmin = 668.452280540119 
+            xmax = 669.0080860663845 
+            text = "(mm)" 
+        intervals [193]:
+            xmin = 669.0080860663845 
+            xmax = 684.9807154530675 
+            text = "--EMPTY--" 
+        intervals [194]:
+            xmin = 684.9807154530675 
+            xmax = 694.1215267853858 
+            text = "--EMPTY--" 
+        intervals [195]:
+            xmin = 694.1215267853858 
+            xmax = 700.0796634665934 
+            text = "yah <c/> correct and and like i said [lah] you know (uh) it's almost like macam kita have that sense of respect" 
+        intervals [196]:
+            xmin = 700.0796634665934 
+            xmax = 701.41 
+            text = "so it's almost like a" 
+        intervals [197]:
+            xmin = 701.41 
+            xmax = 702.3097728559679 
+            text = "--EMPTY--" 
+        intervals [198]:
+            xmin = 702.3097728559679 
+            xmax = 704.1787795501733 
+            text = "like a sisterhood thing like macam like" 
+        intervals [199]:
+            xmin = 704.1787795501733 
+            xmax = 707.8173385030562 
+            text = "(uh) ki~ i know it's wrong because we are men but like you know <c/> i treat you like like" 
+        intervals [200]:
+            xmin = 707.8173385030562 
+            xmax = 708.6168116803791 
+            text = "--EMPTY--" 
+        intervals [201]:
+            xmin = 708.6168116803791 
+            xmax = 709.6155869158592 
+            text = "like you are" 
+        intervals [202]:
+            xmin = 709.6155869158592 
+            xmax = 712.38 
+            text = "a sister <s/> macam like you know like you know i do not want to" 
+        intervals [203]:
+            xmin = 712.38 
+            xmax = 713.3084569051953 
+            text = "--EMPTY--" 
+        intervals [204]:
+            xmin = 713.3084569051953 
+            xmax = 718.2479758210278 
+            text = "but (er) then again aku tak nak ka~ aku tak nak cakap lepas [ah] <s/> mana tahu like one day you know like a fan comes up to me and i'm like [eh]" 
+        intervals [205]:
+            xmin = 718.2479758210278 
+            xmax = 721.6218283550289 
+            text = "[wah] this is really someone that i interested to know about <s/>" 
+        intervals [206]:
+            xmin = 721.6218283550289 
+            xmax = 722.8631156566619 
+            text = "--EMPTY--" 
+        intervals [207]:
+            xmin = 722.8631156566619 
+            xmax = 724.5970921810874 
+            text = "yah yah yah <s/> of course of course of course <s/>" 
+        intervals [208]:
+            xmin = 724.5970921810874 
+            xmax = 725.49 
+            text = "--EMPTY--" 
+        intervals [209]:
+            xmin = 725.49 
+            xmax = 726.1869375 
+            text = "no no <s/>" 
+        intervals [210]:
+            xmin = 726.1869375 
+            xmax = 729.0117897820317 
+            text = "--EMPTY--" 
+        intervals [211]:
+            xmin = 729.0117897820317 
+            xmax = 730.0006118697733 
+            text = "probably <s/>" 
+        intervals [212]:
+            xmin = 730.0006118697733 
+            xmax = 733.57 
+            text = "--EMPTY--" 
+        intervals [213]:
+            xmin = 733.57 
+            xmax = 734.55 
+            text = "(mm)" 
+        intervals [214]:
+            xmin = 734.55 
+            xmax = 744.11 
+            text = "--EMPTY--" 
+        intervals [215]:
+            xmin = 744.11 
+            xmax = 744.86 
+            text = "betul <s/>" 
+        intervals [216]:
+            xmin = 744.86 
+            xmax = 746.6464832587436 
+            text = "--EMPTY--" 
+        intervals [217]:
+            xmin = 746.6464832587436 
+            xmax = 747.046219847405 
+            text = "(mm)" 
+        intervals [218]:
+            xmin = 747.046219847405 
+            xmax = 751.376762377052 
+            text = "so aku ada soalan untuk kau like since we we on the topic of marriage [eh] <c/> like what" 
+        intervals [219]:
+            xmin = 751.376762377052 
+            xmax = 753.47 
+            text = "what would be like your ideal" 
+        intervals [220]:
+            xmin = 753.47 
+            xmax = 753.8803757481422 
+            text = "--EMPTY--" 
+        intervals [221]:
+            xmin = 753.8803757481422 
+            xmax = 758.55 
+            text = "wife <s/> like what are the characteristics that you think would would would be something that you are very interested <s/>" 
+        intervals [222]:
+            xmin = 758.55 
+            xmax = 759.45 
+            text = "--EMPTY--" 
+        intervals [223]:
+            xmin = 759.45 
+            xmax = 760.467875 
+            text = "like you would resonate them <s/>" 
+        intervals [224]:
+            xmin = 760.467875 
+            xmax = 761.3223601543461 
+            text = "--EMPTY--" 
+        intervals [225]:
+            xmin = 761.3223601543461 
+            xmax = 764.898950684475 
+            text = "(uh) can be physical <c/> can be (uh) characteristics wise <s/>" 
+        intervals [226]:
+            xmin = 764.898950684475 
+            xmax = 772.5934003045705 
+            text = "--EMPTY--" 
+        intervals [227]:
+            xmin = 772.5934003045705 
+            xmax = 773.9276402403344 
+            text = "<unk> what what kind is that <s/>" 
+        intervals [228]:
+            xmin = 773.9276402403344 
+            xmax = 775.29 
+            text = "--EMPTY--" 
+        intervals [229]:
+            xmin = 775.29 
+            xmax = 777.92 
+            text = "[oh] you <c/> okay <c/> like you you like girls who are petite is it <s/>" 
+        intervals [230]:
+            xmin = 777.92 
+            xmax = 783.534234872296 
+            text = "--EMPTY--" 
+        intervals [231]:
+            xmin = 783.534234872296 
+            xmax = 786.2570334844632 
+            text = "jangan takut <c/> i think most women are shorter than you cause you you quite tall <s/>" 
+        intervals [232]:
+            xmin = 786.2570334844632 
+            xmax = 791.2765919507399 
+            text = "--EMPTY--" 
+        intervals [233]:
+            xmin = 791.2765919507399 
+            xmax = 791.970871285886 
+            text = "yah <s/>" 
+        intervals [234]:
+            xmin = 791.970871285886 
+            xmax = 797.4263125 
+            text = "--EMPTY--" 
+        intervals [235]:
+            xmin = 797.4263125 
+            xmax = 798.5929152757691 
+            text = "betul betul <s/>" 
+        intervals [236]:
+            xmin = 798.5929152757691 
+            xmax = 800.830674347259 
+            text = "--EMPTY--" 
+        intervals [237]:
+            xmin = 800.830674347259 
+            xmax = 801.3776823106904 
+            text = "(mm)" 
+        intervals [238]:
+            xmin = 801.3776823106904 
+            xmax = 804.7626281689629 
+            text = "--EMPTY--" 
+        intervals [239]:
+            xmin = 804.7626281689629 
+            xmax = 807.1610477009317 
+            text = "apa apa [lah] <s/> kau faham [lah] <c/> kau faham [eh] <s/> [ah]" 
+        intervals [240]:
+            xmin = 807.1610477009317 
+            xmax = 810.767474561719 
+            text = "--EMPTY--" 
+        intervals [241]:
+            xmin = 810.767474561719 
+            xmax = 811.59 
+            text = "--EMPTY--" 
+        intervals [242]:
+            xmin = 811.59 
+            xmax = 815.8366697266536 
+            text = "kenapa <s/> orang orang kulit gelap tak tak tak lawa ke <s/>" 
+        intervals [243]:
+            xmin = 815.8366697266536 
+            xmax = 823.5467530352165 
+            text = "--EMPTY--" 
+        intervals [244]:
+            xmin = 823.5467530352165 
+            xmax = 826.4921805306168 
+            text = "yah <c/> actually it's true <s/> (ppl)" 
+        intervals [245]:
+            xmin = 826.4921805306168 
+            xmax = 829.3178772204675 
+            text = "--EMPTY--" 
+        intervals [246]:
+            xmin = 829.3178772204675 
+            xmax = 830.5591645221006 
+            text = "yah yah yah yah <s/>" 
+        intervals [247]:
+            xmin = 830.5591645221006 
+            xmax = 837.5195530297835 
+            text = "--EMPTY--" 
+        intervals [248]:
+            xmin = 837.5195530297835 
+            xmax = 838.5294138853493 
+            text = "[mm-mm] (mm)" 
+        intervals [249]:
+            xmin = 838.5294138853493 
+            xmax = 846.62 
+            text = "--EMPTY--" 
+        intervals [250]:
+            xmin = 846.62 
+            xmax = 847.1 
+            text = "okay <s/>" 
+        intervals [251]:
+            xmin = 847.1 
+            xmax = 848.8594488870746 
+            text = "--EMPTY--" 
+        intervals [252]:
+            xmin = 848.8594488870746 
+            xmax = 849.8746636633182 
+            text = "what about like" 
+        intervals [253]:
+            xmin = 849.8746636633182 
+            xmax = 851.2211448040725 
+            text = "--EMPTY--" 
+        intervals [254]:
+            xmin = 851.2211448040725 
+            xmax = 852.5768125000001 
+            text = "[oh] gitu [eh] <s/>" 
+        intervals [255]:
+            xmin = 852.5768125000001 
+            xmax = 855.2460512599077 
+            text = "asal asal asal dah kahwin terus suara kau sengau [eh] <s/>" 
+        intervals [256]:
+            xmin = 855.2460512599077 
+            xmax = 856.213834579825 
+            text = "--EMPTY--" 
+        intervals [257]:
+            xmin = 856.213834579825 
+            xmax = 860.169122930791 
+            text = "(ppo) gitu <s/> (uh) what about like macam in terms of like dia punya (um)" 
+        intervals [258]:
+            xmin = 860.169122930791 
+            xmax = 860.9441129821784 
+            text = "--EMPTY--" 
+        intervals [259]:
+            xmin = 860.9441129821784 
+            xmax = 861.6150577911179 
+            text = "[ah] like" 
+        intervals [260]:
+            xmin = 861.6150577911179 
+            xmax = 863.887244716141 
+            text = "[ah] bu~ budi pekerti <s/> okay <s/>" 
+        intervals [261]:
+            xmin = 863.887244716141 
+            xmax = 868.0318819775257 
+            text = "--EMPTY--" 
+        intervals [262]:
+            xmin = 868.0318819775257 
+            xmax = 868.5788899409572 
+            text = "yah <s/>" 
+        intervals [263]:
+            xmin = 868.5788899409572 
+            xmax = 884.4849608139214 
+            text = "--EMPTY--" 
+        intervals [264]:
+            xmin = 884.4849608139214 
+            xmax = 886.3141857339157 
+            text = "[oh] kau suka yang <unk> gitu [eh] <s/>" 
+        intervals [265]:
+            xmin = 886.3141857339157 
+            xmax = 889.6582019372584 
+            text = "--EMPTY--" 
+        intervals [266]:
+            xmin = 889.6582019372584 
+            xmax = 891.4476450830418 
+            text = "(ppl) itu itu miang <s/>" 
+        intervals [267]:
+            xmin = 891.4476450830418 
+            xmax = 893.8625118599597 
+            text = "itu gatal <s/> [ah] itu bukan manja <s/>" 
+        intervals [268]:
+            xmin = 893.8625118599597 
+            xmax = 896.459077865181 
+            text = "--EMPTY--" 
+        intervals [269]:
+            xmin = 896.459077865181 
+            xmax = 897.5840780034212 
+            text = "[oh] okay okay okay <s/>" 
+        intervals [270]:
+            xmin = 897.5840780034212 
+            xmax = 900.6656835493197 
+            text = "--EMPTY--" 
+        intervals [271]:
+            xmin = 900.6656835493197 
+            xmax = 902.1471941438988 
+            text = "there must be push and pull [lah] <s/>" 
+        intervals [272]:
+            xmin = 902.1471941438988 
+            xmax = 913.84 
+            text = "--EMPTY--" 
+        intervals [273]:
+            xmin = 913.84 
+            xmax = 915.2176228834592 
+            text = "(ppl)" 
+        intervals [274]:
+            xmin = 915.2176228834592 
+            xmax = 917.468771040658 
+            text = "--EMPTY--" 
+        intervals [275]:
+            xmin = 917.468771040658 
+            xmax = 919.804074269154 
+            text = "(uh) yah <c/> so (um)" 
+        intervals [276]:
+            xmin = 919.804074269154 
+            xmax = 921.7817184446369 
+            text = "i do not have a" 
+        intervals [277]:
+            xmin = 921.7817184446369 
+            xmax = 925.080213470175 
+            text = "type in terms of physical wise <s/> i'm pretty okay with anything <s/>" 
+        intervals [278]:
+            xmin = 925.080213470175 
+            xmax = 925.4589112910121 
+            text = "--EMPTY--" 
+        intervals [279]:
+            xmin = 925.4589112910121 
+            xmax = 926.3846170752807 
+            text = "(um)" 
+        intervals [280]:
+            xmin = 926.3846170752807 
+            xmax = 926.9526638065365 
+            text = "--EMPTY--" 
+        intervals [281]:
+            xmin = 926.9526638065365 
+            xmax = 930.5567941899312 
+            text = "but i think it's the personality that that matters [lah] <s/> (uh) for me" 
+        intervals [282]:
+            xmin = 930.5567941899312 
+            xmax = 936.8894633050418 
+            text = "like like like what zuhairi said i think respect is very important [lah] <s/> i think me~ mesti ada sifat hormat dengan (uh)" 
+        intervals [283]:
+            xmin = 936.8894633050418 
+            xmax = 939.0354176231191 
+            text = "everyone around them you know like" 
+        intervals [284]:
+            xmin = 939.0354176231191 
+            xmax = 946.5370746906395 
+            text = "(uh) not even <c/> not not only to your (uh) parents or to my parents <c/> you know or to the elderly but people in general <c/> like to the waiters you know <s/>" 
+        intervals [285]:
+            xmin = 946.5370746906395 
+            xmax = 952.3016970744943 
+            text = "to the grab drivers and all that <s/> i think it's very important <s/> it's very telling of who you are as a person by how you treat people <s/>" 
+        intervals [286]:
+            xmin = 952.3016970744943 
+            xmax = 958.3685118900042 
+            text = "(uh) around you so that is very important <s/> i think and just a pleasant personality [lah] like yah <s/> i i" 
+        intervals [287]:
+            xmin = 958.3685118900042 
+            xmax = 962.0147205250025 
+            text = "i don't mind if she's loud <c/> i don't mind if she is (uh)" 
+        intervals [288]:
+            xmin = 962.0147205250025 
+            xmax = 962.9813559642009 
+            text = "--EMPTY--" 
+        intervals [289]:
+            xmin = 962.9813559642009 
+            xmax = 967.5987915612727 
+            text = "what's the word <s/> if she is very boisterous or what <s/> i don't mind <s/> as long as <c/> as long as" 
+        intervals [290]:
+            xmin = 967.5987915612727 
+            xmax = 969.0803028718069 
+            text = "--EMPTY--" 
+        intervals [291]:
+            xmin = 969.0803028718069 
+            xmax = 972.5727383306386 
+            text = "tak [lah] <s/> boisterous tu macam like kecoh kecoh very kecoh <s/> [ah]" 
+        intervals [292]:
+            xmin = 972.5727383306386 
+            xmax = 973.919219471393 
+            text = "i don't mind <c/> i don't mind <s/> you know i think" 
+        intervals [293]:
+            xmin = 973.919219471393 
+            xmax = 975.8968636468761 
+            text = "kecoh is good <s/> i think you you can <c/> you can" 
+        intervals [294]:
+            xmin = 975.8968636468761 
+            xmax = 976.8015306633205 
+            text = "(er) really like" 
+        intervals [295]:
+            xmin = 976.8015306633205 
+            xmax = 977.790352751062 
+            text = "--EMPTY--" 
+        intervals [296]:
+            xmin = 977.790352751062 
+            xmax = 981.4663977167183 
+            text = "macam nga~ (uh) kancing dengan aku punya mak [lah] you know cause my mother is quite" 
+        intervals [297]:
+            xmin = 981.4663977167183 
+            xmax = 982.15 
+            text = "(er)" 
+        intervals [298]:
+            xmin = 982.15 
+            xmax = 982.88 
+            text = "--EMPTY--" 
+        intervals [299]:
+            xmin = 982.88 
+            xmax = 985.6619093606307 
+            text = "boisterous as well herself so yah <s/> so" 
+        intervals [300]:
+            xmin = 985.6619093606307 
+            xmax = 991.7210744940255 
+            text = "(um) i don't really care like okay <s/> like do you care if you're <c/> okay <c/> what like you you have a girl right <c/>" 
+        intervals [301]:
+            xmin = 991.7210744940255 
+            xmax = 994.4771530790072 
+            text = "you have <c/> you have a woman in your life and then mak kau tak suka <s/>" 
+        intervals [302]:
+            xmin = 994.4771530790072 
+            xmax = 997.19 
+            text = "what would <c/> what would be something that the first thing you do <s/>" 
+        intervals [303]:
+            xmin = 997.19 
+            xmax = 997.8154298787563 
+            text = "--EMPTY--" 
+        intervals [304]:
+            xmin = 997.8154298787563 
+            xmax = 999.7077711022233 
+            text = "kalau mak <c/> kalau mak kau cakap mak tak suka <s/>" 
+        intervals [305]:
+            xmin = 999.7077711022233 
+            xmax = 1000.6124381186677 
+            text = "--EMPTY--" 
+        intervals [306]:
+            xmin = 1000.6124381186677 
+            xmax = 1001.8905446638034 
+            text = "mak tak nak dia jadi menantu <s/>" 
+        intervals [307]:
+            xmin = 1001.8905446638034 
+            xmax = 1004.2919252945705 
+            text = "what would you say <s/> what would you do <s/> tapi kau betul betul sayang perempuan ni <s/>" 
+        intervals [308]:
+            xmin = 1004.2919252945705 
+            xmax = 1005.98 
+            text = "--EMPTY--" 
+        intervals [309]:
+            xmin = 1005.98 
+            xmax = 1006.5009959161208 
+            text = "(ppl)" 
+        intervals [310]:
+            xmin = 1006.5009959161208 
+            xmax = 1008.0157871994695 
+            text = "--EMPTY--" 
+        intervals [311]:
+            xmin = 1008.0157871994695 
+            xmax = 1008.9835705193867 
+            text = "(ppo)" 
+        intervals [312]:
+            xmin = 1008.9835705193867 
+            xmax = 1014.4490586308262 
+            text = "--EMPTY--" 
+        intervals [313]:
+            xmin = 1014.4490586308262 
+            xmax = 1015.017105362082 
+            text = "okay <s/>" 
+        intervals [314]:
+            xmin = 1015.017105362082 
+            xmax = 1019.6123543106107 
+            text = "--EMPTY--" 
+        intervals [315]:
+            xmin = 1019.6123543106107 
+            xmax = 1021.4843125 
+            text = "(ppl) okay okay <s/>" 
+        intervals [316]:
+            xmin = 1021.4843125 
+            xmax = 1028.5369979080676 
+            text = "--EMPTY--" 
+        intervals [317]:
+            xmin = 1028.5369979080676 
+            xmax = 1029.294393549742 
+            text = "diumpan <s/>" 
+        intervals [318]:
+            xmin = 1029.294393549742 
+            xmax = 1031.98 
+            text = "--EMPTY--" 
+        intervals [319]:
+            xmin = 1031.98 
+            xmax = 1032.584091012446 
+            text = "senang suka <s/> yah <s/>" 
+        intervals [320]:
+            xmin = 1032.584091012446 
+            xmax = 1033.5939518680118 
+            text = "i think my mother also <s/>" 
+        intervals [321]:
+            xmin = 1033.5939518680118 
+            xmax = 1041.986124468465 
+            text = "--EMPTY--" 
+        intervals [322]:
+            xmin = 1041.986124468465 
+            xmax = 1042.9118302527336 
+            text = "warm up to them <s/>" 
+        intervals [323]:
+            xmin = 1042.9118302527336 
+            xmax = 1046.7 
+            text = "--EMPTY--" 
+        intervals [324]:
+            xmin = 1046.7 
+            xmax = 1047.5047834398247 
+            text = "tiba <s/>" 
+        intervals [325]:
+            xmin = 1047.5047834398247 
+            xmax = 1050.1112948885989 
+            text = "--EMPTY--" 
+        intervals [326]:
+            xmin = 1050.1112948885989 
+            xmax = 1050.5951865485574 
+            text = "[oh]" 
+        intervals [327]:
+            xmin = 1050.5951865485574 
+            xmax = 1073.8051534987057 
+            text = "--EMPTY--" 
+        intervals [328]:
+            xmin = 1073.8051534987057 
+            xmax = 1074.4778125 
+            text = "yah <s/>" 
+        intervals [329]:
+            xmin = 1074.4778125 
+            xmax = 1082.699412632535 
+            text = "--EMPTY--" 
+        intervals [330]:
+            xmin = 1082.699412632535 
+            xmax = 1083.2043430580957 
+            text = "okay <s/>" 
+        intervals [331]:
+            xmin = 1083.2043430580957 
+            xmax = 1086.871590479436 
+            text = "--EMPTY--" 
+        intervals [332]:
+            xmin = 1086.871590479436 
+            xmax = 1088.0853371718497 
+            text = "yah yah yah yah <s/>" 
+        intervals [333]:
+            xmin = 1088.0853371718497 
+            xmax = 1089.4138370465814 
+            text = "--EMPTY--" 
+        intervals [334]:
+            xmin = 1089.4138370465814 
+            xmax = 1091.1600547683124 
+            text = "that's the reason why you're single <c/> tak kahwin <s/>" 
+        intervals [335]:
+            xmin = 1091.1600547683124 
+            xmax = 1092.83 
+            text = "--EMPTY--" 
+        intervals [336]:
+            xmin = 1092.83 
+            xmax = 1095.998971346603 
+            text = "(uh) yah <s/> so i think if it were to happen to me (uh)" 
+        intervals [337]:
+            xmin = 1095.998971346603 
+            xmax = 1100.05 
+            text = "i think it's highly unlikely because i know my mother very well <s/> mak aku is very" 
+        intervals [338]:
+            xmin = 1100.05 
+            xmax = 1101.54 
+            text = "--EMPTY--" 
+        intervals [339]:
+            xmin = 1101.54 
+            xmax = 1102.9348774731932 
+            text = "i wouldn't use the word open minded" 
+        intervals [340]:
+            xmin = 1102.9348774731932 
+            xmax = 1103.6081180406077 
+            text = "--EMPTY--" 
+        intervals [341]:
+            xmin = 1103.6081180406077 
+            xmax = 1106.153808936143 
+            text = "but she's very welcoming <s/> yah <c/> she's very welcoming and she's very forthcoming <s/>" 
+        intervals [342]:
+            xmin = 1106.153808936143 
+            xmax = 1109.9484368346855 
+            text = "she doesn't ma~ <c/> it doesn't matter whether engkau ni hisap rokok ke" 
+        intervals [343]:
+            xmin = 1109.9484368346855 
+            xmax = 1113.9247639359762 
+            text = "kau rambut pendek ke <c/> kau pakai tudung ke <c/> kau tak pakai tudung ke <c/> kau pakai sexy ke <c/> kau pakai" 
+        intervals [344]:
+            xmin = 1113.9247639359762 
+            xmax = 1116.6808425088288 
+            text = "tu~ (uh) baju labuh ke <s/> she doesn't care <c/> she doesn't mind <s/>" 
+        intervals [345]:
+            xmin = 1116.6808425088288 
+            xmax = 1118.6584866756084 
+            text = "as long as you're a good person <s/> and i think" 
+        intervals [346]:
+            xmin = 1118.6584866756084 
+            xmax = 1123.2238992733867 
+            text = "that's what she wants for her sons like someone who is good for for for her son <s/>" 
+        intervals [347]:
+            xmin = 1123.2238992733867 
+            xmax = 1127.1581488392144 
+            text = "(uh) because i mean i'm not talking about myself <c/> i'm talking about my brothers [ah] <s/> my brothers" 
+        intervals [348]:
+            xmin = 1127.1581488392144 
+            xmax = 1130.3258176523423 
+            text = "have brought home (uh) girls to her that" 
+        intervals [349]:
+            xmin = 1130.3258176523423 
+            xmax = 1130.73 
+            text = "--EMPTY--" 
+        intervals [350]:
+            xmin = 1130.73 
+            xmax = 1132.850469780146 
+            text = "even i like macam question like [eh]" 
+        intervals [351]:
+            xmin = 1132.850469780146 
+            xmax = 1135.5855095852667 
+            text = "is <c/> is he" 
+        intervals [352]:
+            xmin = 1135.5855095852667 
+            xmax = 1140.247693606459 
+            text = "is sh~ is is she really like the the one for my brother you know like macam because" 
+        intervals [353]:
+            xmin = 1140.247693606459 
+            xmax = 1142.2337601884833 
+            text = "macam the way they look" 
+        intervals [354]:
+            xmin = 1142.2337601884833 
+            xmax = 1145.4653080039202 
+            text = "but of course that's that's just me being judgy [lah] <c/> judging people by the way they are <s/>" 
+        intervals [355]:
+            xmin = 1145.4653080039202 
+            xmax = 1149.504751408406 
+            text = "and my mum is pretty okay <s/> you know my mum is okay <c/> my mum very o~" 
+        intervals [356]:
+            xmin = 1149.504751408406 
+            xmax = 1152.2872227142038 
+            text = "very very open minded [lah] <s/> kirakan open minded <s/> like she will" 
+        intervals [357]:
+            xmin = 1152.2872227142038 
+            xmax = 1158.0254523397437 
+            text = "she will invite them like macam kalau macam kita pergi <c/> that time aku pergi johor like she will invite my brother's girlfriend you know like" 
+        intervals [358]:
+            xmin = 1158.0254523397437 
+            xmax = 1160.1977993813223 
+            text = "--EMPTY--" 
+        intervals [359]:
+            xmin = 1160.1977993813223 
+            xmax = 1162.1333660126386 
+            text = "her sons [lah] <s/> probably [lah] <s/>" 
+        intervals [360]:
+            xmin = 1162.1333660126386 
+            xmax = 1162.9538779541747 
+            text = "--EMPTY--" 
+        intervals [361]:
+            xmin = 1162.9538779541747 
+            xmax = 1167.5796249999999 
+            text = "[kan] lekas lekas korang berambus <s/> <unk> because i think she got four sons so yah <c/> maybe that's that's the reason why <s/>" 
+        intervals [362]:
+            xmin = 1167.5796249999999 
+            xmax = 1169.9808263765617 
+            text = "--EMPTY--" 
+        intervals [363]:
+            xmin = 1169.9808263765617 
+            xmax = 1174.4096762466002 
+            text = "if dia tak suka <c/> see <c/> there's the thing because i know my mum really well <s/> kalau dia tak suka <c/>" 
+        intervals [364]:
+            xmin = 1174.4096762466002 
+            xmax = 1180.5319576565241 
+            text = "kalau dia tak suka <c/> kalau dia damn itu perempuan [eh] <c/> means there's really something that's in~ like innately wrong <s/>" 
+        intervals [365]:
+            xmin = 1180.5319576565241 
+            xmax = 1182.762067036084 
+            text = "mesti ada yang tak kena so" 
+        intervals [366]:
+            xmin = 1182.762067036084 
+            xmax = 1189.4103176393007 
+            text = "i think as a son i will try to to understand where she's from and ask her what is about about my my partner that she doesn't like you know <s/>" 
+        intervals [367]:
+            xmin = 1189.4103176393007 
+            xmax = 1191.2414507660596 
+            text = "and and see if i can" 
+        intervals [368]:
+            xmin = 1191.2414507660596 
+            xmax = 1195.0284289577653 
+            text = "if i can do something about it you know <s/> cause as much as i want i do not want my" 
+        intervals [369]:
+            xmin = 1195.0284289577653 
+            xmax = 1197.7111249999998 
+            text = "my partner to change who she is as a person because" 
+        intervals [370]:
+            xmin = 1197.7111249999998 
+            xmax = 1200.7930513162505 
+            text = "there's not nice you see <s/> then after that nanti dia will be" 
+        intervals [371]:
+            xmin = 1200.7930513162505 
+            xmax = 1204.920855886065 
+            text = "will have a lot of resentment towards my mother and my family and i do not want that in the future you know <s/>" 
+        intervals [372]:
+            xmin = 1204.920855886065 
+            xmax = 1206.8353837496495 
+            text = "aku tak nak nanti macam twenty <c/> twenty years down the road" 
+        intervals [373]:
+            xmin = 1206.8353837496495 
+            xmax = 1210.2647028899164 
+            text = "tu [lah] mak yang kau suruh aku buat ni blah blah blah nanti dia ungkit you know and i do not want that <s/>" 
+        intervals [374]:
+            xmin = 1210.2647028899164 
+            xmax = 1212.2002695212325 
+            text = "--EMPTY--" 
+        intervals [375]:
+            xmin = 1212.2002695212325 
+            xmax = 1212.93 
+            text = "yah <s/>" 
+        intervals [376]:
+            xmin = 1212.93 
+            xmax = 1213.7781771011098 
+            text = "--EMPTY--" 
+        intervals [377]:
+            xmin = 1213.7781771011098 
+            xmax = 1214.5566115071827 
+            text = "yah <s/>" 
+        intervals [378]:
+            xmin = 1214.5566115071827 
+            xmax = 1214.9773868618167 
+            text = "--EMPTY--" 
+        intervals [379]:
+            xmin = 1214.9773868618167 
+            xmax = 1216.4501006030355 
+            text = "yah <c/> correct correct <s/>" 
+        intervals [380]:
+            xmin = 1216.4501006030355 
+            xmax = 1221.9622577487403 
+            text = "(um) yah <c/> so i think basically that's it [lah] <s/> i i hardly think it's gonna be an issue cause my mother is very" 
+        intervals [381]:
+            xmin = 1221.9622577487403 
+            xmax = 1222.62 
+            text = "--EMPTY--" 
+        intervals [382]:
+            xmin = 1222.62 
+            xmax = 1226.6546661508305 
+            text = "okay <s/> mak aku everything okay punya you know but if she doesn't like means" 
+        intervals [383]:
+            xmin = 1226.6546661508305 
+            xmax = 1229.6643570913202 
+            text = "kalau dia betul betul tak suka [kan] <c/> means (uh) ada [lah] <c/> ada [lah] <s/>" 
+        intervals [384]:
+            xmin = 1229.6643570913202 
+            xmax = 1230.1891791297558 
+            text = "yah <s/>" 
+        intervals [385]:
+            xmin = 1230.1891791297558 
+            xmax = 1230.7151483230482 
+            text = "--EMPTY--" 
+        intervals [386]:
+            xmin = 1230.7151483230482 
+            xmax = 1231.9564356192184 
+            text = "yah <s/> yah <s/>" 
+        intervals [387]:
+            xmin = 1231.9564356192184 
+            xmax = 1232.7769475607545 
+            text = "yah <s/>" 
+        intervals [388]:
+            xmin = 1232.7769475607545 
+            xmax = 1234.98 
+            text = "--EMPTY--" 
+        intervals [389]:
+            xmin = 1234.98 
+            xmax = 1235.9958790237042 
+            text = "jarang jarang <s/> yah <s/>" 
+        intervals [390]:
+            xmin = 1235.9958790237042 
+            xmax = 1247.1936646145239 
+            text = "--EMPTY--" 
+        intervals [391]:
+            xmin = 1247.1936646145239 
+            xmax = 1248.8453971439778 
+            text = "(mm) betul betul betul <s/>" 
+        intervals [392]:
+            xmin = 1248.8453971439778 
+            xmax = 1249.602792782319 
+            text = "--EMPTY--" 
+        intervals [393]:
+            xmin = 1249.602792782319 
+            xmax = 1257.7868734299493 
+            text = "tu [lah] jadi (uh) kepada anda anda di luar sana <c/> yah [lah] <c/> jangan <c/> jangan berhenti doakan supaya dapat jodoh [eh] <s/> [oh] my god <s/>" 
+        intervals [394]:
+            xmin = 1257.7868734299493 
+            xmax = 1266.5455033583157 
+            text = "but entah <s/> when i was in my mid twenties up to my late twenties <c/> i was very pressured by this whole like bila nak kahwin <c/> bila nak kahwin <c/> bila nak kahwin <s/>" 
+        intervals [395]:
+            xmin = 1266.5455033583157 
+            xmax = 1268.6283413637539 
+            text = "but the moment i hit thirty <c/> i'm like" 
+        intervals [396]:
+            xmin = 1268.6283413637539 
+            xmax = 1269.6 
+            text = "--EMPTY--" 
+        intervals [397]:
+            xmin = 1269.6 
+            xmax = 1271.405458704338 
+            text = "aku tak nak kahwin <s/> what are you going to do about it <s/>" 
+        intervals [398]:
+            xmin = 1271.405458704338 
+            xmax = 1272.2470094136058 
+            text = "--EMPTY--" 
+        intervals [399]:
+            xmin = 1272.2470094136058 
+            xmax = 1272.6888235359716 
+            text = "you know <s/>" 
+        intervals [400]:
+            xmin = 1272.6888235359716 
+            xmax = 1273.8669945289466 
+            text = "--EMPTY--" 
+        intervals [401]:
+            xmin = 1273.8669945289466 
+            xmax = 1274.5731275174662 
+            text = "yah <s/>" 
+        intervals [402]:
+            xmin = 1274.5731275174662 
+            xmax = 1275.3 
+            text = "so" 
+        intervals [403]:
+            xmin = 1275.3 
+            xmax = 1277.0967584099603 
+            text = "--EMPTY--" 
+        intervals [404]:
+            xmin = 1277.0967584099603 
+            xmax = 1277.93 
+            text = "(mm)" 
+        intervals [405]:
+            xmin = 1277.93 
+            xmax = 1283.1779835197306 
+            text = "--EMPTY--" 
+        intervals [406]:
+            xmin = 1283.1779835197306 
+            xmax = 1283.6618751775595 
+            text = "[kan]" 
+        intervals [407]:
+            xmin = 1283.6618751775595 
+            xmax = 1285.366015363827 
+            text = "lagipun kau pun sekarang" 
+        intervals [408]:
+            xmin = 1285.366015363827 
+            xmax = 1287.64 
+            text = "kahwin sekarang bukan senang [tau] you know <s/> (um)" 
+        intervals [409]:
+            xmin = 1287.64 
+            xmax = 1290.1968968464362 
+            text = "--EMPTY--" 
+        intervals [410]:
+            xmin = 1290.1968968464362 
+            xmax = 1290.8070211106553 
+            text = "yah <s/>" 
+        intervals [411]:
+            xmin = 1290.8070211106553 
+            xmax = 1295.0568521924583 
+            text = "--EMPTY--" 
+        intervals [412]:
+            xmin = 1295.0568521924583 
+            xmax = 1298.18 
+            text = "dia nak jaga <c/> dia nak jaga <c/> dia nak jaga aku <s/> [ah]" 
+        intervals [413]:
+            xmin = 1298.18 
+            xmax = 1299.36 
+            text = "yah yah yah yah <s/>" 
+        intervals [414]:
+            xmin = 1299.36 
+            xmax = 1302.1469169180405 
+            text = "--EMPTY--" 
+        intervals [415]:
+            xmin = 1302.1469169180405 
+            xmax = 1310.6255403139146 
+            text = "i think my mum also like have been saying that to my relatives that tak apa [lah] <c/> aku kalau anak anak yang lain yang dah kahwin tak apa <c/> nanti aku boleh tinggal dengan hafidz so~ sorang aja <s/> [ah] dia boleh jaga aku <s/> so" 
+        intervals [416]:
+            xmin = 1310.6255403139146 
+            xmax = 1311.177902240152 
+            text = "--EMPTY--" 
+        intervals [417]:
+            xmin = 1311.177902240152 
+            xmax = 1312.2719181622003 
+            text = "so it's good but" 
+        intervals [418]:
+            xmin = 1312.2719181622003 
+            xmax = 1313.0503525682732 
+            text = "don't know [lah] [eh] <s/>" 
+        intervals [419]:
+            xmin = 1313.0503525682732 
+            xmax = 1316.4796717085399 
+            text = "--EMPTY--" 
+        intervals [420]:
+            xmin = 1316.4796717085399 
+            xmax = 1317.22 
+            text = "yah <c/> correct <s/>" 
+        intervals [421]:
+            xmin = 1317.22 
+            xmax = 1318.1627731270758 
+            text = "<unk>" 
+        intervals [422]:
+            xmin = 1318.1627731270758 
+            xmax = 1321.1311497300237 
+            text = "--EMPTY--" 
+        intervals [423]:
+            xmin = 1321.1311497300237 
+            xmax = 1322.645941006706 
+            text = "true true true <s/> so" 
+        intervals [424]:
+            xmin = 1322.645941006706 
+            xmax = 1323.8030732319494 
+            text = "(um)" 
+        intervals [425]:
+            xmin = 1323.8030732319494 
+            xmax = 1328.0739437974387 
+            text = "i think that will (ppl) sort of conclude and wrap today's discussion [ah] <s/>" 
+        intervals [426]:
+            xmin = 1328.0739437974387 
+            xmax = 1330.9141774412178 
+            text = "so but but but guys <c/>" 
+        intervals [427]:
+            xmin = 1330.9141774412178 
+            xmax = 1332.0790831449804 
+            text = "(uh) for those" 
+        intervals [428]:
+            xmin = 1332.0790831449804 
+            xmax = 1335.5813409811747 
+            text = "--EMPTY--" 
+        intervals [429]:
+            xmin = 1335.5813409811747 
+            xmax = 1338.3163807862954 
+            text = "give the link [eh] <s/> please please listen to this <s/>" 
+        intervals [430]:
+            xmin = 1338.3163807862954 
+            xmax = 1340.5044126303922 
+            text = "this is relevant for the next five years <s/>" 
+        intervals [431]:
+            xmin = 1340.5044126303922 
+            xmax = 1343.9046579072456 
+            text = "you can ask me again in five years [eh] <s/> (uh)" 
+        intervals [432]:
+            xmin = 1343.9046579072456 
+            xmax = 1350.4477146718036 
+            text = "but yah <s/> so i think for for those of you <c/> i you know i really appreciate and i really thank for those of you who are brave enough to d_m us <s/>" 
+        intervals [433]:
+            xmin = 1350.4477146718036 
+            xmax = 1352.1939323935346 
+            text = "(uh) just know that we" 
+        intervals [434]:
+            xmin = 1352.1939323935346 
+            xmax = 1357.5798569328492 
+            text = "we do not sometimes want to respond to you really not of because of anything but because we really respect you" 
+        intervals [435]:
+            xmin = 1357.5798569328492 
+            xmax = 1359.7587065264074 
+            text = "and we do not want to make it weird for you guys you know <s/>" 
+        intervals [436]:
+            xmin = 1359.7587065264074 
+            xmax = 1368.7212215801105 
+            text = "--EMPTY--" 
+        intervals [437]:
+            xmin = 1368.7212215801105 
+            xmax = 1370.2149740890611 
+            text = "is very heartwarming <s/> yah <s/>" 
+        intervals [438]:
+            xmin = 1370.2149740890611 
+            xmax = 1371.9933231818404 
+            text = "--EMPTY--" 
+        intervals [439]:
+            xmin = 1371.9933231818404 
+            xmax = 1372.6316598546027 
+            text = "yeah <c/> correct <s/>" 
+        intervals [440]:
+            xmin = 1372.6316598546027 
+            xmax = 1380.4195374889912 
+            text = "--EMPTY--" 
+        intervals [441]:
+            xmin = 1380.4195374889912 
+            xmax = 1381.1558943596006 
+            text = "yah <s/>" 
+        intervals [442]:
+            xmin = 1381.1558943596006 
+            xmax = 1381.8080961592832 
+            text = "--EMPTY--" 
+        intervals [443]:
+            xmin = 1381.8080961592832 
+            xmax = 1385.7423457251107 
+            text = "i wish i can you know just like bring any random fan out for dinner <s/>" 
+        intervals [444]:
+            xmin = 1385.7423457251107 
+            xmax = 1389.73 
+            text = "but it wouldn't <c/> it would speak a lot about my character <s/> you know i don't want that <s/>" 
+        intervals [445]:
+            xmin = 1389.73 
+            xmax = 1395.7357603976673 
+            text = "--EMPTY--" 
+        intervals [446]:
+            xmin = 1395.7357603976673 
+            xmax = 1396.862668740821 
+            text = "betul betul <s/>" 
+        intervals [447]:
+            xmin = 1396.862668740821 
+            xmax = 1397.493831772772 
+            text = "--EMPTY--" 
+        intervals [448]:
+            xmin = 1397.493831772772 
+            xmax = 1403.2 
+            text = "kay <c/> jadi (uh) kalau nak d_m <c/> d_m [je] <s/> mana tahu kalau kau d_m <c/> kita reply [eh] <s/>" 
+        intervals [449]:
+            xmin = 1403.2 
+            xmax = 1404.4576638919639 
+            text = "(ppl)" 
+        intervals [450]:
+            xmin = 1404.4576638919639 
+            xmax = 1406.02 
+            text = "maybe kau <unk> terpilih <s/>" 
+        intervals [451]:
+            xmin = 1406.02 
+            xmax = 1407.929060567694 
+            text = "--EMPTY--" 
+        intervals [452]:
+            xmin = 1407.929060567694 
+            xmax = 1409.254502934791 
+            text = "no no no <s/>" 
+        intervals [453]:
+            xmin = 1409.254502934791 
+            xmax = 1413.1596793531596 
+            text = "--EMPTY--" 
+        intervals [454]:
+            xmin = 1413.1596793531596 
+            xmax = 1414.337875 
+            text = "[ah] tapi" 
+        intervals [455]:
+            xmin = 1414.337875 
+            xmax = 1419.8289687241079 
+            text = "--EMPTY--" 
+        intervals [456]:
+            xmin = 1419.8289687241079 
+            xmax = 1420.9861009493513 
+            text = "yah <c/> yah [lah] <s/>" 
+        intervals [457]:
+            xmin = 1420.9861009493513 
+            xmax = 1424.3312650186913 
+            text = "(ppl) okay [lah] <c/> okay [lah] till we see you guys next episode <s/>" 
+        intervals [458]:
+            xmin = 1424.3312650186913 
+            xmax = 1427.1504598947388 
+            text = "thank you so much for listening <s/> nama saya hafidz rahman <s/>" 
+        intervals [459]:
+            xmin = 1427.1504598947388 
+            xmax = 1428.181359513592 
+            text = "--EMPTY--" 
+        intervals [460]:
+            xmin = 1428.181359513592 
+            xmax = 1430.1590036803716 
+            text = "dan thank you for listening to" 
+        intervals [461]:
+            xmin = 1430.1590036803716 
+            xmax = 1431.91 
+            text = "the podcast <s/>" 
+    item [2]:
+        class = "IntervalTier" 
+        name = "channel2_S1" 
+        xmin = 0 
+        xmax = 1432
+        intervals: size = 455 
+        intervals [1]:
+            xmin = 0 
+            xmax = 3.076438700264491 
+            text = "--EMPTY--" 
+        intervals [2]:
+            xmin = 3.076438700264491 
+            xmax = 4.591229983613157 
+            text = "ramai [lah] <c/> ramai <s/>" 
+        intervals [3]:
+            xmin = 4.591229983613157 
+            xmax = 13.035425563267621 
+            text = "--EMPTY--" 
+        intervals [4]:
+            xmin = 13.035425563267621 
+            xmax = 19.33366682484481 
+            text = "aku minum <c/> aku minum <c/> aku minum air dulu [ah] <s/> soalan ni <c/> soalan ni macam boleh me~ mengeringkan tekak <s/> minum air dulu <s/> sekejap <c/> sabar <c/> dengar <s/>" 
+        intervals [5]:
+            xmin = 19.33366682484481 
+            xmax = 19.838597252627697 
+            text = "--EMPTY--" 
+        intervals [6]:
+            xmin = 19.838597252627697 
+            xmax = 22.342210623717854 
+            text = "aku macam nak buat a_s_m_r [ah] <s/> boleh tak kita buat macam ni <s/>" 
+        intervals [7]:
+            xmin = 22.342210623717854 
+            xmax = 25.01068834738117 
+            text = "--EMPTY--" 
+        intervals [8]:
+            xmin = 25.01068834738117 
+            xmax = 25.347308632569764 
+            text = "(ppo)" 
+        intervals [9]:
+            xmin = 25.347308632569764 
+            xmax = 26.546518398554124 
+            text = "--EMPTY--" 
+        intervals [10]:
+            xmin = 26.546518398554124 
+            xmax = 27.97715461060564 
+            text = "(ppo) (ppl)" 
+        intervals [11]:
+            xmin = 27.97715461060564 
+            xmax = 28.48553082840967 
+            text = "--EMPTY--" 
+        intervals [12]:
+            xmin = 28.48553082840967 
+            xmax = 29.57 
+            text = "(ppl)" 
+        intervals [13]:
+            xmin = 29.57 
+            xmax = 30.652523914311235 
+            text = "(uh) okay <s/>" 
+        intervals [14]:
+            xmin = 30.652523914311235 
+            xmax = 31.179253359856496 
+            text = "--EMPTY--" 
+        intervals [15]:
+            xmin = 31.179253359856496 
+            xmax = 32.71508341102945 
+            text = "apa soalan dia <s/> (ppl)" 
+        intervals [16]:
+            xmin = 32.71508341102945 
+            xmax = 34.082603319608104 
+            text = "kenapa tak belum kahwin lagi [eh] <s/>" 
+        intervals [17]:
+            xmin = 34.082603319608104 
+            xmax = 35.5 
+            text = "--EMPTY--" 
+        intervals [18]:
+            xmin = 35.5 
+            xmax = 41.5 
+            text = "soalan clich~ (uh) jawapan cliche yang saya nak kasi adalah belum jodoh lagi mak cik <s/> tu satu <s/>" 
+        intervals [19]:
+            xmin = 41.5 
+            xmax = 42.2 
+            text = "--EMPTY--" 
+        intervals [20]:
+            xmin = 42.2 
+            xmax = 43.18 
+            text = "(uh)" 
+        intervals [21]:
+            xmin = 43.18 
+            xmax = 43.779178093257 
+            text = "--EMPTY--" 
+        intervals [22]:
+            xmin = 43.779178093257 
+            xmax = 46.31 
+            text = "i mean of course [lah] [kan] <c/> jodoh ni [kan] di tangan tuhan [kan] <s/>" 
+        intervals [23]:
+            xmin = 46.31 
+            xmax = 46.661489285184324 
+            text = "--EMPTY--" 
+        intervals [24]:
+            xmin = 46.661489285184324 
+            xmax = 47.688946671641546 
+            text = "(uh)" 
+        intervals [25]:
+            xmin = 47.688946671641546 
+            xmax = 53.073721948717015 
+            text = "but then of course orang kata nak kena usaha kalau tak <c/> tak [kan] [lah] jodoh ja~ jatuh tergolek <s/> betul tak <s/>" 
+        intervals [26]:
+            xmin = 53.073721948717015 
+            xmax = 53.66280744779705 
+            text = "--EMPTY--" 
+        intervals [27]:
+            xmin = 53.66280744779705 
+            xmax = 55.57733531980717 
+            text = "(uh) usaha [eh] <s/>" 
+        intervals [28]:
+            xmin = 55.57733531980717 
+            xmax = 58.69642687847959 
+            text = "i can say i tak usaha [lah] for now <s/> (ppl)" 
+        intervals [29]:
+            xmin = 58.69642687847959 
+            xmax = 62.46236631902698 
+            text = "i tak usaha for now sebab i'm very busy <s/> i i'm busy" 
+        intervals [30]:
+            xmin = 62.46236631902698 
+            xmax = 64.36235722460947 
+            text = "and have a lot of things i want to achieve <s/>" 
+        intervals [31]:
+            xmin = 64.36235722460947 
+            xmax = 65.24598547322952 
+            text = "(um)" 
+        intervals [32]:
+            xmin = 65.24598547322952 
+            xmax = 68.12829666515684 
+            text = "sekarang ni you know <s/> belum terfikir lagi nak kahwin [ah] <s/>" 
+        intervals [33]:
+            xmin = 68.12829666515684 
+            xmax = 70.42152235800413 
+            text = "i think maybe that's the only reason i can give you guys [ah] <s/>" 
+        intervals [34]:
+            xmin = 70.42152235800413 
+            xmax = 71.68106716713667 
+            text = "belum terfikir nak kahwin <s/>" 
+        intervals [35]:
+            xmin = 71.68106716713667 
+            xmax = 77.38535450784315 
+            text = "ada orang [kan] macam minat kahwin kahwin <c/> <unk> kahwin kahwin [kan] macam [oh] (uh) umur tiga puluh lima aku nak kahwin <c/> umur dua puluh tujuh aku nak kahwin <c/> you see <s/>" 
+        intervals [36]:
+            xmin = 77.38535450784315 
+            xmax = 79.45135979458247 
+            text = "you set a target when to get married" 
+        intervals [37]:
+            xmin = 79.45135979458247 
+            xmax = 85.67883507057144 
+            text = "but for me i don't <s/> i don't set a target when to get married but i i set more of a target macam i want to retire by forty years old <s/> [ah] that's my target <s/>" 
+        intervals [38]:
+            xmin = 85.67883507057144 
+            xmax = 86.35207564094864 
+            text = "--EMPTY--" 
+        intervals [39]:
+            xmin = 86.35207564094864 
+            xmax = 87.44609156781156 
+            text = "[ah] you see so" 
+        intervals [40]:
+            xmin = 87.44609156781156 
+            xmax = 90.72813934840035 
+            text = "kita tak boleh samakan semua orang dengan (uh)" 
+        intervals [41]:
+            xmin = 90.72813934840035 
+            xmax = 92.12271359071033 
+            text = "kita tak boleh samakan semua orang <s/>" 
+        intervals [42]:
+            xmin = 92.12271359071033 
+            xmax = 99.23085970865282 
+            text = "sebab lain orang lain (uh) pegangan <s/> lain orang lain (uh) goals and aspiration <c/> you see <s/> ada orang dia nak" 
+        intervals [43]:
+            xmin = 99.23085970865282 
+            xmax = 101.22905569014549 
+            text = "jadi suri rumah by the time this age <s/>" 
+        intervals [44]:
+            xmin = 101.22905569014549 
+            xmax = 108.3781314733878 
+            text = "that kind of thing <s/> nak settle <c/> nak ada family by the time this age <s/> ada orang tak nak <s/> ada orang (uh) [oh] i want to <c/> a big house <c/> i want to be successful <c/> you see <s/> so (ppo)" 
+        intervals [45]:
+            xmin = 108.3781314733878 
+            xmax = 114.40057299181186 
+            text = "susah sikit <s/> so saya adalah golongan yang (uh) tidak memikirkan tentang kahwin dari segi matlamat hidup saya <s/>" 
+        intervals [46]:
+            xmin = 114.40057299181186 
+            xmax = 119.8766675024664 
+            text = "saya lebih tumpukan kepada kerjaya saya <c/> kepada masa depan saya <s/>" 
+        intervals [47]:
+            xmin = 119.8766675024664 
+            xmax = 120.8361401846063 
+            text = "what about you hafidz <s/>" 
+        intervals [48]:
+            xmin = 120.8361401846063 
+            xmax = 144.963364113804 
+            text = "--EMPTY--" 
+        intervals [49]:
+            xmin = 144.963364113804 
+            xmax = 148.82 
+            text = "keria tu dia banyak gula [tau] jadi be careful with your food intake <unk> <s/>" 
+        intervals [50]:
+            xmin = 148.82 
+            xmax = 151.52516391354413 
+            text = "--EMPTY--" 
+        intervals [51]:
+            xmin = 151.52516391354413 
+            xmax = 152.78748998300136 
+            text = "(ppl)" 
+        intervals [52]:
+            xmin = 152.78748998300136 
+            xmax = 157.1635536904531 
+            text = "--EMPTY--" 
+        intervals [53]:
+            xmin = 157.1635536904531 
+            xmax = 158.38257887997688 
+            text = "[ah] yes <s/>" 
+        intervals [54]:
+            xmin = 158.38257887997688 
+            xmax = 161.51283922648688 
+            text = "yang <unk> [ah] yes <c/> keledek lebih and dia punya gula dia lembut <s/>" 
+        intervals [55]:
+            xmin = 161.51283922648688 
+            xmax = 164.13 
+            text = "[kan] <s/> ada macam keras batu kat luar tu <s/> [ah]" 
+        intervals [56]:
+            xmin = 164.13 
+            xmax = 170.48415188246727 
+            text = "--EMPTY--" 
+        intervals [57]:
+            xmin = 170.48415188246727 
+            xmax = 171.76 
+            text = "[ah]" 
+        intervals [58]:
+            xmin = 171.76 
+            xmax = 173.0508815570303 
+            text = "--EMPTY--" 
+        intervals [59]:
+            xmin = 173.0508815570303 
+            xmax = 175.49558394865178 
+            text = "akan naik [lah] <s/> be successful [lah] <s/>" 
+        intervals [60]:
+            xmin = 175.49558394865178 
+            xmax = 208.85044088220025 
+            text = "--EMPTY--" 
+        intervals [61]:
+            xmin = 208.85044088220025 
+            xmax = 210.78026811844103 
+            text = "tapi [kan] hafidz <c/> orang kata [kan] <c/>" 
+        intervals [62]:
+            xmin = 210.78026811844103 
+            xmax = 214.47955655728208 
+            text = "how to know whether you are ready if you haven't even try it <s/>" 
+        intervals [63]:
+            xmin = 214.47955655728208 
+            xmax = 216.38423004181675 
+            text = "[ah] itu prinsip hidup dia [lah] <s/>" 
+        intervals [64]:
+            xmin = 216.38423004181675 
+            xmax = 218.97199848420408 
+            text = "then bilang dengan dorang cakap okay [lah] <c/>" 
+        intervals [65]:
+            xmin = 218.97199848420408 
+            xmax = 220.24312211649536 
+            text = "good for you [lah] <s/>" 
+        intervals [66]:
+            xmin = 220.24312211649536 
+            xmax = 223.81 
+            text = "you do you [lah] <s/> you want to try and then to see whether you are ready or not then up to you [lah] <s/>" 
+        intervals [67]:
+            xmin = 223.81 
+            xmax = 228.0485049793059 
+            text = "because for us maybe kita lebih berhati hati <s/>" 
+        intervals [68]:
+            xmin = 228.0485049793059 
+            xmax = 234.35439592299838 
+            text = "kita kalau boleh kita macam i want to be mentally prepared <s/> i want to be ready <s/> i mean when kita cakap ready tu <c/> tak semestinya macam [oh] (uh)" 
+        intervals [69]:
+            xmin = 234.35439592299838 
+            xmax = 238.32727939963252 
+            text = "kita boleh <c/> by the time kita kahwin <c/> kita dapat selesaikan semua masalah hidup kita <s/>" 
+        intervals [70]:
+            xmin = 238.32727939963252 
+            xmax = 244.72306481821582 
+            text = "tak ada <c/> it's more of like macam how ready are we to have another person in our life (uh) for us to be responsible <s/>" 
+        intervals [71]:
+            xmin = 244.72306481821582 
+            xmax = 246.44824377980737 
+            text = "because kay <c/> for me personally <c/>" 
+        intervals [72]:
+            xmin = 246.44824377980737 
+            xmax = 250.63218560434228 
+            text = "(uh) i don't think i'll be responsible (uh) i i don't think i'll be ready to be" 
+        intervals [73]:
+            xmin = 250.63218560434228 
+            xmax = 253.24099280307283 
+            text = "(uh) memikul tanggungjawab seorang suami" 
+        intervals [74]:
+            xmin = 253.24099280307283 
+            xmax = 255.41075887295372 
+            text = "terhadap seorang (uh) isteri" 
+        intervals [75]:
+            xmin = 255.41075887295372 
+            xmax = 255.78945669379087 
+            text = "--EMPTY--" 
+        intervals [76]:
+            xmin = 255.78945669379087 
+            xmax = 258.1775445833361 
+            text = "sebab (uh) because i'm scared" 
+        intervals [77]:
+            xmin = 258.1775445833361 
+            xmax = 258.62 
+            text = "--EMPTY--" 
+        intervals [78]:
+            xmin = 258.62 
+            xmax = 262.4273756838421 
+            text = "(uh) kalau sekiranya because i myself i tak boleh multitask [tau] <s/>" 
+        intervals [79]:
+            xmin = 262.4273756838421 
+            xmax = 262.70087966555786 
+            text = "--EMPTY--" 
+        intervals [80]:
+            xmin = 262.70087966555786 
+            xmax = 264.320864788028 
+            text = "(uh) i need to focus on one thing <s/>" 
+        intervals [81]:
+            xmin = 264.320864788028 
+            xmax = 272.00001504389286 
+            text = "that's why o~ bila i nampak orang <c/> budak budak sekolah <c/> lepas tu dia kerja <c/> i'm like [oh] i salute you guys because you guys can do a lot of things you know <s/>" 
+        intervals [82]:
+            xmin = 272.00001504389286 
+            xmax = 274.69297732540167 
+            text = "but for me tak <c/> i kalau sekolah <c/> i sekolah <s/> kalau i kerja <c/> i kerja <s/>" 
+        intervals [83]:
+            xmin = 274.69297732540167 
+            xmax = 277.1874076507419 
+            text = "so in terms of macam (uh) perkahwinan ni <c/>" 
+        intervals [84]:
+            xmin = 277.1874076507419 
+            xmax = 277.7554543819976 
+            text = "--EMPTY--" 
+        intervals [85]:
+            xmin = 277.7554543819976 
+            xmax = 279.62 
+            text = "i'm scared kalau sekiranya saya kahwin <c/>" 
+        intervals [86]:
+            xmin = 279.62 
+            xmax = 280.1117963783178 
+            text = "--EMPTY--" 
+        intervals [87]:
+            xmin = 280.1117963783178 
+            xmax = 285.69357165315046 
+            text = "saya akan tumpukan lebih perhatian saya pada isteri saya dan saya tak tumpukan perhatian saya pada mak saya <s/>" 
+        intervals [88]:
+            xmin = 285.69357165315046 
+            xmax = 286.87 
+            text = "[ah] so" 
+        intervals [89]:
+            xmin = 286.87 
+            xmax = 289.88028645018363 
+            text = "for now my mother is my main priority <s/>" 
+        intervals [90]:
+            xmin = 289.88028645018363 
+            xmax = 292.73696663545684 
+            text = "and i feel that if i have someone else in my life <c/>" 
+        intervals [91]:
+            xmin = 292.73696663545684 
+            xmax = 293.38916843800973 
+            text = "--EMPTY--" 
+        intervals [92]:
+            xmin = 293.38916843800973 
+            xmax = 302.25 
+            text = "i might not be able to (uh) apa orang kata <c/> (uh) tangani kedua duanya dengan sempurna atau dengan adil so i might as well focus on my mum <s/>" 
+        intervals [93]:
+            xmin = 302.25 
+            xmax = 320.17113367945655 
+            text = "--EMPTY--" 
+        intervals [94]:
+            xmin = 320.17113367945655 
+            xmax = 321.2020333028466 
+            text = "(mm)" 
+        intervals [95]:
+            xmin = 321.2020333028466 
+            xmax = 335.5103049859286 
+            text = "--EMPTY--" 
+        intervals [96]:
+            xmin = 335.5103049859286 
+            xmax = 337.4248328579387 
+            text = "mesti [lah] aku anak mak <c/> tak [kan] anak setan [kot] <s/>" 
+        intervals [97]:
+            xmin = 337.4248328579387 
+            xmax = 360.936990091877 
+            text = "--EMPTY--" 
+        intervals [98]:
+            xmin = 360.936990091877 
+            xmax = 361.39984298401134 
+            text = "yah <s/>" 
+        intervals [99]:
+            xmin = 361.39984298401134 
+            xmax = 363.2543127117888 
+            text = "but then again i'm still open <s/>" 
+        intervals [100]:
+            xmin = 363.2543127117888 
+            xmax = 371.1625936522834 
+            text = "<unk> because i said [kan] jodoh ke mana [kan] <s/> so i if if kalau sekiranya jodoh tu sampai <c/> i really hope that (uh) my partner atau my isteri" 
+        intervals [101]:
+            xmin = 371.1625936522834 
+            xmax = 374.00282730856225 
+            text = "(uh) are the kind yang macam jenis (uh)" 
+        intervals [102]:
+            xmin = 374.00282730856225 
+            xmax = 377.9967495530206 
+            text = "dia understand [ah] <s/> dia understand my situation that i need to prioritise my mum more <s/>" 
+        intervals [103]:
+            xmin = 377.9967495530206 
+            xmax = 378.3123310703849 
+            text = "--EMPTY--" 
+        intervals [104]:
+            xmin = 378.3123310703849 
+            xmax = 379.6553685689831 
+            text = "yah <s/> so kalau jenis" 
+        intervals [105]:
+            xmin = 379.6553685689831 
+            xmax = 384.86 
+            text = "kalau jenis perempuan yang jenis <c/> i want attention from you <c/> give me your attention from you <s/> okay <c/> then you get out from my life <s/> <unk>" 
+        intervals [106]:
+            xmin = 384.86 
+            xmax = 386.923688911915 
+            text = "--EMPTY--" 
+        intervals [107]:
+            xmin = 386.923688911915 
+            xmax = 389.9953490142609 
+            text = "[ah] then cannot <s/> then i will definitely say i choose my mum so get out <s/>" 
+        intervals [108]:
+            xmin = 389.9953490142609 
+            xmax = 390.81586095940816 
+            text = "--EMPTY--" 
+        intervals [109]:
+            xmin = 390.81586095940816 
+            xmax = 391.20106058164185 
+            text = "yup <s/>" 
+        intervals [110]:
+            xmin = 391.20106058164185 
+            xmax = 392.12993750000004 
+            text = "--EMPTY--" 
+        intervals [111]:
+            xmin = 392.12993750000004 
+            xmax = 394.9880387900136 
+            text = "so if you if you if you have that kind of question <c/>" 
+        intervals [112]:
+            xmin = 394.9880387900136 
+            xmax = 396.9412005555161 
+            text = "then don't even try <s/>" 
+        intervals [113]:
+            xmin = 396.9412005555161 
+            xmax = 397.446130983299 
+            text = "--EMPTY--" 
+        intervals [114]:
+            xmin = 397.446130983299 
+            xmax = 397.80379003631185 
+            text = "yup <s/>" 
+        intervals [115]:
+            xmin = 397.80379003631185 
+            xmax = 404.27034144048326 
+            text = "--EMPTY--" 
+        intervals [116]:
+            xmin = 404.27034144048326 
+            xmax = 404.92254324303616 
+            text = "(ppl)" 
+        intervals [117]:
+            xmin = 404.92254324303616 
+            xmax = 405.9955204020748 
+            text = "--EMPTY--" 
+        intervals [118]:
+            xmin = 405.9955204020748 
+            xmax = 407.46823414977496 
+            text = "aku dah agak <s/>" 
+        intervals [119]:
+            xmin = 407.46823414977496 
+            xmax = 407.89665918837596 
+            text = "(huh)" 
+        intervals [120]:
+            xmin = 407.89665918837596 
+            xmax = 408.88548127611745 
+            text = "--EMPTY--" 
+        intervals [121]:
+            xmin = 408.88548127611745 
+            xmax = 409.72703198908897 
+            text = "(mm)" 
+        intervals [122]:
+            xmin = 409.72703198908897 
+            xmax = 426.1280871303282 
+            text = "--EMPTY--" 
+        intervals [123]:
+            xmin = 426.1280871303282 
+            xmax = 426.9485990754754 
+            text = "come to you <s/>" 
+        intervals [124]:
+            xmin = 426.9485990754754 
+            xmax = 438.7754447519651 
+            text = "--EMPTY--" 
+        intervals [125]:
+            xmin = 438.7754447519651 
+            xmax = 441.5861409330179 
+            text = "but orang kata kalau another version of you tu yang susah babe <s/>" 
+        intervals [126]:
+            xmin = 441.5861409330179 
+            xmax = 444.22 
+            text = "patutnya opposite attracts [tau] <c/> tak boleh sama perangai <s/>" 
+        intervals [127]:
+            xmin = 444.22 
+            xmax = 445.8544161844785 
+            text = "(uh) i mean of course i i have" 
+        intervals [128]:
+            xmin = 445.8544161844785 
+            xmax = 446.8247940982107 
+            text = "of course [eh] <s/>" 
+        intervals [129]:
+            xmin = 446.8247940982107 
+            xmax = 451.8347801672539 
+            text = "i do <s/> i did and i still do get this kind of (uh) messages <s/>" 
+        intervals [130]:
+            xmin = 451.8347801672539 
+            xmax = 455.6194626141881 
+            text = "--EMPTY--" 
+        intervals [131]:
+            xmin = 455.6194626141881 
+            xmax = 459.0277430017226 
+            text = "[eh] ada sampai hantar surat cinta segala [tau] <s/>" 
+        intervals [132]:
+            xmin = 459.0277430017226 
+            xmax = 460.68 
+            text = "--EMPTY--" 
+        intervals [133]:
+            xmin = 460.68 
+            xmax = 461.71840952179383 
+            text = "[ah] okay okay <s/>" 
+        intervals [134]:
+            xmin = 461.71840952179383 
+            xmax = 462.66515407388675 
+            text = "--EMPTY--" 
+        intervals [135]:
+            xmin = 462.66515407388675 
+            xmax = 463.4623307738173 
+            text = "okay <s/> (uh)" 
+        intervals [136]:
+            xmin = 463.4623307738173 
+            xmax = 466.17 
+            text = "untuk podcast ni ke atau untuk" 
+        intervals [137]:
+            xmin = 466.17 
+            xmax = 468.27906072486036 
+            text = "untuk sekarang punya episode <s/> okay <s/>" 
+        intervals [138]:
+            xmin = 468.27906072486036 
+            xmax = 469.5501843571516 
+            text = "(uh) anyway" 
+        intervals [139]:
+            xmin = 469.5501843571516 
+            xmax = 470.88 
+            text = "so (uh)" 
+        intervals [140]:
+            xmin = 470.88 
+            xmax = 471.2952542058488 
+            text = "--EMPTY--" 
+        intervals [141]:
+            xmin = 471.2952542058488 
+            xmax = 472.17888245446886 
+            text = "[kan] aku lost track <s/>" 
+        intervals [142]:
+            xmin = 472.17888245446886 
+            xmax = 472.557580275306 
+            text = "--EMPTY--" 
+        intervals [143]:
+            xmin = 472.557580275306 
+            xmax = 475.2505425568148 
+            text = "apa aku cakap tadi <s/> [oh] pasal (uh) hantar meminang ni [kan] <s/>" 
+        intervals [144]:
+            xmin = 475.2505425568148 
+            xmax = 475.8384801751761 
+            text = "--EMPTY--" 
+        intervals [145]:
+            xmin = 475.8384801751761 
+            xmax = 479.298783541912 
+            text = "[ah] so memang ada [lah] tapi (um)" 
+        intervals [146]:
+            xmin = 479.298783541912 
+            xmax = 479.8668302731677 
+            text = "--EMPTY--" 
+        intervals [147]:
+            xmin = 479.8668302731677 
+            xmax = 481.11576725691594 
+            text = "not for now <c/> not for now <s/>" 
+        intervals [148]:
+            xmin = 481.11576725691594 
+            xmax = 497.7516932023335 
+            text = "--EMPTY--" 
+        intervals [149]:
+            xmin = 497.7516932023335 
+            xmax = 500.3891888624847 
+            text = "[oh] yes <c/> that's what i want to say just now aku lupa <unk>" 
+        intervals [150]:
+            xmin = 500.3891888624847 
+            xmax = 505.38 
+            text = "--EMPTY--" 
+        intervals [151]:
+            xmin = 505.38 
+            xmax = 511.54394184931607 
+            text = "i mean there are macam perkahwinan yang datang daripada peminat for example macam yusry dengan lisa <s/> lisa [kan] peminat yusry dulu <s/>" 
+        intervals [152]:
+            xmin = 511.54394184931607 
+            xmax = 514.189 
+            text = "[ah] that kind of thing <s/> so <unk>" 
+        intervals [153]:
+            xmin = 514.189 
+            xmax = 515.91 
+            text = "--EMPTY--" 
+        intervals [154]:
+            xmin = 515.91 
+            xmax = 516.3694693631932 
+            text = "[oh] is it <s/>" 
+        intervals [155]:
+            xmin = 516.3694693631932 
+            xmax = 518.8199118743634 
+            text = "okay <c/> that one aku tak tahu <s/> [ah] but but i mean" 
+        intervals [156]:
+            xmin = 518.8199118743634 
+            xmax = 519.4598724719258 
+            text = "yah [lah] <s/>" 
+        intervals [157]:
+            xmin = 519.4598724719258 
+            xmax = 520.7432373092073 
+            text = "--EMPTY--" 
+        intervals [158]:
+            xmin = 520.7432373092073 
+            xmax = 521.3744003439359 
+            text = "(mm)" 
+        intervals [159]:
+            xmin = 521.3744003439359 
+            xmax = 528.31 
+            text = "okay <c/> for me maybe i'm a bit berwaspada bila kalau macam i want to take a fan to be (er) someone (uh) serious <s/>" 
+        intervals [160]:
+            xmin = 528.31 
+            xmax = 537.1377913650051 
+            text = "sebab i tak nak orang tu (um) interested in me because of my persona on on on on social media sebab" 
+        intervals [161]:
+            xmin = 537.1377913650051 
+            xmax = 537.65 
+            text = "--EMPTY--" 
+        intervals [162]:
+            xmin = 537.65 
+            xmax = 538.4276572877282 
+            text = "to be honest <c/>" 
+        intervals [163]:
+            xmin = 538.4276572877282 
+            xmax = 541.6775729762212 
+            text = "sesiapa yang kenal diri saya <c/> yang kawan kawan rapat saya <c/>" 
+        intervals [164]:
+            xmin = 541.6775729762212 
+            xmax = 548.2803024308911 
+            text = "even kawan kawan army saya pun dorang cakap the same <s/> macam [eh] kau kat atas <c/> kau kat video dengan kau kat kat luar sekarang kau lain [eh] <s/>" 
+        intervals [165]:
+            xmin = 548.2803024308911 
+            xmax = 553.1911321808291 
+            text = "[ah] that kind of thing <s/> so i don't want later <c/> kalau sekiranya orang (uh)" 
+        intervals [166]:
+            xmin = 553.1911321808291 
+            xmax = 555.25 
+            text = "suka kat saya dan saya kata okay <c/> let's meet up" 
+        intervals [167]:
+            xmin = 555.25 
+            xmax = 555.7157843197436 
+            text = "--EMPTY--" 
+        intervals [168]:
+            xmin = 555.7157843197436 
+            xmax = 557.3354862438692 
+            text = "and then suddenly you know she just [oh]" 
+        intervals [169]:
+            xmin = 557.3354862438692 
+            xmax = 557.6931452953081 
+            text = "--EMPTY--" 
+        intervals [170]:
+            xmin = 557.6931452953081 
+            xmax = 560.265875 
+            text = "you are not the the the person that i've i've seen before <s/>" 
+        intervals [171]:
+            xmin = 560.265875 
+            xmax = 562.5055669233947 
+            text = "like you know <c/> you are different and stuff like that <s/>" 
+        intervals [172]:
+            xmin = 562.5055669233947 
+            xmax = 572.7400696508535 
+            text = "that's for her but for me i also will think macam kau suka aku pasal aku zuhairi ke atau kau suka aku pasal akunya yang macam you know in in in person <s/> do you like me as it is or what <s/>" 
+        intervals [173]:
+            xmin = 572.7400696508535 
+            xmax = 574.6093602237564 
+            text = "you know <s/> so so it's a bit worrying [ah] <s/>" 
+        intervals [174]:
+            xmin = 574.6093602237564 
+            xmax = 581.937353228005 
+            text = "--EMPTY--" 
+        intervals [175]:
+            xmin = 581.937353228005 
+            xmax = 583.31 
+            text = "tak ada [lah] <s/>" 
+        intervals [176]:
+            xmin = 583.31 
+            xmax = 588.9853404491414 
+            text = "--EMPTY--" 
+        intervals [177]:
+            xmin = 588.9853404491414 
+            xmax = 590.6083837308515 
+            text = "(ppl)" 
+        intervals [178]:
+            xmin = 590.6083837308515 
+            xmax = 594.204865148086 
+            text = "--EMPTY--" 
+        intervals [179]:
+            xmin = 594.204865148086 
+            xmax = 595.4882299853675 
+            text = "[ah-ah]" 
+        intervals [180]:
+            xmin = 595.4882299853675 
+            xmax = 601.8086578954877 
+            text = "--EMPTY--" 
+        intervals [181]:
+            xmin = 601.8086578954877 
+            xmax = 603.72 
+            text = "(ppl)" 
+        intervals [182]:
+            xmin = 603.72 
+            xmax = 618.640140878081 
+            text = "--EMPTY--" 
+        intervals [183]:
+            xmin = 618.640140878081 
+            xmax = 626.2603794385219 
+            text = "[eh] tak tapi sekarang aku dah belajar <s/> [ah] dulu lain <s/> [eh] tapi betul dulu <c/> <unk> kay <c/> kadang kadang okay <c/> this maybe for those of you who are hearing this right <c/>" 
+        intervals [184]:
+            xmin = 626.2603794385219 
+            xmax = 634.4930394592149 
+            text = "maybe ada orang akan kata [eh] kenapa zuhairi atau hafidz macam tak layan aku ni <c/> that kind of thing <s/> you must understand sometimes it's not <c/> we are not blaming you guys" 
+        intervals [185]:
+            xmin = 634.4930394592149 
+            xmax = 639.5090637642294 
+            text = "but there are some people among the fans ni yang macam mereka ambil kesempatan [tau] <s/>" 
+        intervals [186]:
+            xmin = 639.5090637642294 
+            xmax = 644.4355790772689 
+            text = "so kalau kita buat baik atau kita layan <c/> mereka melalut <s/> got one time i was so freak out <s/>" 
+        intervals [187]:
+            xmin = 644.4355790772689 
+            xmax = 649.4558094222423 
+            text = "that time i i layankan <s/> (um) not layankan [ah] macam you know i want to be friendly to people" 
+        intervals [188]:
+            xmin = 649.4558094222423 
+            xmax = 653.3024602919306 
+            text = "so i i (uh) i replied this particular d_m [ah] kat facebook <s/>" 
+        intervals [189]:
+            xmin = 653.3024602919306 
+            xmax = 654.04 
+            text = "--EMPTY--" 
+        intervals [190]:
+            xmin = 654.04 
+            xmax = 655.0153980485317 
+            text = "member call [eh] <s/>" 
+        intervals [191]:
+            xmin = 655.0153980485317 
+            xmax = 656.1514915110432 
+            text = "--EMPTY--" 
+        intervals [192]:
+            xmin = 656.1514915110432 
+            xmax = 657.3285139125297 
+            text = "kau sibuk ada" 
+        intervals [193]:
+            xmin = 657.3285139125297 
+            xmax = 659.1302037942545 
+            text = "<unk> something <c/> i don't know <s/>" 
+        intervals [194]:
+            xmin = 659.1302037942545 
+            xmax = 660.3954375000001 
+            text = "that person call [eh] <s/>" 
+        intervals [195]:
+            xmin = 660.3954375000001 
+            xmax = 661.6602036069404 
+            text = "--EMPTY--" 
+        intervals [196]:
+            xmin = 661.6602036069404 
+            xmax = 663.4683897591103 
+            text = "berkali kali sampai i have to block that person <s/>" 
+        intervals [197]:
+            xmin = 663.4683897591103 
+            xmax = 663.9943589547175 
+            text = "--EMPTY--" 
+        intervals [198]:
+            xmin = 663.9943589547175 
+            xmax = 668.08 
+            text = "and it's it's freaking me out [lah] macam terus after that i'm like okay okay okay zuhairi <c/> you you need to stop <s/>" 
+        intervals [199]:
+            xmin = 668.08 
+            xmax = 668.452280540119 
+            text = "--EMPTY--" 
+        intervals [200]:
+            xmin = 668.452280540119 
+            xmax = 672.5735825562867 
+            text = "know <s/> so i will only reply if i feel it's safe to reply" 
+        intervals [201]:
+            xmin = 672.5735825562867 
+            xmax = 676.930903973307 
+            text = "or like (uh) and some more kadang kadang tak boleh reply semua pun pasal sekarang tengah busy so" 
+        intervals [202]:
+            xmin = 676.930903973307 
+            xmax = 684.9807154530675 
+            text = "whenever i yah <c/> so example if if i if i feel i want to reply <c/> i think it's safe to reply <c/> i'll reply [lah] tapi kalau saya tak reply tu saya minta maaf [lah] banyak banyak sesiapa yang mendengar ni" 
+        intervals [203]:
+            xmin = 684.9807154530675 
+            xmax = 692.2689266831052 
+            text = "yang pernah d_m saya <c/> saya tak jawab ke <c/> saya tak respond ke <c/> saya minta maaf banyak banyak <s/> it's not like i don't trust you <c/> it's just that i hope you understand where i'm coming from [lah] <s/> it's a bit" 
+        intervals [204]:
+            xmin = 692.2689266831052 
+            xmax = 694.68 
+            text = "difficult kalau kita nak puaskan hati semua orang [eh] <s/>" 
+        intervals [205]:
+            xmin = 694.68 
+            xmax = 719.8048446400251 
+            text = "--EMPTY--" 
+        intervals [206]:
+            xmin = 719.8048446400251 
+            xmax = 722.8631156566619 
+            text = "but we do <c/> but we do have fans yang jadi kawan <s/>" 
+        intervals [207]:
+            xmin = 722.8631156566619 
+            xmax = 723.4795 
+            text = "betul tak <s/>" 
+        intervals [208]:
+            xmin = 723.4795 
+            xmax = 729.1169836211532 
+            text = "[ah] bukan kita kita tak layan pun <s/> memang ada kita layan <s/> macam maybe cara you guys approach kita [kot] <s/>" 
+        intervals [209]:
+            xmin = 729.1169836211532 
+            xmax = 736.6167304101522 
+            text = "[ah] it's i think it's it's not just about just us <s/> i think in person <c/> in in reality itself <c/> cara you guys approach seorang tu or a stranger tu <c/>" 
+        intervals [210]:
+            xmin = 736.6167304101522 
+            xmax = 740.4878636898211 
+            text = "it might lead to something else [ah] <s/> you might give a bad impression <c/> you might get a good impression <s/>" 
+        intervals [211]:
+            xmin = 740.4878636898211 
+            xmax = 747.046219847405 
+            text = "so alhamdulillah we do have like some fans yang become our friends yang macam we still keep in contact <c/> masih keluar together <c/> that kind of thing [eh] <s/>" 
+        intervals [212]:
+            xmin = 747.046219847405 
+            xmax = 748.6662049698753 
+            text = "--EMPTY--" 
+        intervals [213]:
+            xmin = 748.6662049698753 
+            xmax = 749.1921741654825 
+            text = "(mm)" 
+        intervals [214]:
+            xmin = 749.1921741654825 
+            xmax = 759.45 
+            text = "--EMPTY--" 
+        intervals [215]:
+            xmin = 759.45 
+            xmax = 761.73 
+            text = "physically or" 
+        intervals [216]:
+            xmin = 761.73 
+            xmax = 765.29 
+            text = "--EMPTY--" 
+        intervals [217]:
+            xmin = 765.29 
+            xmax = 768.95 
+            text = "okay <c/> physically (uh) i i kind of like" 
+        intervals [218]:
+            xmin = 768.95 
+            xmax = 769.5561680557578 
+            text = "--EMPTY--" 
+        intervals [219]:
+            xmin = 769.5561680557578 
+            xmax = 771.11 
+            text = "nora danish punya kind <s/>" 
+        intervals [220]:
+            xmin = 771.11 
+            xmax = 773.9276402403344 
+            text = "--EMPTY--" 
+        intervals [221]:
+            xmin = 773.9276402403344 
+            xmax = 774.61 
+            text = "dia pendek <s/>" 
+        intervals [222]:
+            xmin = 774.61 
+            xmax = 776.2261327551531 
+            text = "--EMPTY--" 
+        intervals [223]:
+            xmin = 776.2261327551531 
+            xmax = 776.8152182542332 
+            text = "[ah] aku tak" 
+        intervals [224]:
+            xmin = 776.8152182542332 
+            xmax = 777.5714660151888 
+            text = "--EMPTY--" 
+        intervals [225]:
+            xmin = 777.5714660151888 
+            xmax = 778.71 
+            text = "[ah] girls who are petite [ah] <s/>" 
+        intervals [226]:
+            xmin = 778.71 
+            xmax = 779.2756062089561 
+            text = "--EMPTY--" 
+        intervals [227]:
+            xmin = 779.2756062089561 
+            xmax = 782.92 
+            text = "tapi jangan [lah] petite sangat [kan] <s/> (uh) macam asalkan dia pendek sikit [lah] daripada aku <s/>" 
+        intervals [228]:
+            xmin = 782.92 
+            xmax = 785.8783356636261 
+            text = "--EMPTY--" 
+        intervals [229]:
+            xmin = 785.8783356636261 
+            xmax = 789.5811588007007 
+            text = "(ppl) tapi ada women yang tinggi but then <c/> okay <c/> this is just (uh)" 
+        intervals [230]:
+            xmin = 789.5811588007007 
+            xmax = 793.07 
+            text = "in terms of superficial punya ni [lah] [eh] <s/> but again (uh)" 
+        intervals [231]:
+            xmin = 793.07 
+            xmax = 793.6721393663234 
+            text = "--EMPTY--" 
+        intervals [232]:
+            xmin = 793.6721393663234 
+            xmax = 798.5929152757691 
+            text = "what i realise is kadang kadang apa yang kita nakkan tu kadang kita tak dapat <s/> kita suka orang yang" 
+        intervals [233]:
+            xmin = 798.5929152757691 
+            xmax = 803.41 
+            text = "way off kita punya ideal punya apa ni <c/> quota [eh] <c/> ideal punya apa" 
+        intervals [234]:
+            xmin = 803.41 
+            xmax = 804.0274191758318 
+            text = "--EMPTY--" 
+        intervals [235]:
+            xmin = 804.0274191758318 
+            xmax = 804.7626281689629 
+            text = "(uh)" 
+        intervals [236]:
+            xmin = 804.7626281689629 
+            xmax = 805.288411260051 
+            text = "--EMPTY--" 
+        intervals [237]:
+            xmin = 805.288411260051 
+            xmax = 807.1610477009317 
+            text = "apa apa [lah] <s/> <unk> [ah]" 
+        intervals [238]:
+            xmin = 807.1610477009317 
+            xmax = 809.2316445105461 
+            text = "so macam nora danish dia pendek sikit <s/>" 
+        intervals [239]:
+            xmin = 809.2316445105461 
+            xmax = 810.767474561719 
+            text = "ku~ kulit dia cerah <s/>" 
+        intervals [240]:
+            xmin = 810.767474561719 
+            xmax = 811.59 
+            text = "--EMPTY--" 
+        intervals [241]:
+            xmin = 811.59 
+            xmax = 813.182875 
+            text = "muka dia macam baby face <s/>" 
+        intervals [242]:
+            xmin = 813.182875 
+            xmax = 815.8366697266536 
+            text = "--EMPTY--" 
+        intervals [243]:
+            xmin = 815.8366697266536 
+            xmax = 820.1 
+            text = "sebab aku kulit gelap jadi aku yang cerah <s/> kita manusia ni kita suka benda yang yang kita tak ada <s/>" 
+        intervals [244]:
+            xmin = 820.1 
+            xmax = 820.4119766293976 
+            text = "--EMPTY--" 
+        intervals [245]:
+            xmin = 820.4119766293976 
+            xmax = 823.5467530352165 
+            text = "[ah] [kan] kalau macam kau kulit cerah <c/> kau suka yang tan [kan] <s/>" 
+        intervals [246]:
+            xmin = 823.5467530352165 
+            xmax = 824.093760998648 
+            text = "--EMPTY--" 
+        intervals [247]:
+            xmin = 824.093760998648 
+            xmax = 826.4921805306168 
+            text = "[ah] [kan] you see <s/> <unk> make sense <s/>" 
+        intervals [248]:
+            xmin = 826.4921805306168 
+            xmax = 830.5591645221006 
+            text = "yah <s/> so manusia ni suka benda yang opposite <c/> benda yang kita tak ada <s/> so for example saya" 
+        intervals [249]:
+            xmin = 830.5591645221006 
+            xmax = 832.03 
+            text = "kulit tak cerah jadi saya s~" 
+        intervals [250]:
+            xmin = 832.03 
+            xmax = 834.3426990883161 
+            text = "kalau nampak kulit cerah tu macam (ppo)" 
+        intervals [251]:
+            xmin = 834.3426990883161 
+            xmax = 839.2236932235509 
+            text = "lawarnya especially kalau kena sinar matahari [kan] macam <unk> [lah] tiba tiba macam ada lighting <s/>" 
+        intervals [252]:
+            xmin = 839.2236932235509 
+            xmax = 843.1789815745169 
+            text = "(um) muka baby face <s/> nora danish [kan] muka baby face macam" 
+        intervals [253]:
+            xmin = 843.1789815745169 
+            xmax = 844.3150750370285 
+            text = "gitu <s/> [ah] gitu <s/>" 
+        intervals [254]:
+            xmin = 844.3150750370285 
+            xmax = 845.5353235708371 
+            text = "cute [lah] macam gitu <unk> <s/>" 
+        intervals [255]:
+            xmin = 845.5353235708371 
+            xmax = 847.1 
+            text = "aku suka <c/> aku suka macam tu <s/>" 
+        intervals [256]:
+            xmin = 847.1 
+            xmax = 848.8594488870746 
+            text = "macam setiap hari tengok macam [eh] <s/>" 
+        intervals [257]:
+            xmin = 848.8594488870746 
+            xmax = 849.3873283612031 
+            text = "--EMPTY--" 
+        intervals [258]:
+            xmin = 849.3873283612031 
+            xmax = 850.6496544306603 
+            text = "macam [eh] [eh]" 
+        intervals [259]:
+            xmin = 850.6496544306603 
+            xmax = 852.5768125000001 
+            text = "(ppl)" 
+        intervals [260]:
+            xmin = 852.5768125000001 
+            xmax = 854.4350000000001 
+            text = "<unk> macam [eh] [eh] <unk> <s/>" 
+        intervals [261]:
+            xmin = 854.4350000000001 
+            xmax = 856.213834579825 
+            text = "(ppl)" 
+        intervals [262]:
+            xmin = 856.213834579825 
+            xmax = 860.169122930791 
+            text = "--EMPTY--" 
+        intervals [263]:
+            xmin = 860.169122930791 
+            xmax = 860.9441129821784 
+            text = "personality [eh] <s/>" 
+        intervals [264]:
+            xmin = 860.9441129821784 
+            xmax = 861.6150577911179 
+            text = "--EMPTY--" 
+        intervals [265]:
+            xmin = 861.6150577911179 
+            xmax = 863.38 
+            text = "(uh) bubbly <c/> cheerful <s/>" 
+        intervals [266]:
+            xmin = 863.38 
+            xmax = 863.887244716141 
+            text = "--EMPTY--" 
+        intervals [267]:
+            xmin = 863.887244716141 
+            xmax = 866.7064396045955 
+            text = "bubbly <c/> cheerful and of course (uh) tahu hormat" 
+        intervals [268]:
+            xmin = 866.7064396045955 
+            xmax = 867.2744863358513 
+            text = "--EMPTY--" 
+        intervals [269]:
+            xmin = 867.2744863358513 
+            xmax = 868.0318819775257 
+            text = "orang tua <s/>" 
+        intervals [270]:
+            xmin = 868.0318819775257 
+            xmax = 868.5788899409572 
+            text = "--EMPTY--" 
+        intervals [271]:
+            xmin = 868.5788899409572 
+            xmax = 870.142260561351 
+            text = "and (uh)" 
+        intervals [272]:
+            xmin = 870.142260561351 
+            xmax = 873.2349594315212 
+            text = "(uh) cara perbualan tu lemah lembut [ah] <s/>" 
+        intervals [273]:
+            xmin = 873.2349594315212 
+            xmax = 876.57 
+            text = "aku kalau b~ dorang berbual kasar macam [eh] gini [eh] <c/> gini gini <s/> [ah] tak boleh <s/>" 
+        intervals [274]:
+            xmin = 876.57 
+            xmax = 877.1902477824873 
+            text = "--EMPTY--" 
+        intervals [275]:
+            xmin = 877.1902477824873 
+            xmax = 878.4923556261556 
+            text = "(um)" 
+        intervals [276]:
+            xmin = 878.4923556261556 
+            xmax = 879.99 
+            text = "--EMPTY--" 
+        intervals [277]:
+            xmin = 879.99 
+            xmax = 881.3033294267196 
+            text = "yah <c/> kind of like that [lah] <s/>" 
+        intervals [278]:
+            xmin = 881.3033294267196 
+            xmax = 884.4849608139214 
+            text = "aku suka macam yang macam [eh] macam cute cute gitu <s/>" 
+        intervals [279]:
+            xmin = 884.4849608139214 
+            xmax = 885.56 
+            text = "--EMPTY--" 
+        intervals [280]:
+            xmin = 885.56 
+            xmax = 888.3759849806959 
+            text = "(ppo) macam mana <s/> <unk>" 
+        intervals [281]:
+            xmin = 888.3759849806959 
+            xmax = 889.8066211927473 
+            text = "tu tu yang mengada ada sangat [eh] <s/>" 
+        intervals [282]:
+            xmin = 889.8066211927473 
+            xmax = 891.4476450830418 
+            text = "--EMPTY--" 
+        intervals [283]:
+            xmin = 891.4476450830418 
+            xmax = 893.8625118599597 
+            text = "(ppl)" 
+        intervals [284]:
+            xmin = 893.8625118599597 
+            xmax = 895.5876908215513 
+            text = "[ah] aku tak suka yang jual mahal <s/>" 
+        intervals [285]:
+            xmin = 895.5876908215513 
+            xmax = 896.0534159594181 
+            text = "(ppo)" 
+        intervals [286]:
+            xmin = 896.0534159594181 
+            xmax = 896.5909375 
+            text = "tak boleh <s/>" 
+        intervals [287]:
+            xmin = 896.5909375 
+            xmax = 897.1633026469354 
+            text = "--EMPTY--" 
+        intervals [288]:
+            xmin = 897.1633026469354 
+            xmax = 897.5840780034212 
+            text = "(mm)" 
+        intervals [289]:
+            xmin = 897.5840780034212 
+            xmax = 900.6656835493197 
+            text = "but but it's i mean it's not wrong to jual mahal but you know like bila" 
+        intervals [290]:
+            xmin = 900.6656835493197 
+            xmax = 901.2061875 
+            text = "okay <c/>" 
+        intervals [291]:
+            xmin = 901.2061875 
+            xmax = 901.8648933153041 
+            text = "--EMPTY--" 
+        intervals [292]:
+            xmin = 901.8648933153041 
+            xmax = 904.6840882037586 
+            text = "there's a certain of tonation [tau] <s/> kalau macam <c/> perempuan tu macam" 
+        intervals [293]:
+            xmin = 904.6840882037586 
+            xmax = 906.8376914879963 
+            text = "[ah] biasa [lah] <s/> (mm) okay <s/>" 
+        intervals [294]:
+            xmin = 906.8376914879963 
+            xmax = 908.4986062653962 
+            text = "[ah] (uh) macam gitu aku tak layan [ah] <s/>" 
+        intervals [295]:
+            xmin = 908.4986062653962 
+            xmax = 909.2349631392462 
+            text = "--EMPTY--" 
+        intervals [296]:
+            xmin = 909.2349631392462 
+            xmax = 911.191568546905 
+            text = "kalau macam you friendly towards me it's okay [lah] <s/> macam macam" 
+        intervals [297]:
+            xmin = 911.191568546905 
+            xmax = 914.43 
+            text = "[ah] biasa macam gitu <s/> [ah] gitu <s/> faham tak intonation dia <s/> [ah] gitu <s/>" 
+        intervals [298]:
+            xmin = 914.43 
+            xmax = 914.8477226254558 
+            text = "--EMPTY--" 
+        intervals [299]:
+            xmin = 914.8477226254558 
+            xmax = 916.57 
+            text = "faham faham [lah] [eh] <s/> susah nak explain <s/> okay <s/>" 
+        intervals [300]:
+            xmin = 916.57 
+            xmax = 917.468771040658 
+            text = "hafidz macam mana pula <s/>" 
+        intervals [301]:
+            xmin = 917.468771040658 
+            xmax = 947.0209663505982 
+            text = "--EMPTY--" 
+        intervals [302]:
+            xmin = 947.0209663505982 
+            xmax = 948.085 
+            text = "yes <c/> yes <s/>" 
+        intervals [303]:
+            xmin = 948.085 
+            xmax = 966.8413959195984 
+            text = "--EMPTY--" 
+        intervals [304]:
+            xmin = 966.8413959195984 
+            xmax = 968.44 
+            text = "boisterous tu apa <s/> macam boy [eh] <s/>" 
+        intervals [305]:
+            xmin = 968.44 
+            xmax = 971.5418387072485 
+            text = "--EMPTY--" 
+        intervals [306]:
+            xmin = 971.5418387072485 
+            xmax = 972.5727383306386 
+            text = "[orh] kecoh <s/>" 
+        intervals [307]:
+            xmin = 972.5727383306386 
+            xmax = 973.2857606752269 
+            text = "--EMPTY--" 
+        intervals [308]:
+            xmin = 973.2857606752269 
+            xmax = 974.5060092090356 
+            text = "kecoh is good <s/>" 
+        intervals [309]:
+            xmin = 974.5060092090356 
+            xmax = 1000.6124381186677 
+            text = "--EMPTY--" 
+        intervals [310]:
+            xmin = 1000.6124381186677 
+            xmax = 1001.242875 
+            text = "[oh]" 
+        intervals [311]:
+            xmin = 1001.242875 
+            xmax = 1005.1 
+            text = "--EMPTY--" 
+        intervals [312]:
+            xmin = 1005.1 
+            xmax = 1005.41 
+            text = "[oh]" 
+        intervals [313]:
+            xmin = 1005.41 
+            xmax = 1006.5009959161208 
+            text = "--EMPTY--" 
+        intervals [314]:
+            xmin = 1006.5009959161208 
+            xmax = 1008.0157871994695 
+            text = "aku tak pernah <unk> macam ni <s/>" 
+        intervals [315]:
+            xmin = 1008.0157871994695 
+            xmax = 1008.9835705193867 
+            text = "(uh)" 
+        intervals [316]:
+            xmin = 1008.9835705193867 
+            xmax = 1010.3300516601411 
+            text = "--EMPTY--" 
+        intervals [317]:
+            xmin = 1010.3300516601411 
+            xmax = 1014.4490586308262 
+            text = "i don't know [eh] <s/> my mother <c/> my mother's opinion has always been very important to me [ah] <s/>" 
+        intervals [318]:
+            xmin = 1014.4490586308262 
+            xmax = 1015.017105362082 
+            text = "--EMPTY--" 
+        intervals [319]:
+            xmin = 1015.017105362082 
+            xmax = 1019.6123543106107 
+            text = "even dari segi drama melayu pun kadang kadang <s/> dia kalau cakap bagus <c/> [ah] then i believe that that story is good <s/>" 
+        intervals [320]:
+            xmin = 1019.6123543106107 
+            xmax = 1020.86 
+            text = "--EMPTY--" 
+        intervals [321]:
+            xmin = 1020.86 
+            xmax = 1022.12 
+            text = "i don't why <s/> (uh)" 
+        intervals [322]:
+            xmin = 1022.12 
+            xmax = 1023.74 
+            text = "--EMPTY--" 
+        intervals [323]:
+            xmin = 1023.74 
+            xmax = 1024.09 
+            text = "but" 
+        intervals [324]:
+            xmin = 1024.09 
+            xmax = 1024.6260828541876 
+            text = "--EMPTY--" 
+        intervals [325]:
+            xmin = 1024.6260828541876 
+            xmax = 1025.3414009602134 
+            text = "to be honest <c/>" 
+        intervals [326]:
+            xmin = 1025.3414009602134 
+            xmax = 1026 
+            text = "--EMPTY--" 
+        intervals [327]:
+            xmin = 1026 
+            xmax = 1028.915695728905 
+            text = "my mum ni senang di orang kata apa tu <c/> (uh)" 
+        intervals [328]:
+            xmin = 1028.915695728905 
+            xmax = 1029.294393549742 
+            text = "--EMPTY--" 
+        intervals [329]:
+            xmin = 1029.294393549742 
+            xmax = 1031.98 
+            text = "bukan senang diumpan <c/> macam dia senang suka <s/>" 
+        intervals [330]:
+            xmin = 1031.98 
+            xmax = 1032.584091012446 
+            text = "--EMPTY--" 
+        intervals [331]:
+            xmin = 1032.584091012446 
+            xmax = 1034.5196576522806 
+            text = "because i realise that (um)" 
+        intervals [332]:
+            xmin = 1034.5196576522806 
+            xmax = 1035.16 
+            text = "--EMPTY--" 
+        intervals [333]:
+            xmin = 1035.16 
+            xmax = 1039.51 
+            text = "most of the time bila saya bawa balik (uh) kawan kerja wanita kat rumah" 
+        intervals [334]:
+            xmin = 1039.51 
+            xmax = 1040.155751667752 
+            text = "--EMPTY--" 
+        intervals [335]:
+            xmin = 1040.155751667752 
+            xmax = 1040.9762636128992 
+            text = "she will just" 
+        intervals [336]:
+            xmin = 1040.9762636128992 
+            xmax = 1041.691581718925 
+            text = "--EMPTY--" 
+        intervals [337]:
+            xmin = 1041.691581718925 
+            xmax = 1042.9118302527336 
+            text = "macam [eh] siapa tu <s/>" 
+        intervals [338]:
+            xmin = 1042.9118302527336 
+            xmax = 1048.2201015458504 
+            text = "dah kahwin belum <s/> [ah] that kind of thing <s/> mak berkenan dengan dia <c/> [ah] gitu <s/> tiba [kan] <s/> [ah] tiba <s/>" 
+        intervals [339]:
+            xmin = 1048.2201015458504 
+            xmax = 1050.1112948885989 
+            text = "pernah <s/> so far dah tiga orang dia suka <s/>" 
+        intervals [340]:
+            xmin = 1050.1112948885989 
+            xmax = 1050.5951865485574 
+            text = "--EMPTY--" 
+        intervals [341]:
+            xmin = 1050.5951865485574 
+            xmax = 1056.1494212541693 
+            text = "[ah] tapi ada yang macam dia tak berkenan sangat macam apa ni gini tapi of course my mum dia jenis (uh) orang lama [kan]" 
+        intervals [342]:
+            xmin = 1056.1494212541693 
+            xmax = 1058.030669153365 
+            text = "so dia ada selera dia masing masing [ah] <s/>" 
+        intervals [343]:
+            xmin = 1058.030669153365 
+            xmax = 1060.6815538992253 
+            text = "but to answer to your question (um)" 
+        intervals [344]:
+            xmin = 1060.6815538992253 
+            xmax = 1062.549412712712 
+            text = "it's gonna be very hard <s/> i never" 
+        intervals [345]:
+            xmin = 1062.549412712712 
+            xmax = 1065.6421115828823 
+            text = "saya tak tahu <s/> i i i've not been in that position before" 
+        intervals [346]:
+            xmin = 1065.6421115828823 
+            xmax = 1069.51 
+            text = "but sekarang ni bila berbual ni <c/> i think i will" 
+        intervals [347]:
+            xmin = 1069.51 
+            xmax = 1070.081291593807 
+            text = "--EMPTY--" 
+        intervals [348]:
+            xmin = 1070.081291593807 
+            xmax = 1073.8051534987057 
+            text = "try to talk to my mum and ask <c/> figure out kenapa dia tak suka <s/>" 
+        intervals [349]:
+            xmin = 1073.8051534987057 
+            xmax = 1075.2989060142302 
+            text = "then from there <c/>" 
+        intervals [350]:
+            xmin = 1075.2989060142302 
+            xmax = 1075.77 
+            text = "--EMPTY--" 
+        intervals [351]:
+            xmin = 1075.77 
+            xmax = 1078.5178374913462 
+            text = "i will talk to my (uh) girlfriend" 
+        intervals [352]:
+            xmin = 1078.5178374913462 
+            xmax = 1082.699412632535 
+            text = "cakap dengan dia (uh) the things that she can improve because these are the things that my mum don't like <s/>" 
+        intervals [353]:
+            xmin = 1082.699412632535 
+            xmax = 1084.4100546548275 
+            text = "--EMPTY--" 
+        intervals [354]:
+            xmin = 1084.4100546548275 
+            xmax = 1088.0853371718497 
+            text = "may be a bit <unk> (huh) so nak kena dengar cakap mak you ke <s/>" 
+        intervals [355]:
+            xmin = 1088.0853371718497 
+            xmax = 1088.67 
+            text = "--EMPTY--" 
+        intervals [356]:
+            xmin = 1088.67 
+            xmax = 1089.4138370465814 
+            text = "then sorry girl <s/>" 
+        intervals [357]:
+            xmin = 1089.4138370465814 
+            xmax = 1091.15 
+            text = "--EMPTY--" 
+        intervals [358]:
+            xmin = 1091.15 
+            xmax = 1091.99 
+            text = "then sorry girl <s/>" 
+        intervals [359]:
+            xmin = 1091.99 
+            xmax = 1092.83 
+            text = "--EMPTY--" 
+        intervals [360]:
+            xmin = 1092.83 
+            xmax = 1093.58 
+            text = "yah <s/>" 
+        intervals [361]:
+            xmin = 1093.58 
+            xmax = 1102.9348774731932 
+            text = "--EMPTY--" 
+        intervals [362]:
+            xmin = 1102.9348774731932 
+            xmax = 1103.6081180406077 
+            text = "very welcoming <s/>" 
+        intervals [363]:
+            xmin = 1103.6081180406077 
+            xmax = 1133.67 
+            text = "--EMPTY--" 
+        intervals [364]:
+            xmin = 1133.67 
+            xmax = 1135.5855095852667 
+            text = "(ppl) kau yang ni <s/>" 
+        intervals [365]:
+            xmin = 1135.5855095852667 
+            xmax = 1157.373250540061 
+            text = "--EMPTY--" 
+        intervals [366]:
+            xmin = 1157.373250540061 
+            xmax = 1160.1977993813223 
+            text = "jadi mak kau [kan] <c/> cuma just want to get rid of (uh)" 
+        intervals [367]:
+            xmin = 1160.1977993813223 
+            xmax = 1163.3459648342402 
+            text = "her sons [lah] <s/> macam cepat cepat [lah] kahwin <s/>" 
+        intervals [368]:
+            xmin = 1163.3459648342402 
+            xmax = 1164.1875155435082 
+            text = "pastu pindah [lah] <s/>" 
+        intervals [369]:
+            xmin = 1164.1875155435082 
+            xmax = 1167.2878641069044 
+            text = "--EMPTY--" 
+        intervals [370]:
+            xmin = 1167.2878641069044 
+            xmax = 1169.9808263765617 
+            text = "kay but but kalau sekiranya dia tak suka macam mana <s/>" 
+        intervals [371]:
+            xmin = 1169.9808263765617 
+            xmax = 1179.4800192699392 
+            text = "--EMPTY--" 
+        intervals [372]:
+            xmin = 1179.4800192699392 
+            xmax = 1181.036888082085 
+            text = "(mm) correct <s/>" 
+        intervals [373]:
+            xmin = 1181.036888082085 
+            xmax = 1182.21505907506 
+            text = "--EMPTY--" 
+        intervals [374]:
+            xmin = 1182.21505907506 
+            xmax = 1182.762067036084 
+            text = "yeah <s/>" 
+        intervals [375]:
+            xmin = 1182.762067036084 
+            xmax = 1183.4773851389618 
+            text = "--EMPTY--" 
+        intervals [376]:
+            xmin = 1183.4773851389618 
+            xmax = 1184.361013383693 
+            text = "you will trust her <s/>" 
+        intervals [377]:
+            xmin = 1184.361013383693 
+            xmax = 1192.73415634418 
+            text = "--EMPTY--" 
+        intervals [378]:
+            xmin = 1192.73415634418 
+            xmax = 1193.3022030729358 
+            text = "(mm)" 
+        intervals [379]:
+            xmin = 1193.3022030729358 
+            xmax = 1210.2647028899164 
+            text = "--EMPTY--" 
+        intervals [380]:
+            xmin = 1210.2647028899164 
+            xmax = 1212.3475408953545 
+            text = "no <c/> i mean dia kalau tak nak berubah then it's fine <s/>" 
+        intervals [381]:
+            xmin = 1212.3475408953545 
+            xmax = 1216.4501006030355 
+            text = "(uh) then you work hard [lah] to to make my mum happy [lah] <s/> yah <s/>" 
+        intervals [382]:
+            xmin = 1216.4501006030355 
+            xmax = 1225.2251770999321 
+            text = "--EMPTY--" 
+        intervals [383]:
+            xmin = 1225.2251770999321 
+            xmax = 1225.7721850609562 
+            text = "yah <s/>" 
+        intervals [384]:
+            xmin = 1225.7721850609562 
+            xmax = 1228.9700777561743 
+            text = "--EMPTY--" 
+        intervals [385]:
+            xmin = 1228.9700777561743 
+            xmax = 1230.5690241037832 
+            text = "correct correct <s/> same goes to my mum [lah] <s/>" 
+        intervals [386]:
+            xmin = 1230.5690241037832 
+            xmax = 1232.0838153804655 
+            text = "macam aku cakap tadi <c/> she's very welcoming <s/>" 
+        intervals [387]:
+            xmin = 1232.0838153804655 
+            xmax = 1239.7449858337895 
+            text = "like macam dia dia jarang macam [eh] tak berkenan dengan dini <s/> no <s/> because that's why like even my sedara anak <c/> my sedara sedara sepupu semua" 
+        intervals [388]:
+            xmin = 1239.7449858337895 
+            xmax = 1247.1936646145239 
+            text = "dorang suka datang my house sebab (uh) bawa matair matair dorang because my mum are very open you know <s/> she's she's very welcoming to anyone <s/>" 
+        intervals [389]:
+            xmin = 1247.1936646145239 
+            xmax = 1271.8683115944355 
+            text = "--EMPTY--" 
+        intervals [390]:
+            xmin = 1271.8683115944355 
+            xmax = 1272.6888235359716 
+            text = "(mm)" 
+        intervals [391]:
+            xmin = 1272.6888235359716 
+            xmax = 1273.3620641033858 
+            text = "--EMPTY--" 
+        intervals [392]:
+            xmin = 1273.3620641033858 
+            xmax = 1274.5731275174662 
+            text = "betul betul betul <s/>" 
+        intervals [393]:
+            xmin = 1274.5731275174662 
+            xmax = 1281.2213781206826 
+            text = "(uh) that time pressure sebab my sister kahwin so of course [lah] orang tanya ni bila lagi nak kahwin <c/> bila lagi nak kahwin <s/> macam" 
+        intervals [394]:
+            xmin = 1281.2213781206826 
+            xmax = 1282.1470839008773 
+            text = "--EMPTY--" 
+        intervals [395]:
+            xmin = 1282.1470839008773 
+            xmax = 1283.1779835197306 
+            text = "aku stress <s/>" 
+        intervals [396]:
+            xmin = 1283.1779835197306 
+            xmax = 1285.366015363827 
+            text = "<unk> but then <unk> i'm just like okay <s/>" 
+        intervals [397]:
+            xmin = 1285.366015363827 
+            xmax = 1287.64 
+            text = "--EMPTY--" 
+        intervals [398]:
+            xmin = 1287.64 
+            xmax = 1290.1968968464362 
+            text = "my mum in fact (uh) selalu nanti dia back me up <s/>" 
+        intervals [399]:
+            xmin = 1290.1968968464362 
+            xmax = 1295.0568521924583 
+            text = "kalau macam sedara tanya atau mak cik mak cik tanya ni bila nak kahwin lagi ni <c/> anak lagi satu ni <s/>" 
+        intervals [400]:
+            xmin = 1295.0568521924583 
+            xmax = 1296.2783749999999 
+            text = "then mak (ppc)" 
+        intervals [401]:
+            xmin = 1296.2783749999999 
+            xmax = 1296.4911823384145 
+            text = "--EMPTY--" 
+        intervals [402]:
+            xmin = 1296.4911823384145 
+            xmax = 1298.18 
+            text = "[ah] hafidz pernah dengar <s/>" 
+        intervals [403]:
+            xmin = 1298.18 
+            xmax = 1298.6334427068468 
+            text = "--EMPTY--" 
+        intervals [404]:
+            xmin = 1298.6334427068468 
+            xmax = 1302.672886111333 
+            text = "nanti dia cakap dia nak jaga aku <s/> [ah] tak apa [lah] <c/> biar [lah] jaga aku dulu <s/> [ah] gitu <s/> so" 
+        intervals [405]:
+            xmin = 1302.672886111333 
+            xmax = 1309.762950836915 
+            text = "--EMPTY--" 
+        intervals [406]:
+            xmin = 1309.762950836915 
+            xmax = 1310.6255403139146 
+            text = "(mm)" 
+        intervals [407]:
+            xmin = 1310.6255403139146 
+            xmax = 1311.177902240152 
+            text = "--EMPTY--" 
+        intervals [408]:
+            xmin = 1311.177902240152 
+            xmax = 1311.8932203430297 
+            text = "yah [lah] <s/>" 
+        intervals [409]:
+            xmin = 1311.8932203430297 
+            xmax = 1312.650615981371 
+            text = "--EMPTY--" 
+        intervals [410]:
+            xmin = 1312.650615981371 
+            xmax = 1316.4796717085399 
+            text = "so personally i'm i'm <c/> we are <c/> i think we are prioritising our parents for now [lah] <s/>" 
+        intervals [411]:
+            xmin = 1316.4796717085399 
+            xmax = 1317.22 
+            text = "--EMPTY--" 
+        intervals [412]:
+            xmin = 1317.22 
+            xmax = 1321.3625761750723 
+            text = "but then again kita tak boleh cakap lepas <s/> mana tahu jodoh sampai <c/> we c~ we we get married so yah <s/>" 
+        intervals [413]:
+            xmin = 1321.3625761750723 
+            xmax = 1328.0739437974387 
+            text = "--EMPTY--" 
+        intervals [414]:
+            xmin = 1328.0739437974387 
+            xmax = 1329.7747499999998 
+            text = "yas <s/>" 
+        intervals [415]:
+            xmin = 1329.7747499999998 
+            xmax = 1331.3559915635835 
+            text = "--EMPTY--" 
+        intervals [416]:
+            xmin = 1331.3559915635835 
+            xmax = 1335.5813409811747 
+            text = "i think bagus [tau] kita buat episode ni <s/> sebab apa <c/> kalau orang tanya lagi bila nak kahwin <c/> kita kasi [je] spotify ni <s/>" 
+        intervals [417]:
+            xmin = 1335.5813409811747 
+            xmax = 1336.309125 
+            text = "--EMPTY--" 
+        intervals [418]:
+            xmin = 1336.309125 
+            xmax = 1336.8681487092883 
+            text = "[ah]" 
+        intervals [419]:
+            xmin = 1336.8681487092883 
+            xmax = 1337.6753953616121 
+            text = "--EMPTY--" 
+        intervals [420]:
+            xmin = 1337.6753953616121 
+            xmax = 1338.7371561409295 
+            text = "listen <s/> (ppl)" 
+        intervals [421]:
+            xmin = 1338.7371561409295 
+            xmax = 1339.5849999999998 
+            text = "penat [lah] <s/>" 
+        intervals [422]:
+            xmin = 1339.5849999999998 
+            xmax = 1340.5044126303922 
+            text = "--EMPTY--" 
+        intervals [423]:
+            xmin = 1340.5044126303922 
+            xmax = 1341.8508937652207 
+            text = "penat nak jawab <s/>" 
+        intervals [424]:
+            xmin = 1341.8508937652207 
+            xmax = 1343.3236075064397 
+            text = "(uh) yes <c/> five years <s/> yes <s/>" 
+        intervals [425]:
+            xmin = 1343.3236075064397 
+            xmax = 1357.5798569328492 
+            text = "--EMPTY--" 
+        intervals [426]:
+            xmin = 1357.5798569328492 
+            xmax = 1358.4845239453123 
+            text = "yes <s/>" 
+        intervals [427]:
+            xmin = 1358.4845239453123 
+            xmax = 1359.7587065264074 
+            text = "--EMPTY--" 
+        intervals [428]:
+            xmin = 1359.7587065264074 
+            xmax = 1360.200520648773 
+            text = "yes <s/>" 
+        intervals [429]:
+            xmin = 1360.200520648773 
+            xmax = 1364.6186618724296 
+            text = "yah please <c/> i mean like <c/> i mean (uh) like what hafidz cakap <c/> we are <c/>" 
+        intervals [430]:
+            xmin = 1364.6186618724296 
+            xmax = 1368.7212215801105 
+            text = "keberanian tu untuk d_m kita <c/> untuk meluahkan perasaan kat pada kita" 
+        intervals [431]:
+            xmin = 1368.7212215801105 
+            xmax = 1370.2149740890611 
+            text = "we really salute <s/> yah <s/>" 
+        intervals [432]:
+            xmin = 1370.2149740890611 
+            xmax = 1371.9933231818404 
+            text = "(er) very heartwarming <s/> i cannot even do it myself <s/>" 
+        intervals [433]:
+            xmin = 1371.9933231818404 
+            xmax = 1375.4929322661137 
+            text = "so bila kita baca tu i'm very flattered <s/> thank you very much <s/>" 
+        intervals [434]:
+            xmin = 1375.4929322661137 
+            xmax = 1376.6738757826924 
+            text = "tapi (um)" 
+        intervals [435]:
+            xmin = 1376.6738757826924 
+            xmax = 1378.0842342707726 
+            text = "--EMPTY--" 
+        intervals [436]:
+            xmin = 1378.0842342707726 
+            xmax = 1381.8080961592832 
+            text = "sayangnya kita tak dapat membalas [lah] (uh) perasaan tu <s/>" 
+        intervals [437]:
+            xmin = 1381.8080961592832 
+            xmax = 1385.7423457251107 
+            text = "--EMPTY--" 
+        intervals [438]:
+            xmin = 1385.7423457251107 
+            xmax = 1386.4576638279884 
+            text = "(mm)" 
+        intervals [439]:
+            xmin = 1386.4576638279884 
+            xmax = 1387.0888268599394 
+            text = "--EMPTY--" 
+        intervals [440]:
+            xmin = 1387.0888268599394 
+            xmax = 1388.3185454867673 
+            text = "but we hope that" 
+        intervals [441]:
+            xmin = 1388.3185454867673 
+            xmax = 1396.47 
+            text = "and we hope that you guys where we are coming from [lah] and we really (uh) treasure dan kita hargai segala sokongan anda semua okay <s/>" 
+        intervals [442]:
+            xmin = 1396.47 
+            xmax = 1397.493831772772 
+            text = "[mm-mm]" 
+        intervals [443]:
+            xmin = 1397.493831772772 
+            xmax = 1401.67 
+            text = "--EMPTY--" 
+        intervals [444]:
+            xmin = 1401.67 
+            xmax = 1402.46 
+            text = "[ah] mana tahu <s/>" 
+        intervals [445]:
+            xmin = 1402.46 
+            xmax = 1402.793217686176 
+            text = "--EMPTY--" 
+        intervals [446]:
+            xmin = 1402.793217686176 
+            xmax = 1405.6147961172073 
+            text = "[ah] betul <s/> so it's it's" 
+        intervals [447]:
+            xmin = 1405.6147961172073 
+            xmax = 1409.0020377220105 
+            text = "it's not like we are closing the doors for opportunities [eh] <s/> tak ada <s/> [ah]" 
+        intervals [448]:
+            xmin = 1409.0020377220105 
+            xmax = 1413.9591525269643 
+            text = "kalau nak d_m <c/> nak luahkan perasaan <c/> taruk su~ tul~ layan surat cinta <c/> silakan <s/>" 
+        intervals [449]:
+            xmin = 1413.9591525269643 
+            xmax = 1418.3562549828891 
+            text = "tapi kalau tak dijawab tu <c/> jangan kecil hati [eh] <c/> we still love you guys but (um) (ppo)" 
+        intervals [450]:
+            xmin = 1418.3562549828891 
+            xmax = 1420.9861009493513 
+            text = "(uh) i~ in in this sense [lah] as a <c/> as a fans <s/>" 
+        intervals [451]:
+            xmin = 1420.9861009493513 
+            xmax = 1421.9614454425314 
+            text = "fans <s/>" 
+        intervals [452]:
+            xmin = 1421.9614454425314 
+            xmax = 1426.8138396110317 
+            text = "--EMPTY--" 
+        intervals [453]:
+            xmin = 1426.8138396110317 
+            xmax = 1428.181359513592 
+            text = "saya zuhairi idris <s/>" 
+        intervals [454]:
+            xmin = 1428.181359513592 
+            xmax = 1430.1590036803716 
+            text = "--EMPTY--" 
+        intervals [455]:
+            xmin = 1430.1590036803716 
+            xmax = 1431.91 
+            text = "the podcast <s/>" 

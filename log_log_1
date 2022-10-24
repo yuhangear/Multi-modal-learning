@@ -1,0 +1,901 @@
+# python3 /home3/yuhang001/espnet/egs2/librispeech_100/asr1/espnet2/bin/asr_train.py --use_preprocessor true --ngpu 1 --bpemodel data/en_token_list/bpe_unigram5000/bpe.model --token_type bpe --token_list data/en_token_list/bpe_unigram5000/tokens.txt --non_linguistic_symbols none --cleaner none --g2p none --valid_data_path_and_name_and_type dump/raw/dev/wav.scp,speech,kaldi_ark --valid_data_path_and_name_and_type dump/raw/dev/text,text,text --valid_data_path_and_name_and_type dump/raw/dev/phone_text_with_id,text_phone,text --valid_shape_file exp/asr_stats_raw_en_bpe5000_sp/valid/speech_shape --valid_shape_file exp/asr_stats_raw_en_bpe5000_sp/valid/text_shape.bpe --resume false --init_param --ignore_init_mismatch false --fold_length 80000 --fold_length 150 --output_dir exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic --config conf/train_asr.yaml --frontend_conf fs=16k --normalize=global_mvn --normalize_conf stats_file=exp/asr_stats_raw_en_bpe5000_sp/train/feats_stats.npz --train_data_path_and_name_and_type dump/raw/train_clean_100_sp/wav.scp,speech,kaldi_ark --train_data_path_and_name_and_type dump/raw/train_clean_100_sp/text,text,text --train_data_path_and_name_and_type dump/raw/train_clean_100_sp/phone_text_with_id,text_phone,text --train_shape_file exp/asr_stats_raw_en_bpe5000_sp/train/speech_shape --train_shape_file exp/asr_stats_raw_en_bpe5000_sp/train/text_shape.bpe 
+# Invoked at Mon Apr 25 05:01:01 SGT 2022 from node06
+#
+# Started at Mon Apr 25 05:01:02 +08 2022 on node01
+/home3/yuhang001/w2021/anaconda/envs/final_esp/bin/python3 /home3/yuhang001/espnet/egs2/librispeech_100/asr1/espnet2/bin/asr_train.py --use_preprocessor true --ngpu 1 --bpemodel data/en_token_list/bpe_unigram5000/bpe.model --token_type bpe --token_list data/en_token_list/bpe_unigram5000/tokens.txt --non_linguistic_symbols none --cleaner none --g2p none --valid_data_path_and_name_and_type dump/raw/dev/wav.scp,speech,kaldi_ark --valid_data_path_and_name_and_type dump/raw/dev/text,text,text --valid_data_path_and_name_and_type dump/raw/dev/phone_text_with_id,text_phone,text --valid_shape_file exp/asr_stats_raw_en_bpe5000_sp/valid/speech_shape --valid_shape_file exp/asr_stats_raw_en_bpe5000_sp/valid/text_shape.bpe --resume false --init_param --ignore_init_mismatch false --fold_length 80000 --fold_length 150 --output_dir exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic --config conf/train_asr.yaml --frontend_conf fs=16k --normalize=global_mvn --normalize_conf stats_file=exp/asr_stats_raw_en_bpe5000_sp/train/feats_stats.npz --train_data_path_and_name_and_type dump/raw/train_clean_100_sp/wav.scp,speech,kaldi_ark --train_data_path_and_name_and_type dump/raw/train_clean_100_sp/text,text,text --train_data_path_and_name_and_type dump/raw/train_clean_100_sp/phone_text_with_id,text_phone,text --train_shape_file exp/asr_stats_raw_en_bpe5000_sp/train/speech_shape --train_shape_file exp/asr_stats_raw_en_bpe5000_sp/train/text_shape.bpe
+[node01] 2022-04-25 05:03:13,024 (asr:411) INFO: Vocabulary size: 5000
+[node01] 2022-04-25 05:04:46,469 (abs_task:1158) INFO: pytorch.version=1.10.1, cuda.available=True, cudnn.version=8200, cudnn.benchmark=False, cudnn.deterministic=False
+[node01] 2022-04-25 05:04:46,479 (abs_task:1159) INFO: Model structure:
+ESPnetASRModel(
+  (frontend): DefaultFrontend(
+    (stft): Stft(n_fft=512, win_length=400, hop_length=160, center=True, normalized=False, onesided=True)
+    (frontend): Frontend()
+    (logmel): LogMel(sr=16000, n_fft=512, n_mels=80, fmin=0, fmax=8000.0, htk=False)
+  )
+  (specaug): SpecAug(
+    (time_warp): TimeWarp(window=5, mode=bicubic)
+    (freq_mask): MaskAlongAxis(mask_width_range=[0, 27], num_mask=2, axis=freq)
+    (time_mask): MaskAlongAxisVariableMaxWidth(mask_width_ratio_range=[0.0, 0.05], num_mask=5, axis=time)
+  )
+  (normalize): GlobalMVN(stats_file=exp/asr_stats_raw_en_bpe5000_sp/train/feats_stats.npz, norm_means=True, norm_vars=True)
+  (encoder): ConformerEncoder(
+    (embed): Conv2dSubsampling(
+      (conv): Sequential(
+        (0): Conv2d(1, 256, kernel_size=(3, 3), stride=(2, 2))
+        (1): ReLU()
+        (2): Conv2d(256, 256, kernel_size=(3, 3), stride=(2, 2))
+        (3): ReLU()
+      )
+      (out): Sequential(
+        (0): Linear(in_features=4864, out_features=256, bias=True)
+        (1): RelPositionalEncoding(
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+      )
+    )
+    (encoders): MultiSequential(
+      (0): EncoderLayer(
+        (self_attn): RelPositionMultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear_pos): Linear(in_features=256, out_features=256, bias=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=1024, bias=True)
+          (w_2): Linear(in_features=1024, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (feed_forward_macaron): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=1024, bias=True)
+          (w_2): Linear(in_features=1024, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (conv_module): ConvolutionModule(
+          (pointwise_conv1): Conv1d(256, 512, kernel_size=(1,), stride=(1,))
+          (depthwise_conv): Conv1d(256, 256, kernel_size=(31,), stride=(1,), padding=(15,), groups=256)
+          (norm): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (pointwise_conv2): Conv1d(256, 256, kernel_size=(1,), stride=(1,))
+          (activation): Swish()
+        )
+        (norm_ff): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_mha): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_ff_macaron): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_conv): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_final): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (1): EncoderLayer(
+        (self_attn): RelPositionMultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear_pos): Linear(in_features=256, out_features=256, bias=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=1024, bias=True)
+          (w_2): Linear(in_features=1024, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (feed_forward_macaron): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=1024, bias=True)
+          (w_2): Linear(in_features=1024, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (conv_module): ConvolutionModule(
+          (pointwise_conv1): Conv1d(256, 512, kernel_size=(1,), stride=(1,))
+          (depthwise_conv): Conv1d(256, 256, kernel_size=(31,), stride=(1,), padding=(15,), groups=256)
+          (norm): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (pointwise_conv2): Conv1d(256, 256, kernel_size=(1,), stride=(1,))
+          (activation): Swish()
+        )
+        (norm_ff): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_mha): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_ff_macaron): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_conv): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_final): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (2): EncoderLayer(
+        (self_attn): RelPositionMultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear_pos): Linear(in_features=256, out_features=256, bias=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=1024, bias=True)
+          (w_2): Linear(in_features=1024, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (feed_forward_macaron): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=1024, bias=True)
+          (w_2): Linear(in_features=1024, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (conv_module): ConvolutionModule(
+          (pointwise_conv1): Conv1d(256, 512, kernel_size=(1,), stride=(1,))
+          (depthwise_conv): Conv1d(256, 256, kernel_size=(31,), stride=(1,), padding=(15,), groups=256)
+          (norm): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (pointwise_conv2): Conv1d(256, 256, kernel_size=(1,), stride=(1,))
+          (activation): Swish()
+        )
+        (norm_ff): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_mha): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_ff_macaron): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_conv): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_final): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (3): EncoderLayer(
+        (self_attn): RelPositionMultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear_pos): Linear(in_features=256, out_features=256, bias=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=1024, bias=True)
+          (w_2): Linear(in_features=1024, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (feed_forward_macaron): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=1024, bias=True)
+          (w_2): Linear(in_features=1024, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (conv_module): ConvolutionModule(
+          (pointwise_conv1): Conv1d(256, 512, kernel_size=(1,), stride=(1,))
+          (depthwise_conv): Conv1d(256, 256, kernel_size=(31,), stride=(1,), padding=(15,), groups=256)
+          (norm): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (pointwise_conv2): Conv1d(256, 256, kernel_size=(1,), stride=(1,))
+          (activation): Swish()
+        )
+        (norm_ff): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_mha): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_ff_macaron): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_conv): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_final): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (4): EncoderLayer(
+        (self_attn): RelPositionMultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear_pos): Linear(in_features=256, out_features=256, bias=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=1024, bias=True)
+          (w_2): Linear(in_features=1024, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (feed_forward_macaron): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=1024, bias=True)
+          (w_2): Linear(in_features=1024, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (conv_module): ConvolutionModule(
+          (pointwise_conv1): Conv1d(256, 512, kernel_size=(1,), stride=(1,))
+          (depthwise_conv): Conv1d(256, 256, kernel_size=(31,), stride=(1,), padding=(15,), groups=256)
+          (norm): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (pointwise_conv2): Conv1d(256, 256, kernel_size=(1,), stride=(1,))
+          (activation): Swish()
+        )
+        (norm_ff): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_mha): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_ff_macaron): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_conv): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_final): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (5): EncoderLayer(
+        (self_attn): RelPositionMultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear_pos): Linear(in_features=256, out_features=256, bias=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=1024, bias=True)
+          (w_2): Linear(in_features=1024, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (feed_forward_macaron): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=1024, bias=True)
+          (w_2): Linear(in_features=1024, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (conv_module): ConvolutionModule(
+          (pointwise_conv1): Conv1d(256, 512, kernel_size=(1,), stride=(1,))
+          (depthwise_conv): Conv1d(256, 256, kernel_size=(31,), stride=(1,), padding=(15,), groups=256)
+          (norm): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (pointwise_conv2): Conv1d(256, 256, kernel_size=(1,), stride=(1,))
+          (activation): Swish()
+        )
+        (norm_ff): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_mha): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_ff_macaron): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_conv): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_final): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (6): EncoderLayer(
+        (self_attn): RelPositionMultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear_pos): Linear(in_features=256, out_features=256, bias=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=1024, bias=True)
+          (w_2): Linear(in_features=1024, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (feed_forward_macaron): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=1024, bias=True)
+          (w_2): Linear(in_features=1024, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (conv_module): ConvolutionModule(
+          (pointwise_conv1): Conv1d(256, 512, kernel_size=(1,), stride=(1,))
+          (depthwise_conv): Conv1d(256, 256, kernel_size=(31,), stride=(1,), padding=(15,), groups=256)
+          (norm): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (pointwise_conv2): Conv1d(256, 256, kernel_size=(1,), stride=(1,))
+          (activation): Swish()
+        )
+        (norm_ff): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_mha): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_ff_macaron): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_conv): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_final): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (7): EncoderLayer(
+        (self_attn): RelPositionMultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear_pos): Linear(in_features=256, out_features=256, bias=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=1024, bias=True)
+          (w_2): Linear(in_features=1024, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (feed_forward_macaron): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=1024, bias=True)
+          (w_2): Linear(in_features=1024, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (conv_module): ConvolutionModule(
+          (pointwise_conv1): Conv1d(256, 512, kernel_size=(1,), stride=(1,))
+          (depthwise_conv): Conv1d(256, 256, kernel_size=(31,), stride=(1,), padding=(15,), groups=256)
+          (norm): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (pointwise_conv2): Conv1d(256, 256, kernel_size=(1,), stride=(1,))
+          (activation): Swish()
+        )
+        (norm_ff): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_mha): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_ff_macaron): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_conv): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_final): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (8): EncoderLayer(
+        (self_attn): RelPositionMultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear_pos): Linear(in_features=256, out_features=256, bias=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=1024, bias=True)
+          (w_2): Linear(in_features=1024, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (feed_forward_macaron): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=1024, bias=True)
+          (w_2): Linear(in_features=1024, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (conv_module): ConvolutionModule(
+          (pointwise_conv1): Conv1d(256, 512, kernel_size=(1,), stride=(1,))
+          (depthwise_conv): Conv1d(256, 256, kernel_size=(31,), stride=(1,), padding=(15,), groups=256)
+          (norm): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (pointwise_conv2): Conv1d(256, 256, kernel_size=(1,), stride=(1,))
+          (activation): Swish()
+        )
+        (norm_ff): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_mha): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_ff_macaron): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_conv): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_final): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (9): EncoderLayer(
+        (self_attn): RelPositionMultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear_pos): Linear(in_features=256, out_features=256, bias=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=1024, bias=True)
+          (w_2): Linear(in_features=1024, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (feed_forward_macaron): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=1024, bias=True)
+          (w_2): Linear(in_features=1024, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (conv_module): ConvolutionModule(
+          (pointwise_conv1): Conv1d(256, 512, kernel_size=(1,), stride=(1,))
+          (depthwise_conv): Conv1d(256, 256, kernel_size=(31,), stride=(1,), padding=(15,), groups=256)
+          (norm): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (pointwise_conv2): Conv1d(256, 256, kernel_size=(1,), stride=(1,))
+          (activation): Swish()
+        )
+        (norm_ff): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_mha): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_ff_macaron): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_conv): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_final): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (10): EncoderLayer(
+        (self_attn): RelPositionMultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear_pos): Linear(in_features=256, out_features=256, bias=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=1024, bias=True)
+          (w_2): Linear(in_features=1024, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (feed_forward_macaron): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=1024, bias=True)
+          (w_2): Linear(in_features=1024, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (conv_module): ConvolutionModule(
+          (pointwise_conv1): Conv1d(256, 512, kernel_size=(1,), stride=(1,))
+          (depthwise_conv): Conv1d(256, 256, kernel_size=(31,), stride=(1,), padding=(15,), groups=256)
+          (norm): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (pointwise_conv2): Conv1d(256, 256, kernel_size=(1,), stride=(1,))
+          (activation): Swish()
+        )
+        (norm_ff): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_mha): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_ff_macaron): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_conv): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_final): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (11): EncoderLayer(
+        (self_attn): RelPositionMultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (linear_pos): Linear(in_features=256, out_features=256, bias=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=1024, bias=True)
+          (w_2): Linear(in_features=1024, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (feed_forward_macaron): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=1024, bias=True)
+          (w_2): Linear(in_features=1024, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): Swish()
+        )
+        (conv_module): ConvolutionModule(
+          (pointwise_conv1): Conv1d(256, 512, kernel_size=(1,), stride=(1,))
+          (depthwise_conv): Conv1d(256, 256, kernel_size=(31,), stride=(1,), padding=(15,), groups=256)
+          (norm): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+          (pointwise_conv2): Conv1d(256, 256, kernel_size=(1,), stride=(1,))
+          (activation): Swish()
+        )
+        (norm_ff): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_mha): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_ff_macaron): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_conv): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm_final): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+    )
+    (after_norm): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+  )
+  (decoder): TransformerDecoder(
+    (embed): Sequential(
+      (0): Embedding(5000, 256)
+      (1): PositionalEncoding(
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+    )
+    (after_norm): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+    (output_layer): Linear(in_features=256, out_features=5000, bias=True)
+    (decoders): MultiSequential(
+      (0): DecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (src_attn): MultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): ReLU()
+        )
+        (norm1): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm2): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm3): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (1): DecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (src_attn): MultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): ReLU()
+        )
+        (norm1): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm2): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm3): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (2): DecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (src_attn): MultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): ReLU()
+        )
+        (norm1): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm2): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm3): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (3): DecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (src_attn): MultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): ReLU()
+        )
+        (norm1): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm2): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm3): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (4): DecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (src_attn): MultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): ReLU()
+        )
+        (norm1): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm2): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm3): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+      (5): DecoderLayer(
+        (self_attn): MultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (src_attn): MultiHeadedAttention(
+          (linear_q): Linear(in_features=256, out_features=256, bias=True)
+          (linear_k): Linear(in_features=256, out_features=256, bias=True)
+          (linear_v): Linear(in_features=256, out_features=256, bias=True)
+          (linear_out): Linear(in_features=256, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+        )
+        (feed_forward): PositionwiseFeedForward(
+          (w_1): Linear(in_features=256, out_features=2048, bias=True)
+          (w_2): Linear(in_features=2048, out_features=256, bias=True)
+          (dropout): Dropout(p=0.1, inplace=False)
+          (activation): ReLU()
+        )
+        (norm1): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm2): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (norm3): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+        (dropout): Dropout(p=0.1, inplace=False)
+      )
+    )
+  )
+  (criterion_att): LabelSmoothingLoss(
+    (criterion): KLDivLoss()
+  )
+  (ctc): CTC(
+    (ctc_lo): Linear(in_features=256, out_features=5000, bias=True)
+    (ctc_loss): CTCLoss()
+  )
+  (ctc_phone): CTC(
+    (ctc_lo): Linear(in_features=256, out_features=89, bias=True)
+    (ctc_loss): CTCLoss()
+  )
+  (ctc_phone_other): CTC(
+    (ctc_lo): Linear(in_features=256, out_features=89, bias=True)
+    (ctc_loss): CTCLoss()
+  )
+  (phone_embedding1): Embedding(89, 256)
+  (phone_embedding2): Embedding(89, 256)
+  (phone_embedding3): Embedding(89, 256)
+  (phone_embedding4): Embedding(89, 256)
+  (phone_embedding5): Embedding(89, 256)
+  (phone_embedding6): Embedding(89, 256)
+  (phone_embedding7): Embedding(89, 256)
+  (phone_embedding8): Embedding(89, 256)
+  (after_norm): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+  (norm1): LayerNorm((256,), eps=1e-05, elementwise_affine=True)
+  (line_emb1): Linear(in_features=256, out_features=89, bias=True)
+  (line_emb2): Linear(in_features=256, out_features=89, bias=True)
+  (line_emb3): Linear(in_features=256, out_features=89, bias=True)
+  (line_emb4): Linear(in_features=256, out_features=89, bias=True)
+  (line_emb5): Linear(in_features=256, out_features=89, bias=True)
+  (line_emb6): Linear(in_features=256, out_features=89, bias=True)
+  (line_emb7): Linear(in_features=256, out_features=89, bias=True)
+  (line_emb8): Linear(in_features=256, out_features=89, bias=True)
+  (line_phone): Linear(in_features=256, out_features=256, bias=True)
+  (change_embedding): EncoderLayer(
+    (self_attn): RelPositionMultiHeadedAttention(
+      (linear_q): Linear(in_features=256, out_features=256, bias=True)
+      (linear_k): Linear(in_features=256, out_features=256, bias=True)
+      (linear_v): Linear(in_features=256, out_features=256, bias=True)
+      (linear_out): Linear(in_features=256, out_features=256, bias=True)
+      (dropout): Dropout(p=0.1, inplace=False)
+      (linear_pos): Linear(in_features=256, out_features=256, bias=False)
+    )
+    (feed_forward): PositionwiseFeedForward(
+      (w_1): Linear(in_features=256, out_features=1024, bias=True)
+      (w_2): Linear(in_features=1024, out_features=256, bias=True)
+      (dropout): Dropout(p=0.1, inplace=False)
+      (activation): Swish()
+    )
+    (feed_forward_macaron): PositionwiseFeedForward(
+      (w_1): Linear(in_features=256, out_features=1024, bias=True)
+      (w_2): Linear(in_features=1024, out_features=256, bias=True)
+      (dropout): Dropout(p=0.1, inplace=False)
+      (activation): Swish()
+    )
+    (conv_module): ConvolutionModule(
+      (pointwise_conv1): Conv1d(256, 512, kernel_size=(1,), stride=(1,))
+      (depthwise_conv): Conv1d(256, 256, kernel_size=(31,), stride=(1,), padding=(15,), groups=256)
+      (norm): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+      (pointwise_conv2): Conv1d(256, 256, kernel_size=(1,), stride=(1,))
+      (activation): Swish()
+    )
+    (norm_ff): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+    (norm_mha): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+    (norm_ff_macaron): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+    (norm_conv): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+    (norm_final): LayerNorm((256,), eps=1e-12, elementwise_affine=True)
+    (dropout): Dropout(p=0.1, inplace=False)
+  )
+)
+
+Model summary:
+    Class Name: ESPnetASRModel
+    Total Number of model parameters: 36.30 M
+    Number of trainable parameters: 36.30 M (100.0%)
+    Size: 145.19 MB
+    Type: torch.float32
+[node01] 2022-04-25 05:04:46,479 (abs_task:1162) INFO: Optimizer:
+Adam (
+Parameter Group 0
+    amsgrad: False
+    betas: (0.9, 0.999)
+    eps: 1e-08
+    initial_lr: 0.002
+    lr: 1.3333333333333336e-07
+    weight_decay: 1e-06
+)
+[node01] 2022-04-25 05:04:46,479 (abs_task:1163) INFO: Scheduler: WarmupLR(warmup_steps=15000)
+[node01] 2022-04-25 05:04:46,481 (abs_task:1172) INFO: Saving the configuration in exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic/config.yaml
+[node01] 2022-04-25 05:05:08,309 (abs_task:1556) INFO: [train] dataset:
+ESPnetDataset(
+  speech: {"path": "dump/raw/train_clean_100_sp/wav.scp", "type": "kaldi_ark"}
+  text: {"path": "dump/raw/train_clean_100_sp/text", "type": "text"}
+  text_phone: {"path": "dump/raw/train_clean_100_sp/phone_text_with_id", "type": "text"}
+  preprocess: <espnet2.train.preprocessor.CommonPreprocessor object at 0x2aabb5cbc3a0>)
+[node01] 2022-04-25 05:05:08,310 (abs_task:1557) INFO: [train] Batch sampler: NumElementsBatchSampler(N-batch=1280, batch_bins=30000000, sort_in_batch=descending, sort_batch=descending)
+[node01] 2022-04-25 05:05:08,310 (abs_task:1558) INFO: [train] mini-batch sizes summary: N-batch=1280, mean=66.9, min=4, max=327
+[node01] 2022-04-25 05:05:10,050 (abs_task:1556) INFO: [valid] dataset:
+ESPnetDataset(
+  speech: {"path": "dump/raw/dev/wav.scp", "type": "kaldi_ark"}
+  text: {"path": "dump/raw/dev/text", "type": "text"}
+  text_phone: {"path": "dump/raw/dev/phone_text_with_id", "type": "text"}
+  preprocess: <espnet2.train.preprocessor.CommonPreprocessor object at 0x2aabb65b3ee0>)
+[node01] 2022-04-25 05:05:10,050 (abs_task:1557) INFO: [valid] Batch sampler: NumElementsBatchSampler(N-batch=25, batch_bins=30000000, sort_in_batch=descending, sort_batch=descending)
+[node01] 2022-04-25 05:05:10,050 (abs_task:1558) INFO: [valid] mini-batch sizes summary: N-batch=25, mean=107.8, min=30, max=282
+[node01] 2022-04-25 05:05:14,486 (trainer:281) INFO: 1/70epoch started
+/home3/yuhang001/espnet/egs2/librispeech_100/asr1/espnet2/layers/stft.py:166: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  olens = (ilens - self.n_fft) // self.hop_length + 1
+[node01] 2022-04-25 05:05:54,986 (trainer:619) WARNING: The grad norm is inf. Skipping updating the model.
+[node01] 2022-04-25 05:05:58,438 (trainer:619) WARNING: The grad norm is inf. Skipping updating the model.
+[node01] 2022-04-25 05:11:48,152 (trainer:677) INFO: 1epoch:train:1-400batch: iter_time=0.066, forward_time=0.440, loss_ctc=20.937, loss_interctc_layer8=49.029, loss_att=13.078, acc=0.940, loss_vq_vae=4.619, kaojin_ctc=23.123, loss_ic_other=186.434, loss=6.864, backward_time=0.308, optim0_lr0=6.601e-06, train_time=3.935, optim_step_time=0.058
+[node01] 2022-04-25 05:17:24,638 (trainer:677) INFO: 1epoch:train:401-800batch: iter_time=4.826e-04, forward_time=0.366, loss_ctc=21.338, loss_interctc_layer8=50.288, loss_att=13.253, acc=0.940, loss_vq_vae=4.346, kaojin_ctc=12.828, loss_ic_other=93.720, loss=5.407, backward_time=0.301, optim0_lr0=1.993e-05, train_time=3.365, optim_step_time=0.056
+[node01] 2022-04-25 05:22:59,698 (trainer:677) INFO: 1epoch:train:801-1200batch: iter_time=4.878e-04, forward_time=0.365, loss_ctc=20.017, loss_interctc_layer8=47.517, loss_att=12.466, acc=0.941, loss_vq_vae=4.237, kaojin_ctc=9.146, loss_ic_other=71.594, loss=4.804, backward_time=0.299, optim0_lr0=3.327e-05, train_time=3.350, optim_step_time=0.056
+[node01] 2022-04-25 05:24:31,310 (trainer:335) INFO: 1epoch results: [train] iter_time=0.021, forward_time=0.389, loss_ctc=20.730, loss_interctc_layer8=48.894, loss_att=12.910, acc=0.940, loss_vq_vae=4.384, kaojin_ctc=14.580, loss_ic_other=114.185, loss=5.633, backward_time=0.303, optim0_lr0=2.127e-05, train_time=3.539, optim_step_time=0.056, time=18 minutes and 52.74 seconds, total_count=1280, gpu_max_cached_mem_GB=33.656, [valid] loss_ctc=13.490, cer_ctc=0.033, loss_interctc_layer8=12.503, cer_interctc_layer8=0.042, loss_att=7.760, acc=0.939, cer=0.036, wer=0.560, loss_vq_vae=3.614, kaojin_ctc=9.492, loss_ic_other=19.939, loss=9.228, time=24.06 seconds, total_count=25, gpu_max_cached_mem_GB=40.254
+[node01] 2022-04-25 05:24:41,470 (trainer:383) INFO: The best model has been updated: valid.acc
+[node01] 2022-04-25 05:24:41,471 (trainer:269) INFO: 2/70epoch started. Estimated time to finish: 22 hours, 22 minutes and 1.92 seconds
+/home3/yuhang001/espnet/egs2/librispeech_100/asr1/espnet2/layers/stft.py:166: UserWarning: __floordiv__ is deprecated, and its behavior will change in a future version of pytorch. It currently rounds toward 0 (like the 'trunc' function NOT 'floor'). This results in incorrect rounding for negative values. To keep the current behavior, use torch.div(a, b, rounding_mode='trunc'), or for actual floor division, use torch.div(a, b, rounding_mode='floor').
+  olens = (ilens - self.n_fft) // self.hop_length + 1
+[node01] 2022-04-25 05:30:19,571 (trainer:677) INFO: 2epoch:train:1-400batch: iter_time=0.002, forward_time=0.367, loss_ctc=21.040, loss_interctc_layer8=49.493, loss_att=13.062, acc=0.940, loss_vq_vae=4.031, kaojin_ctc=7.427, loss_ic_other=68.401, loss=4.857, backward_time=0.302, optim_step_time=0.054, optim0_lr0=4.927e-05, train_time=3.380
+[node01] 2022-04-25 05:35:55,600 (trainer:677) INFO: 2epoch:train:401-800batch: iter_time=4.972e-04, forward_time=0.367, loss_ctc=19.904, loss_interctc_layer8=47.076, loss_att=12.393, acc=0.942, loss_vq_vae=3.844, kaojin_ctc=6.566, loss_ic_other=62.762, loss=4.571, backward_time=0.300, optim_step_time=0.054, optim0_lr0=6.260e-05, train_time=3.360
+[node01] 2022-04-25 05:41:30,201 (trainer:677) INFO: 2epoch:train:801-1200batch: iter_time=5.058e-04, forward_time=0.365, loss_ctc=20.600, loss_interctc_layer8=48.636, loss_att=12.735, acc=0.941, loss_vq_vae=3.728, kaojin_ctc=5.900, loss_ic_other=63.290, loss=4.658, backward_time=0.299, optim_step_time=0.054, optim0_lr0=7.593e-05, train_time=3.346
+[node01] 2022-04-25 05:43:00,057 (trainer:335) INFO: 2epoch results: [train] iter_time=0.001, forward_time=0.367, loss_ctc=20.570, loss_interctc_layer8=48.531, loss_att=12.771, acc=0.941, loss_vq_vae=3.856, kaojin_ctc=6.564, loss_ic_other=64.805, loss=4.703, backward_time=0.301, optim_step_time=0.054, optim0_lr0=6.393e-05, train_time=3.368, time=17 minutes and 57.99 seconds, total_count=2560, gpu_max_cached_mem_GB=40.254, [valid] loss_ctc=13.736, cer_ctc=0.033, loss_interctc_layer8=12.421, cer_interctc_layer8=0.041, loss_att=7.860, acc=0.939, cer=0.036, wer=0.561, loss_vq_vae=3.153, kaojin_ctc=6.291, loss_ic_other=17.926, loss=8.743, time=20.6 seconds, total_count=50, gpu_max_cached_mem_GB=40.254
+[node01] 2022-04-25 05:43:04,115 (trainer:381) INFO: There are no improvements in this epoch
+[node01] 2022-04-25 05:43:04,116 (trainer:269) INFO: 3/70epoch started. Estimated time to finish: 21 hours, 26 minutes and 7.41 seconds
+[node01] 2022-04-25 05:43:14,923 (trainer:619) WARNING: The grad norm is inf. Skipping updating the model.
+[node01] 2022-04-25 05:48:42,824 (trainer:677) INFO: 3epoch:train:1-400batch: iter_time=0.002, forward_time=0.368, loss_ctc=20.538, loss_interctc_layer8=48.505, loss_att=12.752, acc=0.941, loss_vq_vae=3.636, kaojin_ctc=5.300, loss_ic_other=61.818, loss=4.614, backward_time=0.302, optim_step_time=0.054, optim0_lr0=9.180e-05, train_time=3.386
+[node01] 2022-04-25 05:54:18,183 (trainer:677) INFO: 3epoch:train:401-800batch: iter_time=4.550e-04, forward_time=0.365, loss_ctc=20.364, loss_interctc_layer8=48.297, loss_att=12.630, acc=0.942, loss_vq_vae=3.580, kaojin_ctc=4.861, loss_ic_other=60.810, loss=4.561, backward_time=0.300, optim_step_time=0.054, optim0_lr0=1.051e-04, train_time=3.353
+[node01] 2022-04-25 05:59:54,187 (trainer:677) INFO: 3epoch:train:801-1200batch: iter_time=4.539e-04, forward_time=0.366, loss_ctc=20.579, loss_interctc_layer8=48.907, loss_att=12.807, acc=0.941, loss_vq_vae=3.528, kaojin_ctc=4.507, loss_ic_other=60.899, loss=4.594, backward_time=0.300, optim_step_time=0.054, optim0_lr0=1.185e-04, train_time=3.360
+[node01] 2022-04-25 06:01:21,435 (trainer:335) INFO: 3epoch results: [train] iter_time=9.907e-04, forward_time=0.366, loss_ctc=20.437, loss_interctc_layer8=48.422, loss_att=12.694, acc=0.941, loss_vq_vae=3.576, kaojin_ctc=4.851, loss_ic_other=60.929, loss=4.575, backward_time=0.301, optim_step_time=0.054, optim0_lr0=1.065e-04, train_time=3.364, time=17 minutes and 56.77 seconds, total_count=3840, gpu_max_cached_mem_GB=40.254, [valid] loss_ctc=13.785, cer_ctc=0.033, loss_interctc_layer8=12.409, cer_interctc_layer8=0.041, loss_att=7.923, acc=0.938, cer=0.036, wer=0.562, loss_vq_vae=3.005, kaojin_ctc=4.891, loss_ic_other=16.647, loss=8.526, time=20.54 seconds, total_count=75, gpu_max_cached_mem_GB=40.254
+[node01] 2022-04-25 06:01:25,401 (trainer:381) INFO: There are no improvements in this epoch
+[node01] 2022-04-25 06:01:25,402 (trainer:269) INFO: 4/70epoch started. Estimated time to finish: 20 hours, 54 minutes and 43.79 seconds
+[node01] 2022-04-25 06:04:27,522 (trainer:619) WARNING: The grad norm is inf. Skipping updating the model.
+[node01] 2022-04-25 06:07:02,147 (trainer:677) INFO: 4epoch:train:1-400batch: iter_time=0.004, forward_time=0.366, loss_ctc=20.130, loss_interctc_layer8=47.582, loss_att=12.489, acc=0.942, loss_vq_vae=3.460, kaojin_ctc=4.161, loss_ic_other=58.590, loss=4.463, backward_time=0.300, optim_step_time=0.054, optim0_lr0=1.344e-04, train_time=3.367
+[node01] 2022-04-25 06:12:38,087 (trainer:677) INFO: 4epoch:train:401-800batch: iter_time=4.535e-04, forward_time=0.366, loss_ctc=20.257, loss_interctc_layer8=47.985, loss_att=12.566, acc=0.942, loss_vq_vae=3.406, kaojin_ctc=3.908, loss_ic_other=58.600, loss=4.478, backward_time=0.300, optim_step_time=0.054, optim0_lr0=1.477e-04, train_time=3.359
+[node01] 2022-04-25 06:18:14,346 (trainer:677) INFO: 4epoch:train:801-1200batch: iter_time=4.874e-04, forward_time=0.367, loss_ctc=20.520, loss_interctc_layer8=48.400, loss_att=12.725, acc=0.942, loss_vq_vae=3.342, kaojin_ctc=3.703, loss_ic_other=58.505, loss=4.504, backward_time=0.301, optim_step_time=0.053, optim0_lr0=1.610e-04, train_time=3.362
+[node01] 2022-04-25 06:19:43,174 (trainer:335) INFO: 4epoch results: [train] iter_time=0.001, forward_time=0.366, loss_ctc=20.397, loss_interctc_layer8=48.187, loss_att=12.653, acc=0.942, loss_vq_vae=3.398, kaojin_ctc=3.904, loss_ic_other=58.744, loss=4.498, backward_time=0.301, optim_step_time=0.054, optim0_lr0=1.490e-04, train_time=3.366, time=17 minutes and 57.34 seconds, total_count=5120, gpu_max_cached_mem_GB=40.254, [valid] loss_ctc=14.042, cer_ctc=0.033, loss_interctc_layer8=12.539, cer_interctc_layer8=0.041, loss_att=7.972, acc=0.938, cer=0.037, wer=0.567, loss_vq_vae=2.831, kaojin_ctc=3.892, loss_ic_other=17.009, loss=8.469, time=20.43 seconds, total_count=100, gpu_max_cached_mem_GB=40.254
+[node01] 2022-04-25 06:19:47,437 (trainer:381) INFO: There are no improvements in this epoch
+[node01] 2022-04-25 06:19:47,438 (trainer:269) INFO: 5/70epoch started. Estimated time to finish: 20 hours, 30 minutes and 3.7 seconds
+[node01] 2022-04-25 06:25:26,475 (trainer:677) INFO: 5epoch:train:1-400batch: iter_time=0.002, forward_time=0.368, loss_ctc=20.829, loss_interctc_layer8=49.170, loss_att=12.907, acc=0.941, loss_vq_vae=3.274, kaojin_ctc=3.504, loss_ic_other=59.015, loss=4.553, backward_time=0.303, optim_step_time=0.054, optim0_lr0=1.770e-04, train_time=3.390
+[node01] 2022-04-25 06:30:59,666 (trainer:677) INFO: 5epoch:train:401-800batch: iter_time=4.784e-04, forward_time=0.363, loss_ctc=19.909, loss_interctc_layer8=47.283, loss_att=12.359, acc=0.942, loss_vq_vae=3.223, kaojin_ctc=3.324, loss_ic_other=56.522, loss=4.370, backward_time=0.298, optim_step_time=0.054, optim0_lr0=1.903e-04, train_time=3.332
+[node01] 2022-04-25 06:36:36,586 (trainer:677) INFO: 5epoch:train:801-1200batch: iter_time=4.826e-04, forward_time=0.367, loss_ctc=20.441, loss_interctc_layer8=48.308, loss_att=12.690, acc=0.942, loss_vq_vae=3.165, kaojin_ctc=3.183, loss_ic_other=57.363, loss=4.456, backward_time=0.302, optim_step_time=0.053, optim0_lr0=2.037e-04, train_time=3.369
+[node01] 2022-04-25 06:38:05,123 (trainer:335) INFO: 5epoch results: [train] iter_time=0.001, forward_time=0.366, loss_ctc=20.331, loss_interctc_layer8=48.118, loss_att=12.617, acc=0.942, loss_vq_vae=3.214, kaojin_ctc=3.322, loss_ic_other=57.452, loss=4.447, backward_time=0.301, optim_step_time=0.053, optim0_lr0=1.917e-04, train_time=3.364, time=17 minutes and 56.67 seconds, total_count=6400, gpu_max_cached_mem_GB=40.254, [valid] loss_ctc=14.105, cer_ctc=0.033, loss_interctc_layer8=12.560, cer_interctc_layer8=0.041, loss_att=8.079, acc=0.938, cer=0.038, wer=0.566, loss_vq_vae=2.694, kaojin_ctc=3.292, loss_ic_other=16.244, loss=8.387, time=21.01 seconds, total_count=125, gpu_max_cached_mem_GB=40.254
+[node01] 2022-04-25 06:38:09,201 (trainer:381) INFO: There are no improvements in this epoch
+[node01] 2022-04-25 06:38:09,202 (trainer:269) INFO: 6/70epoch started. Estimated time to finish: 20 hours, 7 minutes and 51.3 seconds
+[node01] 2022-04-25 06:43:46,931 (trainer:677) INFO: 6epoch:train:1-400batch: iter_time=0.003, forward_time=0.366, loss_ctc=21.114, loss_interctc_layer8=49.762, loss_att=13.139, acc=0.941, loss_vq_vae=3.107, kaojin_ctc=3.045, loss_ic_other=58.567, loss=4.576, backward_time=0.302, optim_step_time=0.052, optim0_lr0=2.197e-04, train_time=3.377
+[node01] 2022-04-25 06:49:22,544 (trainer:677) INFO: 6epoch:train:401-800batch: iter_time=4.471e-04, forward_time=0.365, loss_ctc=20.157, loss_interctc_layer8=47.519, loss_att=12.498, acc=0.942, loss_vq_vae=3.051, kaojin_ctc=2.944, loss_ic_other=55.835, loss=4.369, backward_time=0.300, optim_step_time=0.053, optim0_lr0=2.330e-04, train_time=3.356
+[node01] 2022-04-25 06:54:55,842 (trainer:677) INFO: 6epoch:train:801-1200batch: iter_time=4.217e-04, forward_time=0.364, loss_ctc=19.547, loss_interctc_layer8=46.538, loss_att=12.139, acc=0.943, loss_vq_vae=2.996, kaojin_ctc=2.833, loss_ic_other=54.552, loss=4.261, backward_time=0.298, optim_step_time=0.053, optim0_lr0=2.463e-04, train_time=3.333
+[node01] 2022-04-25 06:56:23,848 (trainer:335) INFO: 6epoch results: [train] iter_time=0.001, forward_time=0.365, loss_ctc=20.270, loss_interctc_layer8=47.931, loss_att=12.586, acc=0.942, loss_vq_vae=3.045, kaojin_ctc=2.929, loss_ic_other=56.294, loss=4.400, backward_time=0.300, optim_step_time=0.053, optim0_lr0=2.343e-04, train_time=3.357, time=17 minutes and 54.46 seconds, total_count=7680, gpu_max_cached_mem_GB=40.254, [valid] loss_ctc=14.176, cer_ctc=0.034, loss_interctc_layer8=12.729, cer_interctc_layer8=0.041, loss_att=8.077, acc=0.937, cer=0.037, wer=0.566, loss_vq_vae=2.538, kaojin_ctc=2.931, loss_ic_other=16.482, loss=8.354, time=20.18 seconds, total_count=150, gpu_max_cached_mem_GB=40.254
+[node01] 2022-04-25 06:56:28,173 (trainer:381) INFO: There are no improvements in this epoch
+[node01] 2022-04-25 06:56:28,175 (trainer:269) INFO: 7/70epoch started. Estimated time to finish: 19 hours, 46 minutes and 26.01 seconds
+[node01] 2022-04-25 07:02:05,162 (trainer:677) INFO: 7epoch:train:1-400batch: iter_time=0.002, forward_time=0.365, loss_ctc=20.489, loss_interctc_layer8=48.279, loss_att=12.701, acc=0.942, loss_vq_vae=2.933, kaojin_ctc=2.730, loss_ic_other=56.229, loss=4.416, backward_time=0.301, optim_step_time=0.053, optim0_lr0=2.623e-04, train_time=3.369
+[node01] 2022-04-25 07:07:39,027 (trainer:677) INFO: 7epoch:train:401-800batch: iter_time=4.299e-04, forward_time=0.364, loss_ctc=20.057, loss_interctc_layer8=47.611, loss_att=12.459, acc=0.942, loss_vq_vae=2.889, kaojin_ctc=2.641, loss_ic_other=55.236, loss=4.340, backward_time=0.298, optim_step_time=0.053, optim0_lr0=2.757e-04, train_time=3.338
+[node01] 2022-04-25 07:13:14,678 (trainer:677) INFO: 7epoch:train:801-1200batch: iter_time=4.587e-04, forward_time=0.365, loss_ctc=20.338, loss_interctc_layer8=48.098, loss_att=12.635, acc=0.942, loss_vq_vae=2.830, kaojin_ctc=2.589, loss_ic_other=55.648, loss=4.382, backward_time=0.301, optim_step_time=0.052, optim0_lr0=2.890e-04, train_time=3.356
+[node01] 2022-04-25 07:14:42,420 (trainer:335) INFO: 7epoch results: [train] iter_time=0.001, forward_time=0.365, loss_ctc=20.289, loss_interctc_layer8=47.969, loss_att=12.590, acc=0.942, loss_vq_vae=2.879, kaojin_ctc=2.646, loss_ic_other=55.654, loss=4.376, backward_time=0.300, optim_step_time=0.053, optim0_lr0=2.770e-04, train_time=3.355, time=17 minutes and 53.86 seconds, total_count=8960, gpu_max_cached_mem_GB=40.254, [valid] loss_ctc=14.115, cer_ctc=0.034, loss_interctc_layer8=12.794, cer_interctc_layer8=0.042, loss_att=8.054, acc=0.937, cer=0.037, wer=0.568, loss_vq_vae=2.401, kaojin_ctc=2.628, loss_ic_other=16.954, loss=8.306, time=20.38 seconds, total_count=175, gpu_max_cached_mem_GB=40.254
+[node01] 2022-04-25 07:14:46,671 (trainer:381) INFO: There are no improvements in this epoch
+[node01] 2022-04-25 07:14:46,672 (trainer:269) INFO: 8/70epoch started. Estimated time to finish: 19 hours, 25 minutes and 49.67 seconds
+[node01] 2022-04-25 07:20:23,141 (trainer:677) INFO: 8epoch:train:1-400batch: iter_time=0.002, forward_time=0.365, loss_ctc=20.716, loss_interctc_layer8=48.808, loss_att=12.813, acc=0.942, loss_vq_vae=2.772, kaojin_ctc=2.504, loss_ic_other=56.242, loss=4.435, backward_time=0.301, optim_step_time=0.053, optim0_lr0=3.050e-04, train_time=3.364
+[node01] 2022-04-25 07:25:58,170 (trainer:677) INFO: 8epoch:train:401-800batch: iter_time=4.461e-04, forward_time=0.365, loss_ctc=19.620, loss_interctc_layer8=46.285, loss_att=12.178, acc=0.943, loss_vq_vae=2.710, kaojin_ctc=2.450, loss_ic_other=53.229, loss=4.214, backward_time=0.300, optim_step_time=0.053, optim0_lr0=3.183e-04, train_time=3.350
+[node01] 2022-04-25 07:31:34,317 (trainer:677) INFO: 8epoch:train:801-1200batch: iter_time=4.654e-04, forward_time=0.365, loss_ctc=20.960, loss_interctc_layer8=49.323, loss_att=12.979, acc=0.941, loss_vq_vae=2.664, kaojin_ctc=2.395, loss_ic_other=56.544, loss=4.470, backward_time=0.302, optim_step_time=0.053, optim0_lr0=3.317e-04, train_time=3.361
+[node01] 2022-04-25 07:33:01,166 (trainer:335) INFO: 8epoch results: [train] iter_time=0.001, forward_time=0.365, loss_ctc=20.310, loss_interctc_layer8=47.898, loss_att=12.585, acc=0.942, loss_vq_vae=2.710, kaojin_ctc=2.443, loss_ic_other=55.062, loss=4.350, backward_time=0.300, optim_step_time=0.053, optim0_lr0=3.197e-04, train_time=3.357, time=17 minutes and 54.41 seconds, total_count=10240, gpu_max_cached_mem_GB=40.254, [valid] loss_ctc=14.734, cer_ctc=0.034, loss_interctc_layer8=12.915, cer_interctc_layer8=0.041, loss_att=8.219, acc=0.936, cer=0.038, wer=0.571, loss_vq_vae=2.279, kaojin_ctc=2.519, loss_ic_other=15.653, loss=8.350, time=20.08 seconds, total_count=200, gpu_max_cached_mem_GB=40.254
+[node01] 2022-04-25 07:33:05,433 (trainer:381) INFO: There are no improvements in this epoch
+[node01] 2022-04-25 07:33:05,466 (trainer:269) INFO: 9/70epoch started. Estimated time to finish: 19 hours, 5 minutes and 50.09 seconds
+[node01] 2022-04-25 07:38:43,724 (trainer:677) INFO: 9epoch:train:1-400batch: iter_time=0.003, forward_time=0.366, loss_ctc=20.855, loss_interctc_layer8=48.765, loss_att=12.878, acc=0.941, loss_vq_vae=2.599, kaojin_ctc=2.330, loss_ic_other=55.628, loss=4.421, backward_time=0.302, optim_step_time=0.053, optim0_lr0=3.477e-04, train_time=3.382
+[node01] 2022-04-25 07:44:17,710 (trainer:677) INFO: 9epoch:train:401-800batch: iter_time=4.501e-04, forward_time=0.364, loss_ctc=19.923, loss_interctc_layer8=46.998, loss_att=12.347, acc=0.943, loss_vq_vae=2.550, kaojin_ctc=2.274, loss_ic_other=53.618, loss=4.253, backward_time=0.299, optim_step_time=0.053, optim0_lr0=3.610e-04, train_time=3.340
+[node01] 2022-04-25 07:49:51,156 (trainer:677) INFO: 9epoch:train:801-1200batch: iter_time=4.424e-04, forward_time=0.364, loss_ctc=20.113, loss_interctc_layer8=47.595, loss_att=12.483, acc=0.942, loss_vq_vae=2.497, kaojin_ctc=2.226, loss_ic_other=54.135, loss=4.293, backward_time=0.298, optim_step_time=0.053, optim0_lr0=3.743e-04, train_time=3.334
+[node01] 2022-04-25 07:51:20,136 (trainer:335) INFO: 9epoch results: [train] iter_time=0.001, forward_time=0.365, loss_ctc=20.401, loss_interctc_layer8=48.028, loss_att=12.637, acc=0.942, loss_vq_vae=2.544, kaojin_ctc=2.271, loss_ic_other=54.719, loss=4.343, backward_time=0.300, optim_step_time=0.053, optim0_lr0=3.623e-04, train_time=3.356, time=17 minutes and 54.22 seconds, total_count=11520, gpu_max_cached_mem_GB=40.254, [valid] loss_ctc=14.527, cer_ctc=0.034, loss_interctc_layer8=13.027, cer_interctc_layer8=0.042, loss_att=8.220, acc=0.936, cer=0.038, wer=0.574, loss_vq_vae=2.126, kaojin_ctc=2.287, loss_ic_other=16.405, loss=8.319, time=20.44 seconds, total_count=225, gpu_max_cached_mem_GB=40.254
+[node01] 2022-04-25 07:51:24,484 (trainer:381) INFO: There are no improvements in this epoch
+[node01] 2022-04-25 07:51:24,486 (trainer:269) INFO: 10/70epoch started. Estimated time to finish: 18 hours, 46 minutes and 14.44 seconds
+[node01] 2022-04-25 07:57:02,836 (trainer:677) INFO: 10epoch:train:1-400batch: iter_time=0.003, forward_time=0.366, loss_ctc=20.804, loss_interctc_layer8=48.858, loss_att=12.873, acc=0.942, loss_vq_vae=2.437, kaojin_ctc=2.185, loss_ic_other=55.316, loss=4.404, backward_time=0.302, optim_step_time=0.052, optim0_lr0=3.903e-04, train_time=3.383
+[node01] 2022-04-25 07:59:12,737 (trainer:619) WARNING: The grad norm is inf. Skipping updating the model.
+[node01] 2022-04-25 08:02:36,127 (trainer:677) INFO: 10epoch:train:401-800batch: iter_time=4.675e-04, forward_time=0.363, loss_ctc=19.659, loss_interctc_layer8=46.414, loss_att=12.221, acc=0.943, loss_vq_vae=2.392, kaojin_ctc=2.143, loss_ic_other=52.610, loss=4.187, backward_time=0.298, optim_step_time=0.053, optim0_lr0=4.036e-04, train_time=3.333
+[node01] 2022-04-25 08:08:11,380 (trainer:677) INFO: 10epoch:train:801-1200batch: iter_time=4.643e-04, forward_time=0.365, loss_ctc=20.214, loss_interctc_layer8=47.752, loss_att=12.546, acc=0.942, loss_vq_vae=2.347, kaojin_ctc=2.097, loss_ic_other=54.052, loss=4.294, backward_time=0.300, optim_step_time=0.053, optim0_lr0=4.169e-04, train_time=3.352
+[node01] 2022-04-25 08:09:39,813 (trainer:335) INFO: 10epoch results: [train] iter_time=0.001, forward_time=0.365, loss_ctc=20.270, loss_interctc_layer8=47.768, loss_att=12.572, acc=0.942, loss_vq_vae=2.388, kaojin_ctc=2.138, loss_ic_other=54.096, loss=4.303, backward_time=0.300, optim_step_time=0.053, optim0_lr0=4.049e-04, train_time=3.357, time=17 minutes and 54.5 seconds, total_count=12800, gpu_max_cached_mem_GB=40.254, [valid] loss_ctc=14.570, cer_ctc=0.034, loss_interctc_layer8=13.048, cer_interctc_layer8=0.041, loss_att=8.241, acc=0.935, cer=0.038, wer=0.571, loss_vq_vae=2.012, kaojin_ctc=2.132, loss_ic_other=16.354, loss=8.288, time=20.83 seconds, total_count=250, gpu_max_cached_mem_GB=40.254
+[node01] 2022-04-25 08:09:44,279 (trainer:381) INFO: There are no improvements in this epoch
+[node01] 2022-04-25 08:09:44,280 (trainer:269) INFO: 11/70epoch started. Estimated time to finish: 18 hours, 26 minutes and 58.76 seconds
+[node01] 2022-04-25 08:15:20,536 (trainer:677) INFO: 11epoch:train:1-400batch: iter_time=0.003, forward_time=0.365, loss_ctc=19.677, loss_interctc_layer8=46.304, loss_att=12.154, acc=0.943, loss_vq_vae=2.295, kaojin_ctc=2.062, loss_ic_other=52.184, loss=4.164, backward_time=0.300, optim_step_time=0.053, optim0_lr0=4.329e-04, train_time=3.362
+[node01] 2022-04-25 08:20:54,592 (trainer:677) INFO: 11epoch:train:401-800batch: iter_time=4.121e-04, forward_time=0.364, loss_ctc=20.634, loss_interctc_layer8=48.390, loss_att=12.776, acc=0.942, loss_vq_vae=2.247, kaojin_ctc=2.035, loss_ic_other=54.514, loss=4.348, backward_time=0.299, optim_step_time=0.052, optim0_lr0=4.462e-04, train_time=3.340
+[node01] 2022-04-25 08:26:28,988 (trainer:677) INFO: 11epoch:train:801-1200batch: iter_time=4.174e-04, forward_time=0.363, loss_ctc=20.898, loss_interctc_layer8=48.978, loss_att=12.945, acc=0.941, loss_vq_vae=2.205, kaojin_ctc=2.007, loss_ic_other=55.050, loss=4.395, backward_time=0.300, optim_step_time=0.052, optim0_lr0=4.595e-04, train_time=3.344
+[node01] 2022-04-25 08:27:57,715 (trainer:335) INFO: 11epoch results: [train] iter_time=0.001, forward_time=0.364, loss_ctc=20.453, loss_interctc_layer8=47.971, loss_att=12.650, acc=0.942, loss_vq_vae=2.245, kaojin_ctc=2.033, loss_ic_other=53.990, loss=4.310, backward_time=0.300, optim_step_time=0.052, optim0_lr0=4.475e-04, train_time=3.353, time=17 minutes and 53.1 seconds, total_count=14080, gpu_max_cached_mem_GB=40.254, [valid] loss_ctc=14.759, cer_ctc=0.034, loss_interctc_layer8=13.282, cer_interctc_layer8=0.042, loss_att=8.343, acc=0.935, cer=0.039, wer=0.575, loss_vq_vae=1.896, kaojin_ctc=2.062, loss_ic_other=16.100, loss=8.332, time=20.33 seconds, total_count=275, gpu_max_cached_mem_GB=40.254
+[node01] 2022-04-25 08:28:01,810 (trainer:381) INFO: There are no improvements in this epoch
+[node01] 2022-04-25 08:28:01,812 (trainer:269) INFO: 12/70epoch started. Estimated time to finish: 18 hours, 7 minutes and 41.11 seconds
+[node01] 2022-04-25 08:33:38,695 (trainer:677) INFO: 12epoch:train:1-400batch: iter_time=0.002, forward_time=0.365, loss_ctc=20.027, loss_interctc_layer8=46.981, loss_att=12.375, acc=0.942, loss_vq_vae=2.150, kaojin_ctc=1.968, loss_ic_other=52.714, loss=4.213, backward_time=0.301, optim_step_time=0.052, optim0_lr0=4.755e-04, train_time=3.368
+[node01] 2022-04-25 08:39:12,286 (trainer:677) INFO: 12epoch:train:401-800batch: iter_time=4.073e-04, forward_time=0.363, loss_ctc=20.137, loss_interctc_layer8=47.336, loss_att=12.455, acc=0.942, loss_vq_vae=2.114, kaojin_ctc=1.939, loss_ic_other=53.087, loss=4.238, backward_time=0.299, optim_step_time=0.052, optim0_lr0=4.889e-04, train_time=3.336
+[node01] 2022-04-25 08:44:45,909 (trainer:677) INFO: 12epoch:train:801-1200batch: iter_time=3.341e-04, forward_time=0.362, loss_ctc=21.202, loss_interctc_layer8=49.569, loss_att=13.104, acc=0.941, loss_vq_vae=2.067, kaojin_ctc=1.926, loss_ic_other=55.297, loss=4.432, backward_time=0.300, optim_step_time=0.052, optim0_lr0=5.022e-04, train_time=3.336
+[node01] 2022-04-25 08:46:14,075 (trainer:335) INFO: 12epoch results: [train] iter_time=0.001, forward_time=0.364, loss_ctc=20.461, loss_interctc_layer8=47.970, loss_att=12.650, acc=0.942, loss_vq_vae=2.107, kaojin_ctc=1.942, loss_ic_other=53.698, loss=4.295, backward_time=0.300, optim_step_time=0.052, optim0_lr0=4.902e-04, train_time=3.349, time=17 minutes and 51.99 seconds, total_count=15360, gpu_max_cached_mem_GB=40.254, [valid] loss_ctc=15.083, cer_ctc=0.035, loss_interctc_layer8=13.541, cer_interctc_layer8=0.042, loss_att=8.458, acc=0.935, cer=0.039, wer=0.576, loss_vq_vae=1.779, kaojin_ctc=1.946, loss_ic_other=16.553, loss=8.432, time=20.27 seconds, total_count=300, gpu_max_cached_mem_GB=40.254
+[node01] 2022-04-25 08:46:18,241 (trainer:381) INFO: There are no improvements in this epoch
+[node01] 2022-04-25 08:46:18,308 (trainer:437) INFO: The model files were removed: exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic/11epoch.pth
+[node01] 2022-04-25 08:46:18,308 (trainer:269) INFO: 13/70epoch started. Estimated time to finish: 17 hours, 48 minutes and 28.47 seconds
+[node01] 2022-04-25 08:51:52,905 (trainer:677) INFO: 13epoch:train:1-400batch: iter_time=0.003, forward_time=0.362, loss_ctc=20.691, loss_interctc_layer8=48.539, loss_att=12.835, acc=0.941, loss_vq_vae=2.025, kaojin_ctc=1.892, loss_ic_other=54.156, loss=4.338, backward_time=0.299, optim_step_time=0.052, optim0_lr0=5.182e-04, train_time=3.345
+[node01] 2022-04-25 08:57:28,393 (trainer:677) INFO: 13epoch:train:401-800batch: iter_time=4.210e-04, forward_time=0.364, loss_ctc=20.891, loss_interctc_layer8=48.830, loss_att=12.936, acc=0.941, loss_vq_vae=1.989, kaojin_ctc=1.869, loss_ic_other=54.345, loss=4.363, backward_time=0.301, optim_step_time=0.052, optim0_lr0=5.315e-04, train_time=3.355
+[node01] 2022-04-25 09:03:01,397 (trainer:677) INFO: 13epoch:train:801-1200batch: iter_time=4.424e-04, forward_time=0.363, loss_ctc=19.821, loss_interctc_layer8=46.363, loss_att=12.295, acc=0.942, loss_vq_vae=1.950, kaojin_ctc=1.838, loss_ic_other=51.692, loss=4.150, backward_time=0.298, optim_step_time=0.052, optim0_lr0=5.449e-04, train_time=3.330
+[node01] 2022-04-25 09:04:30,590 (trainer:335) INFO: 13epoch results: [train] iter_time=0.001, forward_time=0.364, loss_ctc=20.541, loss_interctc_layer8=48.041, loss_att=12.729, acc=0.941, loss_vq_vae=1.983, kaojin_ctc=1.864, loss_ic_other=53.526, loss=4.296, backward_time=0.300, optim_step_time=0.052, optim0_lr0=5.329e-04, train_time=3.348, time=17 minutes and 51.75 seconds, total_count=16640, gpu_max_cached_mem_GB=40.254, [valid] loss_ctc=14.850, cer_ctc=0.035, loss_interctc_layer8=13.461, cer_interctc_layer8=0.042, loss_att=8.468, acc=0.935, cer=0.039, wer=0.572, loss_vq_vae=1.673, kaojin_ctc=1.871, loss_ic_other=16.677, loss=8.371, time=20.53 seconds, total_count=325, gpu_max_cached_mem_GB=40.254
+[node01] 2022-04-25 09:04:34,486 (trainer:381) INFO: There are no improvements in this epoch
+[node01] 2022-04-25 09:04:34,560 (trainer:437) INFO: The model files were removed: exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic/12epoch.pth
+[node01] 2022-04-25 09:04:34,560 (trainer:269) INFO: 14/70epoch started. Estimated time to finish: 17 hours, 29 minutes and 23.4 seconds
+[node01] 2022-04-25 09:10:09,765 (trainer:677) INFO: 14epoch:train:1-400batch: iter_time=0.003, forward_time=0.363, loss_ctc=20.307, loss_interctc_layer8=47.566, loss_att=12.584, acc=0.942, loss_vq_vae=1.907, kaojin_ctc=1.829, loss_ic_other=52.828, loss=4.244, backward_time=0.299, optim_step_time=0.052, optim0_lr0=5.609e-04, train_time=3.351
+[node01] 2022-04-25 09:15:45,440 (trainer:677) INFO: 14epoch:train:401-800batch: iter_time=4.001e-04, forward_time=0.365, loss_ctc=20.763, loss_interctc_layer8=48.324, loss_att=12.802, acc=0.941, loss_vq_vae=1.868, kaojin_ctc=1.804, loss_ic_other=53.530, loss=4.310, backward_time=0.301, optim_step_time=0.053, optim0_lr0=5.742e-04, train_time=3.356
+[node01] 2022-04-25 09:21:20,106 (trainer:677) INFO: 14epoch:train:801-1200batch: iter_time=4.564e-04, forward_time=0.365, loss_ctc=20.514, loss_interctc_layer8=47.747, loss_att=12.643, acc=0.942, loss_vq_vae=1.836, kaojin_ctc=1.786, loss_ic_other=52.812, loss=4.256, backward_time=0.300, optim_step_time=0.053, optim0_lr0=5.875e-04, train_time=3.346
+[node01] 2022-04-25 09:22:47,997 (trainer:335) INFO: 14epoch results: [train] iter_time=0.001, forward_time=0.364, loss_ctc=20.562, loss_interctc_layer8=47.964, loss_att=12.700, acc=0.942, loss_vq_vae=1.867, kaojin_ctc=1.805, loss_ic_other=53.133, loss=4.277, backward_time=0.300, optim_step_time=0.053, optim0_lr0=5.755e-04, train_time=3.353, time=17 minutes and 53.17 seconds, total_count=17920, gpu_max_cached_mem_GB=40.254, [valid] loss_ctc=14.884, cer_ctc=0.034, loss_interctc_layer8=13.474, cer_interctc_layer8=0.042, loss_att=8.569, acc=0.935, cer=0.039, wer=0.580, loss_vq_vae=1.573, kaojin_ctc=1.777, loss_ic_other=17.140, loss=8.408, time=20.26 seconds, total_count=350, gpu_max_cached_mem_GB=40.254
+[node01] 2022-04-25 09:22:51,964 (trainer:381) INFO: There are no improvements in this epoch
+[node01] 2022-04-25 09:22:51,987 (trainer:437) INFO: The model files were removed: exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic/13epoch.pth
+[node01] 2022-04-25 09:22:51,987 (trainer:269) INFO: 15/70epoch started. Estimated time to finish: 17 hours, 10 minutes and 30 seconds
+[node01] 2022-04-25 09:28:26,758 (trainer:677) INFO: 15epoch:train:1-400batch: iter_time=0.003, forward_time=0.363, loss_ctc=20.164, loss_interctc_layer8=47.026, loss_att=12.447, acc=0.942, loss_vq_vae=1.803, kaojin_ctc=1.771, loss_ic_other=51.912, loss=4.189, backward_time=0.298, optim_step_time=0.052, optim0_lr0=6.035e-04, train_time=3.347
+[node01] 2022-04-25 09:34:01,895 (trainer:677) INFO: 15epoch:train:401-800batch: iter_time=4.692e-04, forward_time=0.365, loss_ctc=20.402, loss_interctc_layer8=47.514, loss_att=12.607, acc=0.942, loss_vq_vae=1.775, kaojin_ctc=1.746, loss_ic_other=52.437, loss=4.232, backward_time=0.301, optim_step_time=0.052, optim0_lr0=6.169e-04, train_time=3.351
+[node01] 2022-04-25 09:39:37,973 (trainer:677) INFO: 15epoch:train:801-1200batch: iter_time=4.397e-04, forward_time=0.365, loss_ctc=21.124, loss_interctc_layer8=49.006, loss_att=13.059, acc=0.941, loss_vq_vae=1.743, kaojin_ctc=1.734, loss_ic_other=53.892, loss=4.363, backward_time=0.302, optim_step_time=0.052, optim0_lr0=6.302e-04, train_time=3.360
+[node01] 2022-04-25 09:41:05,004 (trainer:335) INFO: 15epoch results: [train] iter_time=0.001, forward_time=0.364, loss_ctc=20.589, loss_interctc_layer8=47.916, loss_att=12.724, acc=0.941, loss_vq_vae=1.771, kaojin_ctc=1.748, loss_ic_other=52.819, loss=4.267, backward_time=0.300, optim_step_time=0.052, optim0_lr0=6.182e-04, train_time=3.351, time=17 minutes and 52.49 seconds, total_count=19200, gpu_max_cached_mem_GB=40.254, [valid] loss_ctc=15.072, cer_ctc=0.034, loss_interctc_layer8=13.570, cer_interctc_layer8=0.043, loss_att=8.645, acc=0.934, cer=0.039, wer=0.579, loss_vq_vae=1.503, kaojin_ctc=1.696, loss_ic_other=16.536, loss=8.415, time=20.53 seconds, total_count=375, gpu_max_cached_mem_GB=40.254
+[node01] 2022-04-25 09:41:09,148 (trainer:381) INFO: There are no improvements in this epoch
+[node01] 2022-04-25 09:41:09,170 (trainer:437) INFO: The model files were removed: exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic/14epoch.pth
+[node01] 2022-04-25 09:41:09,171 (trainer:269) INFO: 16/70epoch started. Estimated time to finish: 16 hours, 51 minutes and 40.51 seconds
+[node01] 2022-04-25 09:46:42,672 (trainer:677) INFO: 16epoch:train:1-400batch: iter_time=0.002, forward_time=0.361, loss_ctc=20.453, loss_interctc_layer8=47.447, loss_att=12.621, acc=0.942, loss_vq_vae=1.713, kaojin_ctc=1.725, loss_ic_other=52.154, loss=4.224, backward_time=0.298, optim_step_time=0.052, optim0_lr0=6.462e-04, train_time=3.334
+[node01] 2022-04-25 09:52:18,599 (trainer:677) INFO: 16epoch:train:401-800batch: iter_time=4.410e-04, forward_time=0.365, loss_ctc=20.782, loss_interctc_layer8=48.403, loss_att=12.858, acc=0.941, loss_vq_vae=1.684, kaojin_ctc=1.697, loss_ic_other=53.124, loss=4.299, backward_time=0.301, optim_step_time=0.053, optim0_lr0=6.595e-04, train_time=3.359
+[node01] 2022-04-25 09:57:54,263 (trainer:677) INFO: 16epoch:train:801-1200batch: iter_time=4.149e-04, forward_time=0.365, loss_ctc=21.005, loss_interctc_layer8=48.794, loss_att=13.003, acc=0.940, loss_vq_vae=1.666, kaojin_ctc=1.684, loss_ic_other=53.495, loss=4.336, backward_time=0.301, optim_step_time=0.053, optim0_lr0=6.729e-04, train_time=3.356
+[node01] 2022-04-25 09:59:22,821 (trainer:335) INFO: 16epoch results: [train] iter_time=0.001, forward_time=0.364, loss_ctc=20.663, loss_interctc_layer8=48.023, loss_att=12.776, acc=0.941, loss_vq_vae=1.685, kaojin_ctc=1.700, loss_ic_other=52.697, loss=4.269, backward_time=0.300, optim_step_time=0.053, optim0_lr0=6.609e-04, train_time=3.351, time=17 minutes and 52.66 seconds, total_count=20480, gpu_max_cached_mem_GB=40.254, [valid] loss_ctc=14.959, cer_ctc=0.035, loss_interctc_layer8=13.749, cer_interctc_layer8=0.042, loss_att=8.441, acc=0.935, cer=0.038, wer=0.574, loss_vq_vae=1.426, kaojin_ctc=1.657, loss_ic_other=17.213, loss=8.356, time=20.99 seconds, total_count=400, gpu_max_cached_mem_GB=40.254
+[node01] 2022-04-25 09:59:27,156 (trainer:381) INFO: There are no improvements in this epoch
+[node01] 2022-04-25 09:59:27,190 (trainer:437) INFO: The model files were removed: exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic/15epoch.pth
+[node01] 2022-04-25 09:59:27,190 (trainer:269) INFO: 17/70epoch started. Estimated time to finish: 16 hours, 32 minutes and 57.87 seconds
+[node01] 2022-04-25 10:05:04,306 (trainer:677) INFO: 17epoch:train:1-400batch: iter_time=0.003, forward_time=0.366, loss_ctc=20.837, loss_interctc_layer8=47.984, loss_att=12.790, acc=0.941, loss_vq_vae=1.637, kaojin_ctc=1.679, loss_ic_other=52.496, loss=4.269, backward_time=0.301, optim_step_time=0.052, optim0_lr0=6.889e-04, train_time=3.371
+[node01] 2022-04-25 10:10:39,924 (trainer:677) INFO: 17epoch:train:401-800batch: iter_time=4.149e-04, forward_time=0.365, loss_ctc=21.039, loss_interctc_layer8=48.673, loss_att=12.966, acc=0.940, loss_vq_vae=1.615, kaojin_ctc=1.656, loss_ic_other=53.165, loss=4.321, backward_time=0.301, optim_step_time=0.052, optim0_lr0=7.022e-04, train_time=3.356
+[node01] 2022-04-25 10:16:14,057 (trainer:677) INFO: 17epoch:train:801-1200batch: iter_time=4.312e-04, forward_time=0.363, loss_ctc=21.379, loss_interctc_layer8=49.554, loss_att=13.227, acc=0.940, loss_vq_vae=1.595, kaojin_ctc=1.649, loss_ic_other=54.106, loss=4.396, backward_time=0.300, optim_step_time=0.052, optim0_lr0=7.155e-04, train_time=3.341
+[node01] 2022-04-25 10:17:40,516 (trainer:335) INFO: 17epoch results: [train] iter_time=0.001, forward_time=0.364, loss_ctc=20.828, loss_interctc_layer8=48.218, loss_att=12.847, acc=0.941, loss_vq_vae=1.614, kaojin_ctc=1.660, loss_ic_other=52.701, loss=4.282, backward_time=0.300, optim_step_time=0.052, optim0_lr0=7.035e-04, train_time=3.352, time=17 minutes and 52.82 seconds, total_count=21760, gpu_max_cached_mem_GB=40.254, [valid] loss_ctc=14.923, cer_ctc=0.035, loss_interctc_layer8=13.539, cer_interctc_layer8=0.042, loss_att=8.529, acc=0.935, cer=0.039, wer=0.578, loss_vq_vae=1.350, kaojin_ctc=1.551, loss_ic_other=16.213, loss=8.277, time=20.51 seconds, total_count=425, gpu_max_cached_mem_GB=40.254
+[node01] 2022-04-25 10:17:44,638 (trainer:381) INFO: There are no improvements in this epoch
+[node01] 2022-04-25 10:17:44,710 (trainer:437) INFO: The model files were removed: exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic/16epoch.pth
+[node01] 2022-04-25 10:17:44,711 (trainer:269) INFO: 18/70epoch started. Estimated time to finish: 16 hours, 14 minutes and 16.58 seconds
+[node01] 2022-04-25 10:20:03,144 (trainer:619) WARNING: The grad norm is inf. Skipping updating the model.
+[node01] 2022-04-25 10:23:22,224 (trainer:677) INFO: 18epoch:train:1-400batch: iter_time=0.002, forward_time=0.366, loss_ctc=21.261, loss_interctc_layer8=49.192, loss_att=13.155, acc=0.941, loss_vq_vae=1.568, kaojin_ctc=1.624, loss_ic_other=53.560, loss=4.365, backward_time=0.302, optim_step_time=0.052, optim0_lr0=7.315e-04, train_time=3.375
+[node01] 2022-04-25 10:28:55,639 (trainer:677) INFO: 18epoch:train:401-800batch: iter_time=4.499e-04, forward_time=0.363, loss_ctc=20.555, loss_interctc_layer8=47.575, loss_att=12.724, acc=0.941, loss_vq_vae=1.555, kaojin_ctc=1.620, loss_ic_other=51.816, loss=4.225, backward_time=0.299, optim_step_time=0.052, optim0_lr0=7.447e-04, train_time=3.334
+[node01] 2022-04-25 10:34:29,292 (trainer:677) INFO: 18epoch:train:801-1200batch: iter_time=4.371e-04, forward_time=0.363, loss_ctc=20.841, loss_interctc_layer8=47.952, loss_att=12.838, acc=0.940, loss_vq_vae=1.537, kaojin_ctc=1.598, loss_ic_other=52.153, loss=4.260, backward_time=0.299, optim_step_time=0.052, optim0_lr0=7.581e-04, train_time=3.336
+[node01] 2022-04-25 10:35:58,059 (trainer:335) INFO: 18epoch results: [train] iter_time=0.001, forward_time=0.364, loss_ctc=20.888, loss_interctc_layer8=48.232, loss_att=12.903, acc=0.940, loss_vq_vae=1.552, kaojin_ctc=1.613, loss_ic_other=52.492, loss=4.282, backward_time=0.300, optim_step_time=0.052, optim0_lr0=7.461e-04, train_time=3.353, time=17 minutes and 53.16 seconds, total_count=23040, gpu_max_cached_mem_GB=40.254, [valid] loss_ctc=15.658, cer_ctc=0.036, loss_interctc_layer8=13.781, cer_interctc_layer8=0.043, loss_att=8.716, acc=0.934, cer=0.039, wer=0.582, loss_vq_vae=1.313, kaojin_ctc=1.560, loss_ic_other=17.719, loss=8.543, time=20.18 seconds, total_count=450, gpu_max_cached_mem_GB=40.254
+[node01] 2022-04-25 10:36:02,147 (trainer:381) INFO: There are no improvements in this epoch
+[node01] 2022-04-25 10:36:02,216 (trainer:437) INFO: The model files were removed: exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic/17epoch.pth
+[node01] 2022-04-25 10:36:02,216 (trainer:269) INFO: 19/70epoch started. Estimated time to finish: 15 hours, 55 minutes and 37.89 seconds
+[node01] 2022-04-25 10:41:39,593 (trainer:677) INFO: 19epoch:train:1-400batch: iter_time=0.003, forward_time=0.366, loss_ctc=20.797, loss_interctc_layer8=48.273, loss_att=12.878, acc=0.940, loss_vq_vae=1.525, kaojin_ctc=1.599, loss_ic_other=52.395, loss=4.275, backward_time=0.302, optim_step_time=0.052, optim0_lr0=7.741e-04, train_time=3.373
+[node01] 2022-04-25 10:47:14,687 (trainer:677) INFO: 19epoch:train:401-800batch: iter_time=4.434e-04, forward_time=0.365, loss_ctc=20.495, loss_interctc_layer8=47.288, loss_att=12.676, acc=0.941, loss_vq_vae=1.504, kaojin_ctc=1.583, loss_ic_other=51.403, loss=4.200, backward_time=0.299, optim_step_time=0.053, optim0_lr0=7.874e-04, train_time=3.351
+[node01] 2022-04-25 10:52:49,065 (trainer:677) INFO: 19epoch:train:801-1200batch: iter_time=4.070e-04, forward_time=0.364, loss_ctc=21.369, loss_interctc_layer8=49.237, loss_att=13.233, acc=0.939, loss_vq_vae=1.493, kaojin_ctc=1.575, loss_ic_other=53.327, loss=4.368, backward_time=0.299, optim_step_time=0.053, optim0_lr0=8.007e-04, train_time=3.343
+[node01] 2022-04-25 10:54:15,981 (trainer:335) INFO: 19epoch results: [train] iter_time=0.001, forward_time=0.365, loss_ctc=20.951, loss_interctc_layer8=48.382, loss_att=12.963, acc=0.940, loss_vq_vae=1.506, kaojin_ctc=1.584, loss_ic_other=52.494, loss=4.291, backward_time=0.300, optim_step_time=0.053, optim0_lr0=7.887e-04, train_time=3.354, time=17 minutes and 53.58 seconds, total_count=24320, gpu_max_cached_mem_GB=40.254, [valid] loss_ctc=14.996, cer_ctc=0.035, loss_interctc_layer8=13.565, cer_interctc_layer8=0.043, loss_att=8.553, acc=0.934, cer=0.040, wer=0.580, loss_vq_vae=1.275, kaojin_ctc=1.517, loss_ic_other=16.780, loss=8.306, time=20.18 seconds, total_count=475, gpu_max_cached_mem_GB=40.254
+[node01] 2022-04-25 10:54:20,081 (trainer:381) INFO: There are no improvements in this epoch
+[node01] 2022-04-25 10:54:20,120 (trainer:437) INFO: The model files were removed: exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic/18epoch.pth
+[node01] 2022-04-25 10:54:20,120 (trainer:269) INFO: 20/70epoch started. Estimated time to finish: 15 hours, 37 minutes and 2.49 seconds
+[node01] 2022-04-25 10:59:57,616 (trainer:677) INFO: 20epoch:train:1-400batch: iter_time=0.003, forward_time=0.366, loss_ctc=21.424, loss_interctc_layer8=49.394, loss_att=13.230, acc=0.940, loss_vq_vae=1.472, kaojin_ctc=1.559, loss_ic_other=53.473, loss=4.374, backward_time=0.301, optim_step_time=0.052, optim0_lr0=8.167e-04, train_time=3.374
+[node01] 2022-04-25 11:05:32,501 (trainer:677) INFO: 20epoch:train:401-800batch: iter_time=4.529e-04, forward_time=0.364, loss_ctc=21.219, loss_interctc_layer8=48.981, loss_att=13.101, acc=0.940, loss_vq_vae=1.463, kaojin_ctc=1.554, loss_ic_other=52.984, loss=4.335, backward_time=0.300, optim_step_time=0.052, optim0_lr0=8.301e-04, train_time=3.349
+[node01] 2022-04-25 11:11:06,398 (trainer:677) INFO: 20epoch:train:801-1200batch: iter_time=4.409e-04, forward_time=0.364, loss_ctc=20.576, loss_interctc_layer8=47.304, loss_att=12.743, acc=0.940, loss_vq_vae=1.454, kaojin_ctc=1.543, loss_ic_other=51.170, loss=4.202, backward_time=0.298, optim_step_time=0.052, optim0_lr0=8.434e-04, train_time=3.339
+[node01] 2022-04-25 11:12:33,581 (trainer:335) INFO: 20epoch results: [train] iter_time=0.001, forward_time=0.365, loss_ctc=21.070, loss_interctc_layer8=48.540, loss_att=13.026, acc=0.940, loss_vq_vae=1.462, kaojin_ctc=1.550, loss_ic_other=52.513, loss=4.303, backward_time=0.300, optim_step_time=0.052, optim0_lr0=8.314e-04, train_time=3.353, time=17 minutes and 53.39 seconds, total_count=25600, gpu_max_cached_mem_GB=40.254, [valid] loss_ctc=15.060, cer_ctc=0.036, loss_interctc_layer8=13.521, cer_interctc_layer8=0.043, loss_att=8.587, acc=0.935, cer=0.039, wer=0.574, loss_vq_vae=1.246, kaojin_ctc=1.445, loss_ic_other=15.756, loss=8.253, time=20.05 seconds, total_count=500, gpu_max_cached_mem_GB=40.254
+[node01] 2022-04-25 11:12:37,682 (trainer:381) INFO: There are no improvements in this epoch
+[node01] 2022-04-25 11:12:37,705 (trainer:437) INFO: The model files were removed: exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic/19epoch.pth
+[node01] 2022-04-25 11:12:37,706 (trainer:269) INFO: 21/70epoch started. Estimated time to finish: 15 hours, 18 minutes and 28.05 seconds
+[node01] 2022-04-25 11:18:11,269 (trainer:677) INFO: 21epoch:train:1-400batch: iter_time=0.003, forward_time=0.362, loss_ctc=21.185, loss_interctc_layer8=48.793, loss_att=13.103, acc=0.940, loss_vq_vae=1.441, kaojin_ctc=1.536, loss_ic_other=52.609, loss=4.322, backward_time=0.297, optim_step_time=0.052, optim0_lr0=8.594e-04, train_time=3.335
+[node01] 2022-04-25 11:23:45,259 (trainer:677) INFO: 21epoch:train:401-800batch: iter_time=4.302e-04, forward_time=0.364, loss_ctc=20.837, loss_interctc_layer8=47.821, loss_att=12.883, acc=0.940, loss_vq_vae=1.434, kaojin_ctc=1.525, loss_ic_other=51.568, loss=4.244, backward_time=0.299, optim_step_time=0.052, optim0_lr0=8.727e-04, train_time=3.340
+[node01] 2022-04-25 11:29:24,000 (trainer:677) INFO: 21epoch:train:801-1200batch: iter_time=4.232e-04, forward_time=0.368, loss_ctc=21.747, loss_interctc_layer8=49.494, loss_att=13.450, acc=0.938, loss_vq_vae=1.424, kaojin_ctc=1.519, loss_ic_other=53.275, loss=4.403, backward_time=0.304, optim_step_time=0.052, optim0_lr0=8.861e-04, train_time=3.387
+[node01] 2022-04-25 11:30:51,782 (trainer:335) INFO: 21epoch results: [train] iter_time=0.001, forward_time=0.365, loss_ctc=21.188, loss_interctc_layer8=48.562, loss_att=13.113, acc=0.939, loss_vq_vae=1.432, kaojin_ctc=1.526, loss_ic_other=52.332, loss=4.311, backward_time=0.300, optim_step_time=0.052, optim0_lr0=8.741e-04, train_time=3.355, time=17 minutes and 53.89 seconds, total_count=26880, gpu_max_cached_mem_GB=40.254, [valid] loss_ctc=14.916, cer_ctc=0.036, loss_interctc_layer8=13.691, cer_interctc_layer8=0.044, loss_att=8.906, acc=0.933, cer=0.040, wer=0.590, loss_vq_vae=1.202, kaojin_ctc=1.426, loss_ic_other=16.592, loss=8.417, time=20.18 seconds, total_count=525, gpu_max_cached_mem_GB=40.254
+[node01] 2022-04-25 11:30:55,822 (trainer:381) INFO: There are no improvements in this epoch
+[node01] 2022-04-25 11:30:55,846 (trainer:437) INFO: The model files were removed: exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic/20epoch.pth
+[node01] 2022-04-25 11:30:55,847 (trainer:269) INFO: 22/70epoch started. Estimated time to finish: 14 hours, 59 minutes and 56.51 seconds
+[node01] 2022-04-25 11:36:34,349 (trainer:677) INFO: 22epoch:train:1-400batch: iter_time=0.002, forward_time=0.367, loss_ctc=21.833, loss_interctc_layer8=49.859, loss_att=13.486, acc=0.939, loss_vq_vae=1.412, kaojin_ctc=1.512, loss_ic_other=53.621, loss=4.424, backward_time=0.302, optim_step_time=0.053, optim0_lr0=9.021e-04, train_time=3.384
+[node01] 2022-04-25 11:42:09,018 (trainer:677) INFO: 22epoch:train:401-800batch: iter_time=4.067e-04, forward_time=0.366, loss_ctc=20.997, loss_interctc_layer8=48.068, loss_att=12.981, acc=0.939, loss_vq_vae=1.410, kaojin_ctc=1.505, loss_ic_other=51.700, loss=4.266, backward_time=0.299, optim_step_time=0.053, optim0_lr0=9.154e-04, train_time=3.346
+[node01] 2022-04-25 11:47:40,515 (trainer:677) INFO: 22epoch:train:801-1200batch: iter_time=4.356e-04, forward_time=0.359, loss_ctc=20.930, loss_interctc_layer8=48.016, loss_att=12.997, acc=0.940, loss_vq_vae=1.401, kaojin_ctc=1.497, loss_ic_other=51.653, loss=4.262, backward_time=0.298, optim_step_time=0.052, optim0_lr0=9.287e-04, train_time=3.315
+[node01] 2022-04-25 11:49:07,469 (trainer:335) INFO: 22epoch results: [train] iter_time=8.908e-04, forward_time=0.364, loss_ctc=21.291, loss_interctc_layer8=48.702, loss_att=13.178, acc=0.939, loss_vq_vae=1.407, kaojin_ctc=1.504, loss_ic_other=52.367, loss=4.323, backward_time=0.300, optim_step_time=0.052, optim0_lr0=9.167e-04, train_time=3.349, time=17 minutes and 51.96 seconds, total_count=28160, gpu_max_cached_mem_GB=40.254, [valid] loss_ctc=15.697, cer_ctc=0.036, loss_interctc_layer8=13.894, cer_interctc_layer8=0.044, loss_att=9.005, acc=0.932, cer=0.041, wer=0.589, loss_vq_vae=1.197, kaojin_ctc=1.424, loss_ic_other=16.438, loss=8.565, time=19.66 seconds, total_count=550, gpu_max_cached_mem_GB=40.254
+[node01] 2022-04-25 11:49:11,329 (trainer:381) INFO: There are no improvements in this epoch
+[node01] 2022-04-25 11:49:11,351 (trainer:437) INFO: The model files were removed: exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic/21epoch.pth
+[node01] 2022-04-25 11:49:11,352 (trainer:269) INFO: 23/70epoch started. Estimated time to finish: 14 hours, 41 minutes and 20.43 seconds
+[node01] 2022-04-25 11:54:44,732 (trainer:677) INFO: 23epoch:train:1-400batch: iter_time=0.002, forward_time=0.361, loss_ctc=20.606, loss_interctc_layer8=47.117, loss_att=12.690, acc=0.940, loss_vq_vae=1.394, kaojin_ctc=1.493, loss_ic_other=50.549, loss=4.178, backward_time=0.298, optim_step_time=0.051, optim0_lr0=9.447e-04, train_time=3.333
+[node01] 2022-04-25 12:00:16,274 (trainer:677) INFO: 23epoch:train:401-800batch: iter_time=3.858e-04, forward_time=0.359, loss_ctc=21.233, loss_interctc_layer8=48.660, loss_att=13.153, acc=0.939, loss_vq_vae=1.386, kaojin_ctc=1.479, loss_ic_other=52.023, loss=4.311, backward_time=0.298, optim_step_time=0.051, optim0_lr0=9.581e-04, train_time=3.315
+[node01] 2022-04-25 12:05:50,308 (trainer:677) INFO: 23epoch:train:801-1200batch: iter_time=4.194e-04, forward_time=0.360, loss_ctc=22.420, loss_interctc_layer8=50.933, loss_att=13.896, acc=0.938, loss_vq_vae=1.377, kaojin_ctc=1.468, loss_ic_other=54.455, loss=4.524, backward_time=0.302, optim_step_time=0.051, optim0_lr0=9.714e-04, train_time=3.340
+[node01] 2022-04-25 12:07:16,613 (trainer:335) INFO: 23epoch results: [train] iter_time=9.755e-04, forward_time=0.360, loss_ctc=21.380, loss_interctc_layer8=48.822, loss_att=13.229, acc=0.939, loss_vq_vae=1.386, kaojin_ctc=1.481, loss_ic_other=52.261, loss=4.331, backward_time=0.299, optim_step_time=0.051, optim0_lr0=9.594e-04, train_time=3.329, time=17 minutes and 45.49 seconds, total_count=29440, gpu_max_cached_mem_GB=40.254, [valid] loss_ctc=15.483, cer_ctc=0.036, loss_interctc_layer8=13.993, cer_interctc_layer8=0.043, loss_att=9.026, acc=0.931, cer=0.041, wer=0.590, loss_vq_vae=1.172, kaojin_ctc=1.404, loss_ic_other=16.535, loss=8.558, time=19.77 seconds, total_count=575, gpu_max_cached_mem_GB=40.254
+[node01] 2022-04-25 12:07:20,583 (trainer:381) INFO: There are no improvements in this epoch
+[node01] 2022-04-25 12:07:20,646 (trainer:437) INFO: The model files were removed: exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic/22epoch.pth
+[node01] 2022-04-25 12:07:20,646 (trainer:269) INFO: 24/70epoch started. Estimated time to finish: 14 hours, 22 minutes and 33.46 seconds
+[node01] 2022-04-25 12:12:56,034 (trainer:677) INFO: 24epoch:train:1-400batch: iter_time=0.002, forward_time=0.363, loss_ctc=21.808, loss_interctc_layer8=49.803, loss_att=13.468, acc=0.938, loss_vq_vae=1.376, kaojin_ctc=1.476, loss_ic_other=53.164, loss=4.410, backward_time=0.300, optim_step_time=0.051, optim0_lr0=9.874e-04, train_time=3.353
+[node01] 2022-04-25 12:18:29,981 (trainer:677) INFO: 24epoch:train:401-800batch: iter_time=3.907e-04, forward_time=0.365, loss_ctc=21.124, loss_interctc_layer8=48.093, loss_att=13.050, acc=0.939, loss_vq_vae=1.373, kaojin_ctc=1.468, loss_ic_other=51.420, loss=4.270, backward_time=0.299, optim_step_time=0.052, optim0_lr0=0.001, train_time=3.339
+[node01] 2022-04-25 12:26:47,265 (trainer:677) INFO: 24epoch:train:801-1200batch: iter_time=0.408, forward_time=0.363, loss_ctc=21.196, loss_interctc_layer8=48.599, loss_att=13.181, acc=0.939, loss_vq_vae=1.363, kaojin_ctc=1.456, loss_ic_other=51.907, loss=4.307, backward_time=0.299, optim_step_time=0.051, optim0_lr0=0.001, train_time=4.973
+[node01] 2022-04-25 12:28:15,179 (trainer:335) INFO: 24epoch results: [train] iter_time=0.128, forward_time=0.364, loss_ctc=21.427, loss_interctc_layer8=48.934, loss_att=13.272, acc=0.938, loss_vq_vae=1.370, kaojin_ctc=1.467, loss_ic_other=52.270, loss=4.339, backward_time=0.300, optim_step_time=0.052, optim0_lr0=0.001, train_time=3.856, time=20 minutes and 34.28 seconds, total_count=30720, gpu_max_cached_mem_GB=40.254, [valid] loss_ctc=15.301, cer_ctc=0.037, loss_interctc_layer8=13.951, cer_interctc_layer8=0.044, loss_att=8.834, acc=0.932, cer=0.041, wer=0.585, loss_vq_vae=1.163, kaojin_ctc=1.401, loss_ic_other=16.064, loss=8.426, time=20.25 seconds, total_count=600, gpu_max_cached_mem_GB=40.254
+[node01] 2022-04-25 12:28:21,016 (trainer:381) INFO: There are no improvements in this epoch
+[node01] 2022-04-25 12:28:21,050 (trainer:437) INFO: The model files were removed: exp/asr_conformer_lr2e-3_warmup15k_amp_nondeterministic/23epoch.pth
+[node01] 2022-04-25 12:28:21,050 (trainer:269) INFO: 25/70epoch started. Estimated time to finish: 14 hours, 9 minutes and 17.58 seconds
+[node01] 2022-04-25 12:33:59,291 (trainer:677) INFO: 25epoch:train:1-400batch: iter_time=0.002, forward_time=0.367, loss_ctc=21.453, loss_interctc_layer8=48.895, loss_att=13.289, acc=0.939, loss_vq_vae=1.366, kaojin_ctc=1.473, loss_ic_other=52.130, loss=4.339, backward_time=0.302, optim_step_time=0.053, optim0_lr0=0.001, train_time=3.382
